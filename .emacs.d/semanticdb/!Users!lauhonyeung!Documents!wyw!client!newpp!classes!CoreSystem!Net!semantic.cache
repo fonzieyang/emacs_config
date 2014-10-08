@@ -1,0 +1,1531 @@
+;; Object Net/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Net/"
+  :tables (list 
+   (semanticdb-table "NxLoginServer.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "NxLoginServer.cpp"
+    :pointmax 16169
+    :fsize 15770
+    :lastmodtime '(21178 17126 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NxProtocol.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NxDef.h" include nil nil [3 21])
+            ("NxProtocol.h" include nil nil [23 46])
+            ("VxIOStream.h" include nil nil [48 71])
+            ("NxLogicEvent.h" include nil nil [73 98])
+            ("NxLogicSys.h" include nil nil [100 123])
+            ("VxAllocator.h" include nil nil [125 149])
+            ("VxMsg.h" include nil nil [151 169])
+            ("NxNetMsg.pb.h" include nil nil [171 195])
+            ("VxLocalObject.h" include nil nil [197 223])
+            ("VxMsgManager.h" include nil nil [225 250])
+            ("NxDataContext.h" include nil nil [252 278])
+            ("VxNetClient.h" include nil nil [280 304])
+            ("NxNetManager.h" include nil nil [306 331])
+            ("NxCharacterData.h" include nil nil [333 361])
+            ("NxItemData.h" include nil nil [363 386])
+            ("NxMaterialData.h" include nil nil [388 415])
+            ("NxPetData.h" include nil nil [417 439])
+            ("NxQuestData.h" include nil nil [441 465])
+            ("NxMatrixData.h" include nil nil [467 492])
+            ("NxLoginData.h" include nil nil [494 518])
+            ("NxChatData.h" include nil nil [520 543])
+            ("NxSkillData.h" include nil nil [545 569])
+            ("NxDBEnvironment.h" include nil nil [571 599])
+            ("NxUpdateData.h" include nil nil [601 626])
+            ("NxMediaData.h" include nil nil [628 652])
+            ("NxGuildWarData.h" include nil nil [654 681])
+            ("NxNetMsgCarrier" function
+               (:constructor-flag t
+                :parent "NxNetMsgCarrier"
+                :arguments 
+                  ( ("pPBMsg" variable
+                       (:pointer 1
+                        :type ("VxPBMsg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1088 1104]))                  
+                :type ("NxNetMsgCarrier" type (:type "class") nil nil))
+                nil [1055 1131])
+            ("NxNetMsgCarrier" function
+               (:destructor-flag t
+                :parent "NxNetMsgCarrier"
+                :type "void")
+                nil [1135 1204])
+            ("getPBMsg" function
+               (:pointer 1
+                :parent "NxNetMsgCarrier"
+                :type ("VxPBMsg" type (:type "class") nil nil))
+                nil [1208 1269])
+            ("NXPROTOCOL_FRMAE_METAHEADER_SIZE" variable (:constant-flag t) nil [1456 1488])
+            ("getEventType" function
+               (:parent "NxProtocol"
+                :arguments 
+                  ( ("nProtocolMsgType" variable (:type "int") (reparse-symbol arg-sub-list) [1544 1565]))                  
+                :type "int")
+                nil [1515 1638])
+            ("getProtocolType" function
+               (:parent "NxProtocol"
+                :arguments 
+                  ( ("nEventType" variable (:type "int") (reparse-symbol arg-sub-list) [1674 1689]))                  
+                :type "int")
+                nil [1642 1756])
+            ("NxProtocol" function
+               (:constructor-flag t
+                :parent "NxProtocol"
+                :type ("NxProtocol" type (:type "class") nil nil))
+                nil [1762 1832])
+            ("NxProtocol" function
+               (:destructor-flag t
+                :parent "NxProtocol"
+                :type "void")
+                nil [1836 1867])
+            ("stop" function
+               (:parent "NxProtocol"
+                :type "void")
+                nil [1871 1933])
+            ("clear" function
+               (:parent "NxProtocol"
+                :type "void")
+                nil [1937 2133])
+            ("createStream" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nMsgType" variable (:type "int") (reparse-symbol arg-sub-list) [2182 2195])
+                    ("nMsgSize" variable (:type "int") (reparse-symbol arg-sub-list) [2196 2209]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [2137 3152])
+            ("createStreamByPB" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nMsgType" variable (:type "int") (reparse-symbol arg-sub-list) [3205 3218])
+                    ("pPBMsg" variable
+                       (:pointer 1
+                        :type ("VxPBMsg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3219 3235]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [3156 3715])
+            ("plHeartBeat" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [3719 3889])
+            ("plLogin" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sName" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3933 3952])
+                    ("sPassword" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3953 3976]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [3893 4142])
+            ("plPayPlatformLogin" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4197 4208]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [4146 4945])
+            ("plRegister" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sName" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4992 5011])
+                    ("sPassword" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5012 5035]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [4949 5207])
+            ("plEnterServer" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sName" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5257 5276])
+                    ("sPassword" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5277 5300]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [5211 5732])
+            ("plCreatePlayer" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sName" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5783 5802])
+                    ("sPassword" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5803 5826])
+                    ("sPlayerName" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5827 5852])
+                    ("nRace" variable (:type "int") (reparse-symbol arg-sub-list) [5853 5863])
+                    ("nSex" variable (:type "int") (reparse-symbol arg-sub-list) [5864 5873]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [5736 6395])
+            ("plEnterGame" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sName" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6443 6462])
+                    ("sPassword" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6463 6486])
+                    ("nPlayerId" variable (:type "int") (reparse-symbol arg-sub-list) [6487 6501]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [6399 6951])
+            ("plExitGame" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [6955 7107])
+            ("plModifyPassword" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("NxLoginModifyPasswordData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7160 7193]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [7111 7347])
+            ("plRetakePassword" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("NxLoginRetakePasswordData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7400 7433]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [7351 7587])
+            ("plAppealPassword" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("NxLoginAppealPasswordData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7640 7673]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [7591 7827])
+            ("plDeletePlayer" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sName" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7878 7897])
+                    ("sPassword" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7898 7921])
+                    ("nPlayerId" variable (:type "int") (reparse-symbol arg-sub-list) [7922 7936]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [7831 8392])
+            ("plVersionChecking" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("NxVersionCheckingData2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8446 8476]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [8396 8754])
+            ("plQueryPlayerDetailData" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nPlayerId" variable (:type "int") (reparse-symbol arg-sub-list) [8814 8828]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [8758 8996])
+            ("plPlayerMove" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pPosition" variable
+                       (:pointer 1
+                        :type ("NxCharacterPosition" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9045 9076]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [9000 9244])
+            ("plPlayerChat" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("NxChatData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9293 9311]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [9248 9517])
+            ("plPlayerPreChat" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("NxChatData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9569 9587]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [9521 9800])
+            ("plPlayerSpeaker" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sContent" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9852 9873]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [9804 10023])
+            ("plPlayerSpeakerShowNum" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [10027 10215])
+            ("plItemSell" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nItemId" variable (:type "int") (reparse-symbol arg-sub-list) [10262 10274])
+                    ("nItemCount" variable (:type "int") (reparse-symbol arg-sub-list) [10275 10290]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [10219 10464])
+            ("plItemBuy" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nShopType" variable (:type "int") (reparse-symbol arg-sub-list) [10510 10524])
+                    ("nShopId" variable (:type ("int64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10525 10539])
+                    ("nShopitemId" variable (:type "int") (reparse-symbol arg-sub-list) [10540 10556])
+                    ("nBuyItemCount" variable (:type "int") (reparse-symbol arg-sub-list) [10557 10575]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [10468 10847])
+            ("plItemDrop" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nItemId" variable (:type "int") (reparse-symbol arg-sub-list) [10894 10906]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [10851 11044])
+            ("plItemMove" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pItemsMoves" variable
+                       (:pointer 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("NxItemMovePosition" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11091 11136]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [11048 11370])
+            ("plItemUse" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nItemId" variable (:type "int") (reparse-symbol arg-sub-list) [11416 11428])
+                    ("sCharacterId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("NxCharacterId" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11429 11463]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [11374 11666])
+            ("plItemMerge" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nSourceItemId" variable (:type "int") (reparse-symbol arg-sub-list) [11714 11732])
+                    ("nTargetItemId" variable (:type "int") (reparse-symbol arg-sub-list) [11733 11751])
+                    ("nItemCount" variable (:type "int") (reparse-symbol arg-sub-list) [11752 11767]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [11670 11997])
+            ("plItemLock" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nItemId" variable (:type "int") (reparse-symbol arg-sub-list) [12044 12056])
+                    ("isLock" variable (:type "bool") (reparse-symbol arg-sub-list) [12057 12069]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [12001 12292])
+            ("plEquipmentEnhance" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nEquipId" variable (:type "int") (reparse-symbol arg-sub-list) [12654 12667])
+                    ("pMaterialData" variable
+                       (:pointer 1
+                        :type ("NxMaterialData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12668 12698]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [12603 12926])
+            ("plEquipmentEnchant" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nEquipmentItemId" variable (:type "int") (reparse-symbol arg-sub-list) [12981 13002])
+                    ("nTargetEnchantLevel" variable (:type "int") (reparse-symbol arg-sub-list) [13003 13027])
+                    ("pMaterialData" variable
+                       (:pointer 1
+                        :type ("NxMaterialData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13028 13058]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [12930 13342])
+            ("plEquipmentCreate" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nEquipmentItemId" variable (:type "int") (reparse-symbol arg-sub-list) [13396 13417])
+                    ("pMaterialData" variable
+                       (:pointer 1
+                        :type ("NxMaterialData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13418 13448]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [13346 13682])
+            ("plEquipmentQuickCreate" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nEquipmentItemId" variable (:type "int") (reparse-symbol arg-sub-list) [13741 13762])
+                    ("pMaterialData" variable
+                       (:pointer 1
+                        :type ("NxMaterialData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13763 13793])
+                    ("nLuckyStoneItemId" variable (:type "int") (reparse-symbol arg-sub-list) [13794 13816])
+                    ("nQuaility" variable (:type "int") (reparse-symbol arg-sub-list) [13817 13831]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [13686 14228])
+            ("plEquipmentRuneCreate" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nOperationId" variable (:type "int") (reparse-symbol arg-sub-list) [14286 14303])
+                    ("pMaterialData" variable
+                       (:pointer 1
+                        :type ("NxMaterialData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14304 14334]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [14232 14579])
+            ("plEquipmentCreateCalcPercent" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nType" variable (:type "int") (reparse-symbol arg-sub-list) [14644 14654])
+                    ("pTargetData" variable
+                       (:pointer 1
+                        :type ("NxEquipmentCalcPercentData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14655 14695])
+                    ("pMaterials" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("NxEquipmentCalcPercentData" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14695 14747])
+                    ("nQuality" variable (:type "int") (reparse-symbol arg-sub-list) [14747 14760])
+                    ("nLuckyStoneTempateId" variable (:type "int") (reparse-symbol arg-sub-list) [14760 14785]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [14583 15422])
+            ("plUpdateQuest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pQuestDatas" variable
+                       (:pointer 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("NxQuestActionData" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16959 17003]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [16913 17241])
+            ("plQuestDailyActionOnce" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("questId" variable (:type "int") (reparse-symbol arg-sub-list) [17300 17312]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [17245 17475])
+            ("plQuestDailyRefresh" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("isAllDone" variable (:type "bool") (reparse-symbol arg-sub-list) [17531 17546]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [17479 17707])
+            ("plQuestDailyStart" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [17711 17884])
+            ("plMonsterBattle" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nSpawnId" variable (:type "int") (reparse-symbol arg-sub-list) [18267 18280]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [18219 18437])
+            ("plMatrixArrange" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pMatricesData" variable
+                       (:pointer 1
+                        :type ("NxMatricesData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18489 18519]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [18441 18701])
+            ("plMatrixLevelUp" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nMatrixId" variable (:type "int") (reparse-symbol arg-sub-list) [18753 18767])
+                    ("nTargetLevel" variable (:type "int") (reparse-symbol arg-sub-list) [18768 18785]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [18705 18977])
+            ("plMatrixSelected" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nMatrixId" variable (:type "int") (reparse-symbol arg-sub-list) [19030 19044]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [18981 19198])
+            ("plSkillAddByBook" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pSkillSlotID" variable
+                       (:reference 1
+                        :type ("NxSkillSlotID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19251 19279])
+                    ("nItemId" variable (:type "int") (reparse-symbol arg-sub-list) [19280 19292]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [19202 19503])
+            ("plSkillLevelup" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pSkillID" variable
+                       (:reference 1
+                        :type ("NxSkillID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19554 19574])
+                    ("nTargetLevel" variable (:type "int") (reparse-symbol arg-sub-list) [19575 19592]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [19507 19801])
+            ("plSkillRemove" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pSkillID" variable
+                       (:reference 1
+                        :type ("NxSkillID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19851 19871]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [19805 20038])
+            ("plSkillMount" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pCharacterId" variable
+                       (:reference 1
+                        :type ("NxCharacterId" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20087 20115])
+                    ("pMountedSkillData" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20116 20152]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [20042 20529])
+            ("plPartnerBuy" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nPartnerIndex" variable (:type "int") (reparse-symbol arg-sub-list) [20578 20596])
+                    ("nBuyType" variable (:type "int") (reparse-symbol arg-sub-list) [20597 20610])
+                    ("lastShopRefreshTime" variable (:type ("int64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20611 20637]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [20533 20916])
+            ("plPartnerDrop" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nPartnerId" variable (:type "int") (reparse-symbol arg-sub-list) [20966 20981]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [20920 21131])
+            ("plPartnerInherit" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nPartnerSrcId" variable (:type "int") (reparse-symbol arg-sub-list) [21184 21202])
+                    ("nPartnerDstId" variable (:type "int") (reparse-symbol arg-sub-list) [21203 21221])
+                    ("nInheritType" variable (:type "int") (reparse-symbol arg-sub-list) [21222 21239]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [21135 21489])
+            ("plPartnerTrain" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nPartnerId" variable (:type "int") (reparse-symbol arg-sub-list) [21540 21555])
+                    ("nTrainType" variable (:type "int") (reparse-symbol arg-sub-list) [21556 21571]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [21493 21816])
+            ("plPartnerTrainConfirm" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nPartnerId" variable (:type "int") (reparse-symbol arg-sub-list) [21874 21889])
+                    ("nConfirmType" variable (:type "int") (reparse-symbol arg-sub-list) [21890 21907]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [21820 22191])
+            ("plPartnerRefreshInn" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nRefreshType" variable (:type "int") (reparse-symbol arg-sub-list) [22247 22264])
+                    ("lastInnRefreshTime" variable (:type ("int64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22265 22290]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [22195 22550])
+            ("plPlayerTrain" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nTrainType" variable (:type "int") (reparse-symbol arg-sub-list) [22600 22615]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [22554 22822])
+            ("plPlayerTrainConfirm" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nConfirmType" variable (:type "int") (reparse-symbol arg-sub-list) [22879 22896]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [22826 23141])
+            ("plConsoleCmd" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sConsoleCmdString" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23190 23227]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [23145 23383])
+            ("plArenaBattle" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("targetId" variable (:type "int") (reparse-symbol arg-sub-list) [23433 23446])
+                    ("nArenaType" variable (:type "int") (reparse-symbol arg-sub-list) [23447 23462])
+                    ("targetRank" variable (:type "int") (reparse-symbol arg-sub-list) [23463 23478]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [23387 23808])
+            ("plArenaWorship" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("targetId" variable (:type "int") (reparse-symbol arg-sub-list) [23859 23872]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [23812 24054])
+            ("plArenaGetRewardRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("rewardType" variable (:type "int") (reparse-symbol arg-sub-list) [24114 24129]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [24058 24333])
+            ("plArenaViewBattleRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nBattleId" variable (:type "int") (reparse-symbol arg-sub-list) [24394 24408])
+                    ("bPersonal" variable (:type "bool") (reparse-symbol arg-sub-list) [24409 24424]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [24337 24616])
+            ("plArenaViewNewReportRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [24620 24809])
+            ("plActivityFightingArrivedRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("playerfightingvalue" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24878 24904]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [24813 25097])
+            ("plArenaGetRanking" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("queryDatas" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("NxEventArenaGetRankingQueryData" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25151 25214]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [25101 25621])
+            ("plArenaRefresh" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("refreshType" variable (:type "int") (reparse-symbol arg-sub-list) [25672 25688]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [25625 25879])
+            ("plSpacePreAddImageRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nImageId" variable (:type "int") (reparse-symbol arg-sub-list) [25941 25954])
+                    ("nImagePlace" variable (:type "int") (reparse-symbol arg-sub-list) [25955 25971])
+                    ("pImage" variable
+                       (:pointer 1
+                        :type ("NxMediaImageData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25972 25997]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [25883 26271])
+            ("plSpaceAddImageRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nImageId" variable (:type "int") (reparse-symbol arg-sub-list) [26330 26343])
+                    ("nImagePlace" variable (:type "int") (reparse-symbol arg-sub-list) [26344 26360])
+                    ("pImage" variable
+                       (:pointer 1
+                        :type ("NxMediaImageData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26361 26386]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [26275 26654])
+            ("plSpaceDeleteImageRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nImageIndex" variable (:type "int") (reparse-symbol arg-sub-list) [26716 26732])
+                    ("nImagePlace" variable (:type "int") (reparse-symbol arg-sub-list) [26733 26749]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [26658 26979])
+            ("plSpaceModifySignatureRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("pSignatureContent" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27045 27075]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [26983 27248])
+            ("plSpaceDeliverFlowerRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nPlayerId" variable (:type "int") (reparse-symbol arg-sub-list) [27312 27326])
+                    ("nFlowerIndex" variable (:type "int") (reparse-symbol arg-sub-list) [27327 27344]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [27252 27546])
+            ("plGuildCreate" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sGuildName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27596 27619]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [27550 27764])
+            ("plGuildRemove" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nGuildId" variable (:type "int") (reparse-symbol arg-sub-list) [27814 27827]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [27768 27973])
+            ("plGuildJoin" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nGuildId" variable (:type "int") (reparse-symbol arg-sub-list) [28021 28034]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [27977 28176])
+            ("plGuildExit" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nGuildId" variable (:type "int") (reparse-symbol arg-sub-list) [28224 28237]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [28180 28379])
+            ("plGuildJoinConfirm" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nConfirmType" variable (:type "int") (reparse-symbol arg-sub-list) [28434 28451])
+                    ("nPlayerId" variable (:type "int") (reparse-symbol arg-sub-list) [28452 28466]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [28383 28712])
+            ("plGuildUpdateList" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nUpdateType" variable (:type "int") (reparse-symbol arg-sub-list) [28766 28782])
+                    ("pUpdateList" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28783 28813]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [28716 29104])
+            ("plGuildUpdateDetail" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nUpdateType" variable (:type "int") (reparse-symbol arg-sub-list) [29160 29176])
+                    ("pUpdateList" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29177 29207]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [29108 29504])
+            ("plGuildUpdateMemberLevel" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nPlayerId" variable (:type "int") (reparse-symbol arg-sub-list) [29565 29579])
+                    ("nMemberLevel" variable (:type "int") (reparse-symbol arg-sub-list) [29580 29597]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [29508 29837])
+            ("plGuildImpeachConditions" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [29841 30035])
+            ("plGuildInvite" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nPlayerId" variable (:type "int") (reparse-symbol arg-sub-list) [30085 30099]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [30039 30247])
+            ("plGuildInviteConfirm" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nConfirmType" variable (:type "int") (reparse-symbol arg-sub-list) [30304 30321])
+                    ("nGuildId" variable (:type "int") (reparse-symbol arg-sub-list) [30322 30335]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [30251 30585])
+            ("plGuildDismiss" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nPlayerId" variable (:type "int") (reparse-symbol arg-sub-list) [30636 30650]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [30589 30800])
+            ("plGuildApply" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [30804 30965])
+            ("plGuildAnnouncement" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sAnnouncement" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31021 31047])
+                    ("nType" variable (:type "int") (reparse-symbol arg-sub-list) [31048 31058]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [30969 31294])
+            ("plGuildAppeal" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [31298 31461])
+            ("plGuildRemoveApply" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nGuildId" variable (:type "int") (reparse-symbol arg-sub-list) [31516 31529]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [31465 31685])
+            ("plGuildBossEnter" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [31689 31871])
+            ("plGuildBossStart" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [31875 32057])
+            ("plGuildBossLeave" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [32061 32243])
+            ("plGuildBossResurge" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [32247 32435])
+            ("plGuildBossGrab" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [32437 32616])
+            ("plWorldBossEnter" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [32620 32802])
+            ("plWorldBossStart" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [32804 32986])
+            ("plWorldBossLeave" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [32988 33170])
+            ("plWorldBossResurge" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [33172 33360])
+            ("plWorldBossGrab" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [33362 33541])
+            ("plGuildEnterActivity" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [33545 33727])
+            ("plGuildFanFanLeHitCard" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nCardNumber" variable (:type "int") (reparse-symbol arg-sub-list) [33786 33802]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [33731 33948])
+            ("plGuildFanFanLeHistory" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [33952 34157])
+            ("plGuildFanFanLeCardList" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [34161 34365])
+            ("plGuildFanFanLeReward" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [34369 34445])
+            ("plGuildFanFanLeEnter" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [34449 34625])
+            ("plGuildIncenseEnter" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [34629 34808])
+            ("plGuildIncenseLight" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nIncenseType" variable (:type "int") (reparse-symbol arg-sub-list) [34864 34881]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [34812 35064])
+            ("plGuildWelfareEnter" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [35068 35247])
+            ("plGuildWelfareReceive" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [35251 35436])
+            ("plGuildWipeEvilGetInfo" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [35440 35628])
+            ("plGuildWipeEvilCreate" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nMonsterLevel" variable (:type "int") (reparse-symbol arg-sub-list) [35686 35704]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [35632 35876])
+            ("plGuildWipeEvilJoin" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nRoomId" variable (:type "int") (reparse-symbol arg-sub-list) [35932 35944]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [35880 36100])
+            ("plGuildWipeEvilLeave" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nRoomId" variable (:type "int") (reparse-symbol arg-sub-list) [36157 36169]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [36104 36327])
+            ("plGuildWipeEvilClose" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nRoomId" variable (:type "int") (reparse-symbol arg-sub-list) [36384 36396]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [36331 36554])
+            ("plGuildWipeEvilSummon" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [36558 36743])
+            ("plGuildWipeEvilStartBattle" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [36747 36947])
+            ("plGuildWarRegister" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nType" variable (:type "int") (reparse-symbol arg-sub-list) [37002 37012]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [36951 37203])
+            ("plGuildWarGetRegisterInfo" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nType" variable (:type "int") (reparse-symbol arg-sub-list) [37265 37275])
+                    ("nFrom" variable (:type "int") (reparse-symbol arg-sub-list) [37276 37286])
+                    ("nTo" variable (:type "int") (reparse-symbol arg-sub-list) [37287 37295]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [37207 37557])
+            ("plGuildWarEnter" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [37561 37728])
+            ("plGuildWarLeave" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [37732 37899])
+            ("plGuildWarRefresh" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nType" variable (:type "int") (reparse-symbol arg-sub-list) [37953 37963])
+                    ("sHeatsQueryData" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("NxGuildWarHeatsQueryData" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37964 38019]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [37903 38333])
+            ("plGuildWarGetGuildDetail" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nGuildId" variable (:type "int") (reparse-symbol arg-sub-list) [38394 38407]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [38337 38580])
+            ("plGuildWarGetHeatsResult" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nGuildId" variable (:type "int") (reparse-symbol arg-sub-list) [38641 38654]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [38584 38824])
+            ("plGuildWarGetFinalResult" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nRound" variable (:type "int") (reparse-symbol arg-sub-list) [38885 38896])
+                    ("nPlace" variable (:type "int") (reparse-symbol arg-sub-list) [38897 38908]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [38828 39130])
+            ("plGuildWarGetFinalDetail" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nBattleId" variable (:type "int") (reparse-symbol arg-sub-list) [39191 39205]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [39134 39379])
+            ("plGuildWarGetLastFinal" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [39383 39573])
+            ("plGuildShopEnter" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [39581 39753])
+            ("plGuildShopBuy" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nGuildShopId" variable (:type "int") (reparse-symbol arg-sub-list) [39804 39821])
+                    ("nGridNo" variable (:type "int") (reparse-symbol arg-sub-list) [39822 39834]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [39757 40022])
+            ("plGuildSweepEnter" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [40026 40199])
+            ("plGuildSweep" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nSweepType" variable (:type "int") (reparse-symbol arg-sub-list) [40248 40263]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [40203 40437])
+            ("plShopUpdate" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nShopType" variable (:type "int") (reparse-symbol arg-sub-list) [40486 40500])
+                    ("nShopId" variable (:type ("int64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40501 40515]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [40441 40713])
+            ("plCoinsConvert" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nCoinsConvertType" variable (:type "int") (reparse-symbol arg-sub-list) [40766 40788])
+                    ("nConvertTimes" variable (:type "int") (reparse-symbol arg-sub-list) [40789 40807]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [40719 41044])
+            ("plCoinsStarProduce" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [41048 41224])
+            ("plCoinsStarConsume" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [41228 41404])
+            ("plSignRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [41408 41555])
+            ("plSignReceiveRewardRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("signStrike" variable (:type "int") (reparse-symbol arg-sub-list) [41618 41633]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [41559 41796])
+            ("plGiftReceiveRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("giftType" variable (:type "int") (reparse-symbol arg-sub-list) [41853 41866]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [41800 42060])
+            ("plGiftReceiveRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("giftType" variable (:type "int") (reparse-symbol arg-sub-list) [42117 42130])
+                    ("loginTimes" variable (:type "int") (reparse-symbol arg-sub-list) [42131 42146]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [42064 42375])
+            ("plOnlineGiftUpdateRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [42379 42572])
+            ("plCdkeyPackEnterRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("code" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42632 42649]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [42576 42817])
+            ("plCdkeyPackReceiveRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("code" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42879 42896]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [42821 43068])
+            ("plBathSelectFairy" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nFairyId" variable (:type "int") (reparse-symbol arg-sub-list) [43122 43135]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [43072 43271])
+            ("plBathInvitePlayer" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nTargetId" variable (:type "int") (reparse-symbol arg-sub-list) [43326 43340]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [43275 43486])
+            ("plBathAutoInvitePlayer" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [43490 43656])
+            ("plBathPlayerAction" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nTargetType" variable (:type "int") (reparse-symbol arg-sub-list) [43711 43727])
+                    ("nTargetId" variable (:type "int") (reparse-symbol arg-sub-list) [43728 43742])
+                    ("nActionType" variable (:type "int") (reparse-symbol arg-sub-list) [43743 43759]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [43660 44047])
+            ("plBathUpdateInfo" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [44051 44221])
+            ("plBathAddTime" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nTargetId" variable (:type "int") (reparse-symbol arg-sub-list) [44271 44285])
+                    ("nTargetType" variable (:type "int") (reparse-symbol arg-sub-list) [44286 44303]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [44225 44524])
+            ("plBathInviteConfirm" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nTargetId" variable (:type "int") (reparse-symbol arg-sub-list) [44580 44594])
+                    ("nConfirmType" variable (:type "int") (reparse-symbol arg-sub-list) [44595 44612]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [44528 44861])
+            ("plBathQuickTrain" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nTargetId" variable (:type "int") (reparse-symbol arg-sub-list) [44914 44928])
+                    ("nTargetType" variable (:type "int") (reparse-symbol arg-sub-list) [44929 44945]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [44865 45162])
+            ("plBathExitQueue" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [45166 45333])
+            ("plGambleNpcRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sGameCoin" variable (:type ("NxGameCoin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45388 45409]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [45337 45573])
+            ("plGambleJoinQueueRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("betType" variable (:type "int") (reparse-symbol arg-sub-list) [45634 45646]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [45577 45828])
+            ("plGambleRspGameActionRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("targetId" variable (:type "int") (reparse-symbol arg-sub-list) [45893 45906])
+                    ("rspActionValue" variable (:type "int") (reparse-symbol arg-sub-list) [45907 45926]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [45832 46156])
+            ("plActionPowerBuyRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nBoughtCount" variable (:type "int") (reparse-symbol arg-sub-list) [46216 46233]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [46160 46396])
+            ("plStageSweepRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nZoneId" variable (:type "int") (reparse-symbol arg-sub-list) [46452 46464])
+                    ("nCount" variable (:type "int") (reparse-symbol arg-sub-list) [46465 46476]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [46400 46649])
+            ("plStageSweepStopRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("nStopType" variable (:type "int") (reparse-symbol arg-sub-list) [46709 46723]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [46653 46897])
+            ("plStageSweepOneRoundRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("sweepType" variable (:type "int") (reparse-symbol arg-sub-list) [46961 46975]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [46901 47176])
+            ("plFriendApplyRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("targetId" variable (:type "int") (reparse-symbol arg-sub-list) [47233 47246]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [47180 47393])
+            ("plFriendRemoveRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("targetId" variable (:type "int") (reparse-symbol arg-sub-list) [47449 47462]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [47395 47611])
+            ("plFriendRefuseRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("targetId" variable (:type "int") (reparse-symbol arg-sub-list) [47667 47680]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [47613 47829])
+            ("plFriendAcceptRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("targetId" variable (:type "int") (reparse-symbol arg-sub-list) [47885 47898]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [47831 48045])
+            ("plRankQueryRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("queryType" variable (:type "int") (reparse-symbol arg-sub-list) [48100 48114])
+                    ("up" variable (:type "int") (reparse-symbol arg-sub-list) [48115 48122])
+                    ("down" variable (:type "int") (reparse-symbol arg-sub-list) [48123 48132]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [48049 48407])
+            ("plMailEnterRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [48411 48579])
+            ("plMailDeleteRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("mailId" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48633 48646]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [48581 48793])
+            ("plMailDeleteAllRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [48795 48975])
+            ("plMailRewardReceiveRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("mailId" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49036 49049]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [48977 49210])
+            ("plMailUnfoldRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("mailId" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49264 49277]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [49212 49424])
+            ("plMailFristRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [49428 49596])
+            ("plVipPurchaseRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("vipLevel" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49653 49668]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [49600 49821])
+            ("plVipGiftRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("vipLevel" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49874 49889]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [49825 50042])
+            ("plVipEnterRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [50046 50205])
+            ("plNewServiceEnterRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [50209 50385])
+            ("plNewServiceReveiceRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("activityId" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50448 50465])
+                    ("packId" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50466 50479]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [50389 50675])
+            ("plPartnerCardConvertRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("templateId" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50739 50756]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [50679 50929])
+            ("plPayMoneyRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("yuan" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50983 50994]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [50933 51197])
+            ("plPayResultRequest" function
+               (:pointer 1
+                :parent "NxProtocol"
+                :arguments 
+                  ( ("orderNum" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51252 51267])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [51268 51279])
+                    ("platformOrderNum" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51280 51309]))                  
+                :type ("VxMsgNetSendStream" type (:type "class") nil nil))
+                nil [51201 51694])
+            ("plParserFrame" function
+               (:parent "NxProtocol"
+                :type "void")
+                nil [51698 53433])
+            ("plParser" function
+               (:parent "NxProtocol"
+                :arguments 
+                  ( ("pRecvData" variable
+                       (:pointer 1
+                        :type ("VxString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53465 53485]))                  
+                :type "void")
+                nil [53439 54278])
+            ("NXPROTOCOL_NETMSG_CREATOR_IN_MSGTYPE_CASE" variable (:constant-flag t) nil [54290 54331])
+            ("plParserMsg" function
+               (:parent "NxProtocol"
+                :arguments 
+                  ( ("pProcotolHeader" variable
+                       (:pointer 1
+                        :type ("ProtocolHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54454 54486])
+                    ("pMsgHeader" variable
+                       (:pointer 1
+                        :type ("MsgHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54487 54509])
+                    ("pBuffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [54510 54524]))                  
+                :type "void")
+                nil [54425 81947])
+            ("recvPBMsgHandler" function
+               (:parent "NxProtocol"
+                :arguments 
+                  ( ("pProtocol" variable
+                       (:pointer 1
+                        :type ("NxProtocol" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81985 82007])
+                    ("nMsgType" variable (:type "int") (reparse-symbol arg-sub-list) [82008 82021])
+                    ("pPBMsg" variable
+                       (:pointer 1
+                        :type ("VxPBMsg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82022 82038]))                  
+                :type "void")
+                nil [81951 82305])
+            ("getPlatformCode" function
+               (:parent "NxProtocol"
+                :type "int")
+                nil [82309 83308]))          
+    :file "NxProtocol.cpp"
+    :pointmax 84831
+    :fsize 83317
+    :lastmodtime '(21178 17196 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NXPROTOCOL_FRMAE_METAHEADER_SIZE" . ((semantic-list "((int)sizeof(int))" 1493 . 1511)))
+          ("NXPROTOCOL_NETMSG_CREATOR_IN_MSGTYPE_CASE" (spp-arg-list ("name") 55844 . 55850) . 
+              ((CASE "case" 55853 . 55857) (symbol "NxNetMsg" 55858 . 55866) (punctuation ":" 55866 . 55867) (punctuation ":" 55867 . 55868) (spp-symbol-merge ((symbol "Msg" 55868 . 55871) (symbol "name" 55873 . 55877)) 55868 . 55877) (punctuation ":" 55877 . 55878) (symbol "pPBMsg" 55879 . 55885) (punctuation "=" 55886 . 55887) (NEW "new" 55888 . 55891) (symbol "NxNetMsg" 55892 . 55900) (punctuation ":" 55900 . 55901) (punctuation ":" 55901 . 55902) (symbol "name" 55902 . 55906) (semantic-list "()" 55906 . 55908) (punctuation ";" 55908 . 55909) (symbol "VXLOG" 55910 . 55915) (semantic-list "(\"Msg\"#name)" 55915 . 55927) (punctuation ";" 55927 . 55928) (BREAK "break" 55929 . 55934)))
+          )
+
+    )
+   (semanticdb-table "NxProtocol.h"
+    :file "NxProtocol.h"
+    :fsize 14120
+    :lastmodtime '(21178 16840 0 0)
+    )
+   (semanticdb-table "NxNetManager.h"
+    :file "NxNetManager.h"
+    :fsize 967
+    :lastmodtime '(21114 11810 0 0)
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!newpp!classes!CoreSystem!Net!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

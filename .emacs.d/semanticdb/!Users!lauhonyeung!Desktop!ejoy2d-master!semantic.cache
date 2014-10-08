@@ -1,0 +1,50 @@
+;; Object ejoy2d-master/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ejoy2d-master/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( (".PHONY" function (:arguments ("mingw" "ej2d" "linux" "undefined")) nil [1 37])
+            ("CFLAGS" variable (:default-value ("-g" "-Wall" "-Ilib" "-D" "EJOY2D_OS=$(OS)")) nil [38 81])
+            ("LDFLAGS" variable nil nil [81 92])
+            ("SRC" variable (:default-value ("lib/shader.c" "lib/lshader.c" "lib/ejoy2dgame.c" "lib/fault.c" "lib/screen.c" "lib/texture.c" "lib/ppm.c" "lib/spritepack.c" "lib/sprite.c" "lib/lsprite.c" "lib/matrix.c" "lib/lmatrix.c" "lib/dfont.c" "lib/label.c" "lib/particle.c" "lib/lparticle.c" "lib/scissor.c")) nil [93 367])
+            ("UNAME" variable (:default-value ("$(shell uname)")) nil [368 389])
+            ("SYS" variable (:default-value ("$(if $(filter Linux%,$(UNAME)),linux,\\
+	    $(if $(filter MINGW%,$(UNAME)),mingw,\\
+	    $(if $(filter Darwin%,$(UNAME)),macosx,\\
+	        undefined\\
+)))")) nil [389 546])
+            ("all" function (:arguments ("$(SYS)")) nil [547 559])
+            ("undefined" function nil nil [560 701])
+            ("mingw" function (:arguments ("OS" ":=" "WINDOWS")) nil [703 725])
+            ("mingw" function (:arguments ("TARGET" ":=" "ej2d.exe")) nil [725 752])
+            ("mingw" function (:arguments ("CFLAGS" "+=" "-I/usr/include" "-I/usr/local/include")) nil [752 806])
+            ("mingw" function (:arguments ("LDFLAGS" "+=" "-L/usr/bin" "-lgdi32" "-lglew32" "-lopengl32" "-L/usr/local/bin" "-llua52")) nil [806 889])
+            ("mingw" function (:arguments ("SRC" "+=" "mingw/window.c" "mingw/winfw.c" "mingw/winfont.c")) nil [889 949])
+            ("mingw" function (:arguments ("$(SRC)" "ej2d")) nil [950 970])
+            ("linux" function (:arguments ("OS" ":=" "LINUX")) nil [971 991])
+            ("linux" function (:arguments ("TARGET" ":=" "ej2d")) nil [991 1014])
+            ("linux" function (:arguments ("CFLAGS" "+=" "-I/usr/include" "-I/usr/local/include" "$(shell freetype-config --cflags)")) nil [1014 1102])
+            ("linux" function (:arguments ("LDFLAGS" "+=" "-lGLEW" "-lGL" "-lX11" "-lfreetype" "-llua" "-lm")) nil [1102 1161])
+            ("linux" function (:arguments ("SRC" "+=" "posix/window.c" "posix/winfw.c" "posix/winfont.c")) nil [1161 1221])
+            ("linux" function (:arguments ("$(SRC)" "ej2d")) nil [1222 1242])
+            ("macosx" function (:arguments ("OS" ":=" "MACOSX")) nil [1243 1265])
+            ("macosx" function (:arguments ("TARGET" ":=" "ej2d")) nil [1265 1289])
+            ("macosx" function (:arguments ("CFLAGS" "+=" "-I/usr/X11R6/include" "-I/usr/include" "-I/usr/local/include" "$(shell freetype-config --cflags)" "-D" "__MACOSX")) nil [1289 1411])
+            ("macosx" function (:arguments ("LDFLAGS" "+=" "-L/usr/X11R6/lib" "-lGLEW" "-lGL" "-lX11" "-lfreetype" "-llua" "-lm")) nil [1411 1488])
+            ("macosx" function (:arguments ("SRC" "+=" "posix/window.c" "posix/winfw.c" "posix/winfont.c")) nil [1488 1549])
+            ("macosx" function (:arguments ("$(SRC)" "ej2d")) nil [1550 1571])
+            ("ej2d" function nil nil [1572 1625])
+            ("clean" function nil nil [1626 1664]))          
+    :file "Makefile"
+    :pointmax 1664
+    :fsize 1663
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax '((shell-command 1652 . 1663) (bol 1651 . 1651))
+    )
+   )
+  :file "!Users!lauhonyeung!Desktop!ejoy2d-master!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

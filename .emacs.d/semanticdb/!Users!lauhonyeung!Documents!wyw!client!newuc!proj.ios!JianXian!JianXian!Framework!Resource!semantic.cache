@@ -1,0 +1,18 @@
+;; Object Resource/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Resource/"
+  :tables (list 
+   (semanticdb-table "bottom_menu.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "bottom_menu.json"
+    :pointmax 4670
+    :fsize 4786
+    :lastmodtime '(21129 35737 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!newuc!proj.ios!JianXian!JianXian!Framework!Resource!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

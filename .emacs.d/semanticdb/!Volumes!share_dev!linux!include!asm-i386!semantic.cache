@@ -1,0 +1,952 @@
+;; Object asm-i386/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "asm-i386/"
+  :tables (list 
+   (semanticdb-table "apicdef.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__ASM_APICDEF_H" variable (:constant-flag t) nil [33 48])
+            ("APIC_DEFAULT_PHYS_BASE" variable (:constant-flag t) nil [221 243])
+            ("APIC_ID" variable (:constant-flag t) nil [266 273])
+            ("APIC_ID_MASK" variable (:constant-flag t) nil [290 302])
+            ("GET_APIC_ID" variable (:constant-flag t) nil [325 336])
+            ("APIC_LVR" variable (:constant-flag t) nil [367 375])
+            ("APIC_LVR_MASK" variable (:constant-flag t) nil [391 404])
+            ("GET_APIC_VERSION" variable (:constant-flag t) nil [425 441])
+            ("GET_APIC_MAXLVT" variable (:constant-flag t) nil [466 481])
+            ("APIC_INTEGRATED" variable (:constant-flag t) nil [512 527])
+            ("APIC_TASKPRI" variable (:constant-flag t) nil [551 563])
+            ("APIC_TPRI_MASK" variable (:constant-flag t) nil [579 593])
+            ("APIC_ARBPRI" variable (:constant-flag t) nil [609 620])
+            ("APIC_ARBPRI_MASK" variable (:constant-flag t) nil [636 652])
+            ("APIC_PROCPRI" variable (:constant-flag t) nil [667 679])
+            ("APIC_EOI" variable (:constant-flag t) nil [694 702])
+            ("APIC_EIO_ACK" variable (:constant-flag t) nil [718 730])
+            ("APIC_RRR" variable (:constant-flag t) nil [783 791])
+            ("APIC_LDR" variable (:constant-flag t) nil [806 814])
+            ("APIC_LDR_MASK" variable (:constant-flag t) nil [830 843])
+            ("GET_APIC_LOGICAL_ID" variable (:constant-flag t) nil [866 885])
+            ("SET_APIC_LOGICAL_ID" variable (:constant-flag t) nil [916 935])
+            ("APIC_ALL_CPUS" variable (:constant-flag t) nil [961 974])
+            ("APIC_DFR" variable (:constant-flag t) nil [990 998])
+            ("APIC_SPIV" variable (:constant-flag t) nil [1013 1022])
+            ("APIC_SPIV_FOCUS_DISABLED" variable (:constant-flag t) nil [1038 1062])
+            ("APIC_SPIV_APIC_ENABLED" variable (:constant-flag t) nil [1080 1102])
+            ("APIC_ISR" variable (:constant-flag t) nil [1120 1128])
+            ("APIC_TMR" variable (:constant-flag t) nil [1144 1152])
+            ("APIC_IRR" variable (:constant-flag t) nil [1168 1176])
+            ("APIC_ESR" variable (:constant-flag t) nil [1192 1200])
+            ("APIC_ESR_SEND_CS" variable (:constant-flag t) nil [1217 1233])
+            ("APIC_ESR_RECV_CS" variable (:constant-flag t) nil [1252 1268])
+            ("APIC_ESR_SEND_ACC" variable (:constant-flag t) nil [1287 1304])
+            ("APIC_ESR_RECV_ACC" variable (:constant-flag t) nil [1323 1340])
+            ("APIC_ESR_SENDILL" variable (:constant-flag t) nil [1359 1375])
+            ("APIC_ESR_RECVILL" variable (:constant-flag t) nil [1394 1410])
+            ("APIC_ESR_ILLREGA" variable (:constant-flag t) nil [1429 1445])
+            ("APIC_ICR" variable (:constant-flag t) nil [1463 1471])
+            ("APIC_DEST_SELF" variable (:constant-flag t) nil [1488 1502])
+            ("APIC_DEST_ALLINC" variable (:constant-flag t) nil [1522 1538])
+            ("APIC_DEST_ALLBUT" variable (:constant-flag t) nil [1557 1573])
+            ("APIC_ICR_RR_MASK" variable (:constant-flag t) nil [1592 1608])
+            ("APIC_ICR_RR_INVALID" variable (:constant-flag t) nil [1627 1646])
+            ("APIC_ICR_RR_INPROG" variable (:constant-flag t) nil [1665 1683])
+            ("APIC_ICR_RR_VALID" variable (:constant-flag t) nil [1702 1719])
+            ("APIC_INT_LEVELTRIG" variable (:constant-flag t) nil [1738 1756])
+            ("APIC_INT_ASSERT" variable (:constant-flag t) nil [1775 1790])
+            ("APIC_ICR_BUSY" variable (:constant-flag t) nil [1810 1823])
+            ("APIC_DEST_LOGICAL" variable (:constant-flag t) nil [1843 1860])
+            ("APIC_DM_FIXED" variable (:constant-flag t) nil [1879 1892])
+            ("APIC_DM_LOWEST" variable (:constant-flag t) nil [1912 1926])
+            ("APIC_DM_SMI" variable (:constant-flag t) nil [1946 1957])
+            ("APIC_DM_REMRD" variable (:constant-flag t) nil [1977 1990])
+            ("APIC_DM_NMI" variable (:constant-flag t) nil [2010 2021])
+            ("APIC_DM_INIT" variable (:constant-flag t) nil [2041 2053])
+            ("APIC_DM_STARTUP" variable (:constant-flag t) nil [2073 2088])
+            ("APIC_DM_EXTINT" variable (:constant-flag t) nil [2108 2122])
+            ("APIC_VECTOR_MASK" variable (:constant-flag t) nil [2142 2158])
+            ("APIC_ICR2" variable (:constant-flag t) nil [2176 2185])
+            ("GET_APIC_DEST_FIELD" variable (:constant-flag t) nil [2202 2221])
+            ("SET_APIC_DEST_FIELD" variable (:constant-flag t) nil [2252 2271])
+            ("APIC_LVTT" variable (:constant-flag t) nil [2294 2303])
+            ("APIC_LVTPC" variable (:constant-flag t) nil [2319 2329])
+            ("APIC_LVT0" variable (:constant-flag t) nil [2345 2354])
+            ("APIC_LVT_TIMER_BASE_MASK" variable (:constant-flag t) nil [2371 2395])
+            ("GET_APIC_TIMER_BASE" variable (:constant-flag t) nil [2416 2435])
+            ("SET_APIC_TIMER_BASE" variable (:constant-flag t) nil [2466 2485])
+            ("APIC_TIMER_BASE_CLKIN" variable (:constant-flag t) nil [2512 2533])
+            ("APIC_TIMER_BASE_TMBASE" variable (:constant-flag t) nil [2549 2571])
+            ("APIC_TIMER_BASE_DIV" variable (:constant-flag t) nil [2587 2606])
+            ("APIC_LVT_TIMER_PERIODIC" variable (:constant-flag t) nil [2622 2645])
+            ("APIC_LVT_MASKED" variable (:constant-flag t) nil [2665 2680])
+            ("APIC_LVT_LEVEL_TRIGGER" variable (:constant-flag t) nil [2701 2723])
+            ("APIC_LVT_REMOTE_IRR" variable (:constant-flag t) nil [2743 2762])
+            ("APIC_INPUT_POLARITY" variable (:constant-flag t) nil [2782 2801])
+            ("APIC_SEND_PENDING" variable (:constant-flag t) nil [2821 2838])
+            ("GET_APIC_DELIVERY_MODE" variable (:constant-flag t) nil [2858 2880])
+            ("SET_APIC_DELIVERY_MODE" variable (:constant-flag t) nil [2909 2931])
+            ("APIC_MODE_FIXED" variable (:constant-flag t) nil [2972 2987])
+            ("APIC_MODE_NMI" variable (:constant-flag t) nil [3004 3017])
+            ("APIC_MODE_EXINT" variable (:constant-flag t) nil [3034 3049])
+            ("APIC_LVT1" variable (:constant-flag t) nil [3064 3073])
+            ("APIC_LVTERR" variable (:constant-flag t) nil [3089 3100])
+            ("APIC_TMICT" variable (:constant-flag t) nil [3116 3126])
+            ("APIC_TMCCT" variable (:constant-flag t) nil [3142 3152])
+            ("APIC_TDCR" variable (:constant-flag t) nil [3168 3177])
+            ("APIC_TDR_DIV_TMBASE" variable (:constant-flag t) nil [3194 3213])
+            ("APIC_TDR_DIV_1" variable (:constant-flag t) nil [3231 3245])
+            ("APIC_TDR_DIV_2" variable (:constant-flag t) nil [3261 3275])
+            ("APIC_TDR_DIV_4" variable (:constant-flag t) nil [3291 3305])
+            ("APIC_TDR_DIV_8" variable (:constant-flag t) nil [3321 3335])
+            ("APIC_TDR_DIV_16" variable (:constant-flag t) nil [3351 3366])
+            ("APIC_TDR_DIV_32" variable (:constant-flag t) nil [3382 3397])
+            ("APIC_TDR_DIV_64" variable (:constant-flag t) nil [3413 3428])
+            ("APIC_TDR_DIV_128" variable (:constant-flag t) nil [3444 3460])
+            ("APIC_BASE" variable (:constant-flag t) nil [3474 3483])
+            ("MAX_IO_APICS" variable (:constant-flag t) nil [3522 3534])
+            ("u32" variable (:constant-flag t) nil [3833 3836])
+            ("lapic" variable (:constant-flag t) nil [3859 3864])
+            ("local_apic" type
+               (:members 
+                  ( ("__reserved_01" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [3946 3964]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3937 3981])
+                    ("__reserved_02" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4000 4018]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3991 4035])
+                    ("id" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved_2" variable
+                                 (:suffix ":4"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4079 4147])
+                              ("phys_apic_id" variable
+                                 (:suffix ":4"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4079 4147])
+                              ("__reserved_1" variable
+                                 (:suffix ":24"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4079 4147])
+                              ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4150 4168]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4045 4175])
+                    ("version" variable
+                       (:constant-flag t
+                        :type ("" type
+                             (:members 
+                                ( ("__reserved_2" variable
+                                     (:suffix ":8"
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [4231 4313])
+                                  ("max_lvt" variable
+                                     (:suffix ":8"
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [4231 4313])
+                                  ("__reserved_1" variable
+                                     (:suffix ":8"
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [4231 4313])
+                                  ("version" variable
+                                     (:suffix ":8"
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [4231 4313])
+                                  ("__reserved" variable
+                                     (:dereference 1
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [4316 4334]))                                
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4185 4346])
+                    ("__reserved_03" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4365 4383]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4356 4400])
+                    ("__reserved_04" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4419 4437]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4410 4454])
+                    ("__reserved_05" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4473 4491]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4464 4508])
+                    ("__reserved_06" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4527 4545]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4518 4562])
+                    ("tpr" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved_1" variable
+                                 (:suffix ":24"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4612 4654])
+                              ("priority" variable
+                                 (:suffix ":8"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4612 4654])
+                              ("__reserved_2" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [4657 4677]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4572 4685])
+                    ("apr" variable
+                       (:constant-flag t
+                        :type ("" type
+                             (:members 
+                                ( ("__reserved_1" variable
+                                     (:suffix ":24"
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [4749 4791])
+                                  ("priority" variable
+                                     (:suffix ":8"
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [4749 4791])
+                                  ("__reserved_2" variable
+                                     (:dereference 1
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [4794 4814]))                                
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4695 4822])
+                    ("ppr" variable
+                       (:constant-flag t
+                        :type ("" type
+                             (:members 
+                                ( ("__reserved_1" variable
+                                     (:suffix ":24"
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [4884 4926])
+                                  ("priority" variable
+                                     (:suffix ":8"
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [4884 4926])
+                                  ("__reserved_2" variable
+                                     (:dereference 1
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [4929 4949]))                                
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4832 4957])
+                    ("eoi" variable (:type ("" type
+                         (:members 
+                            ( ("eoi" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5010 5020])
+                              ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5023 5041]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4967 5049])
+                    ("__reserved_07" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5068 5086]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5059 5103])
+                    ("ldr" variable (:type ("" type
+                         (:members 
+                            ( ("logical_dest" variable
+                                 (:suffix ":8"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5159 5205])
+                              ("__reserved_1" variable
+                                 (:suffix ":24"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5159 5205])
+                              ("__reserved_2" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5208 5228]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5113 5236])
+                    ("dfr" variable (:type ("" type
+                         (:members 
+                            ( ("model" variable
+                                 (:suffix ":4"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5291 5331])
+                              ("__reserved_1" variable
+                                 (:suffix ":28"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5291 5331])
+                              ("__reserved_2" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5334 5354]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5246 5362])
+                    ("svr" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved_2" variable
+                                 (:suffix ":22"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5424 5512])
+                              ("focus_cpu" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5424 5512])
+                              ("apic_enabled" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5424 5512])
+                              ("spurious_vector" variable
+                                 (:suffix ":8"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5424 5512])
+                              ("__reserved_3" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [5515 5535]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [5372 5543])
+                    ("isr" variable
+                       (:dereference 1
+                        :type ("" type
+                             (:members 
+                                ( ("bitfield" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5597 5610])
+                                  ("__reserved" variable
+                                     (:dereference 1
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [5613 5631]))                                
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5553 5643])
+                    ("tmr" variable
+                       (:dereference 1
+                        :type ("" type
+                             (:members 
+                                ( ("bitfield" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5699 5712])
+                                  ("__reserved" variable
+                                     (:dereference 1
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [5715 5733]))                                
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5653 5745])
+                    ("irr" variable
+                       (:dereference 1
+                        :type ("" type
+                             (:members 
+                                ( ("bitfield" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5806 5819])
+                                  ("__reserved" variable
+                                     (:dereference 1
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [5822 5840]))                                
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5755 5852])
+                    ("esr" variable (:type ("" type
+                         (:members 
+                            ( ("error_bits" variable (:type ("" type
+                                   (:members 
+                                      ( ("__reserved_2" variable
+                                           (:suffix ":24"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [5912 6178])
+                                        ("illegal_register_address" variable
+                                           (:suffix ":1"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [5912 6178])
+                                        ("receive_illegal_vector" variable
+                                           (:suffix ":1"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [5912 6178])
+                                        ("send_illegal_vector" variable
+                                           (:suffix ":1"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [5912 6178])
+                                        ("__reserved_1" variable
+                                           (:suffix ":1"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [5912 6178])
+                                        ("receive_accept_error" variable
+                                           (:suffix ":1"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [5912 6178])
+                                        ("send_accept_error" variable
+                                           (:suffix ":1"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [5912 6178])
+                                        ("receive_cs_error" variable
+                                           (:suffix ":1"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [5912 6178])
+                                        ("send_cs_error" variable
+                                           (:suffix ":1"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [5912 6178])
+                                        ("__reserved_3" variable
+                                           (:dereference 1
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [6182 6202]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [5900 6218])
+                              ("all_errors" variable (:type ("" type
+                                   (:members 
+                                      ( ("errors" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6233 6244])
+                                        ("__reserved_3" variable
+                                           (:dereference 1
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [6248 6268]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [6221 6284]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [5862 6292])
+                    ("__reserved_08" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6311 6329]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6302 6346])
+                    ("__reserved_09" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6365 6383]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6356 6400])
+                    ("__reserved_10" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6419 6437]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6410 6454])
+                    ("__reserved_11" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6473 6491]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6464 6508])
+                    ("__reserved_12" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6527 6545]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6518 6562])
+                    ("__reserved_13" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6581 6599]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6572 6616])
+                    ("__reserved_14" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6635 6653]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6626 6670])
+                    ("icr1" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved_3" variable
+                                 (:suffix ":12"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6726 6948])
+                              ("shorthand" variable
+                                 (:suffix ":2"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6726 6948])
+                              ("__reserved_2" variable
+                                 (:suffix ":2"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6726 6948])
+                              ("trigger" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6726 6948])
+                              ("level" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6726 6948])
+                              ("__reserved_1" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6726 6948])
+                              ("delivery_status" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6726 6948])
+                              ("destination_mode" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6726 6948])
+                              ("delivery_mode" variable
+                                 (:suffix ":3"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6726 6948])
+                              ("vector" variable
+                                 (:suffix ":8"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6726 6948])
+                              ("__reserved_4" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [6951 6971]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6680 6980])
+                    ("icr2" variable (:type ("" type
+                         (:members 
+                            ( ("dest" variable (:type ("" type
+                                   (:members 
+                                      ( ("__reserved_2" variable
+                                           (:suffix ":4"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [7047 7114])
+                                        ("phys_dest" variable
+                                           (:suffix ":4"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [7047 7114])
+                                        ("__reserved_1" variable
+                                           (:suffix ":24"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [7047 7114])
+                                        ("logical_dest" variable
+                                           (:suffix ":8"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [7118 7165])
+                                        ("__reserved_3" variable
+                                           (:suffix ":24"
+                                            :type ("u32" type (:type "class") nil nil))
+                                            (reparse-symbol classsubparts) [7118 7165]))                                      
+                                    :type "union")
+                                    nil nil)) (reparse-symbol classsubparts) [7036 7175])
+                              ("__reserved_4" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7178 7198]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6990 7207])
+                    ("lvt_timer" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved_3" variable
+                                 (:suffix ":14"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7246 7391])
+                              ("timer_mode" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7246 7391])
+                              ("mask" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7246 7391])
+                              ("__reserved_2" variable
+                                 (:suffix ":3"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7246 7391])
+                              ("delivery_status" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7246 7391])
+                              ("__reserved_1" variable
+                                 (:suffix ":4"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7246 7391])
+                              ("vector" variable
+                                 (:suffix ":8"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7246 7391])
+                              ("__reserved_4" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7394 7414]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7217 7428])
+                    ("__reserved_15" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7447 7465]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7438 7482])
+                    ("lvt_pc" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved_3" variable
+                                 (:suffix ":15"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7535 7683])
+                              ("mask" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7535 7683])
+                              ("__reserved_2" variable
+                                 (:suffix ":3"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7535 7683])
+                              ("delivery_status" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7535 7683])
+                              ("__reserved_1" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7535 7683])
+                              ("delivery_mode" variable
+                                 (:suffix ":3"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7535 7683])
+                              ("vector" variable
+                                 (:suffix ":8"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7535 7683])
+                              ("__reserved_4" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7686 7706]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7492 7717])
+                    ("lvt_lint0" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved_2" variable
+                                 (:suffix ":15"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7756 7938])
+                              ("mask" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7756 7938])
+                              ("trigger" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7756 7938])
+                              ("remote_irr" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7756 7938])
+                              ("polarity" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7756 7938])
+                              ("delivery_status" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7756 7938])
+                              ("__reserved_1" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7756 7938])
+                              ("delivery_mode" variable
+                                 (:suffix ":3"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7756 7938])
+                              ("vector" variable
+                                 (:suffix ":8"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7756 7938])
+                              ("__reserved_3" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [7941 7961]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7727 7975])
+                    ("lvt_lint1" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved_2" variable
+                                 (:suffix ":15"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8014 8196])
+                              ("mask" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8014 8196])
+                              ("trigger" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8014 8196])
+                              ("remote_irr" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8014 8196])
+                              ("polarity" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8014 8196])
+                              ("delivery_status" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8014 8196])
+                              ("__reserved_1" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8014 8196])
+                              ("delivery_mode" variable
+                                 (:suffix ":3"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8014 8196])
+                              ("vector" variable
+                                 (:suffix ":8"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8014 8196])
+                              ("__reserved_3" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8199 8219]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7985 8233])
+                    ("lvt_error" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved_3" variable
+                                 (:suffix ":15"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8272 8397])
+                              ("mask" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8272 8397])
+                              ("__reserved_2" variable
+                                 (:suffix ":3"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8272 8397])
+                              ("delivery_status" variable
+                                 (:suffix ":1"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8272 8397])
+                              ("__reserved_1" variable
+                                 (:suffix ":4"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8272 8397])
+                              ("vector" variable
+                                 (:suffix ":8"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8272 8397])
+                              ("__reserved_4" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8400 8420]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8243 8434])
+                    ("timer_icr" variable (:type ("" type
+                         (:members 
+                            ( ("initial_count" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8490 8510])
+                              ("__reserved_2" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8513 8533]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8444 8547])
+                    ("timer_ccr" variable
+                       (:constant-flag t
+                        :type ("" type
+                             (:members 
+                                ( ("curr_count" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8610 8627])
+                                  ("__reserved_2" variable
+                                     (:dereference 1
+                                      :type ("u32" type (:type "class") nil nil))
+                                      (reparse-symbol classsubparts) [8630 8650]))                                
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8557 8664])
+                    ("__reserved_16" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8683 8701]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8674 8718])
+                    ("__reserved_17" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8737 8755]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8728 8772])
+                    ("__reserved_18" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8791 8809]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8782 8826])
+                    ("__reserved_19" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8845 8863]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8836 8880])
+                    ("timer_dcr" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved_1" variable
+                                 (:suffix ":28"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8943 8985])
+                              ("divisor" variable
+                                 (:suffix ":4"
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8943 8985])
+                              ("__reserved_2" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [8988 9008]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8890 9022])
+                    ("__reserved_20" variable (:type ("" type
+                         (:members 
+                            ( ("__reserved" variable
+                                 (:dereference 1
+                                  :type ("u32" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [9041 9059]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9032 9076]))                  
+                :type "struct")
+                nil [3908 9105]))          
+    :file "apicdef.h"
+    :pointmax 9126
+    :fsize 9125
+    :lastmodtime '(15222 51047 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GET_APIC_ID" (spp-arg-list ("x") 336 . 339) . ((semantic-list "(((x)>>24)&0x0F)" 341 . 357)))
+          ("APIC_EIO_ACK" . ((number "0x0" 732 . 735)))
+          ("APIC_DFR" . ((number "0xE0" 999 . 1003)))
+          ("APIC_DEST_SELF" . ((number "0x40000" 1504 . 1511)))
+          ("APIC_DM_NMI" . ((number "0x00400" 2023 . 2030)))
+          ("GET_APIC_DEST_FIELD" (spp-arg-list ("x") 2221 . 2224) . ((semantic-list "(((x)>>24)&0xFF)" 2225 . 2241)))
+          ("APIC_TDR_DIV_2" . ((number "0x0" 3277 . 3280)))
+          ("APIC_INTEGRATED" (spp-arg-list ("x") 527 . 530) . ((semantic-list "((x)&0xF0)" 531 . 541)))
+          ("APIC_EOI" . ((number "0xB0" 703 . 707)))
+          ("APIC_LDR" . ((number "0xD0" 815 . 819)))
+          ("APIC_ALL_CPUS" . ((number "0xFF" 976 . 980)))
+          ("APIC_ESR_RECV_ACC" . ((number "0x00008" 1341 . 1348)))
+          ("APIC_ICR_RR_MASK" . ((number "0x30000" 1609 . 1616)))
+          ("APIC_VECTOR_MASK" . ((number "0x000FF" 2159 . 2166)))
+          ("APIC_LVTPC" . ((number "0x340" 2330 . 2335)))
+          ("APIC_TDR_DIV_TMBASE" . ((semantic-list "(1<<2)" 3214 . 3220)))
+          ("APIC_TDR_DIV_32" . ((number "0x8" 3399 . 3402)))
+          ("MAX_IO_APICS" . ((number "8" 3535 . 3536)))
+          ("GET_APIC_VERSION" (spp-arg-list ("x") 441 . 444) . ((semantic-list "((x)&0xFF)" 445 . 455)))
+          ("APIC_DM_EXTINT" . ((number "0x00700" 2124 . 2131)))
+          ("APIC_ICR2" . ((number "0x310" 2186 . 2191)))
+          ("APIC_TIMER_BASE_DIV" . ((number "0x2" 2608 . 2611)))
+          ("SET_APIC_DELIVERY_MODE" (spp-arg-list ("x" "y") 2931 . 2936) . ((semantic-list "(((x)&~0x700)|((y)<<8))" 2937 . 2960)))
+          ("APIC_TDR_DIV_4" . ((number "0x1" 3307 . 3310)))
+          ("APIC_ID" . ((number "0x20" 275 . 279)))
+          ("APIC_LVR" . ((number "0x30" 376 . 380)))
+          ("SET_APIC_LOGICAL_ID" (spp-arg-list ("x") 935 . 938) . ((semantic-list "(((x)<<24))" 939 . 950)))
+          ("APIC_IRR" . ((number "0x200" 1177 . 1182)))
+          ("APIC_ICR_RR_INVALID" . ((number "0x00000" 1647 . 1654)))
+          ("APIC_DM_REMRD" . ((number "0x00300" 1992 . 1999)))
+          ("APIC_LVT_MASKED" . ((semantic-list "(1<<16)" 2683 . 2690)))
+          ("APIC_SEND_PENDING" . ((semantic-list "(1<<12)" 2840 . 2847)))
+          ("APIC_ESR_RECV_CS" . ((number "0x00002" 1269 . 1276)))
+          ("APIC_ICR_RR_VALID" . ((number "0x20000" 1720 . 1727)))
+          ("SET_APIC_DEST_FIELD" (spp-arg-list ("x") 2271 . 2274) . ((semantic-list "((x)<<24)" 2275 . 2284)))
+          ("APIC_LVT_TIMER_BASE_MASK" . ((semantic-list "(0x3<<18)" 2396 . 2405)))
+          ("APIC_DEFAULT_PHYS_BASE" . ((number "0xfee00000" 244 . 254)))
+          ("APIC_ARBPRI" . ((number "0x90" 621 . 625)))
+          ("APIC_SPIV_APIC_ENABLED" . ((semantic-list "(1<<8)" 1104 . 1110)))
+          ("APIC_INT_ASSERT" . ((number "0x04000" 1792 . 1799)))
+          ("APIC_DM_FIXED" . ((number "0x00000" 1894 . 1901)))
+          ("APIC_LVT_LEVEL_TRIGGER" . ((semantic-list "(1<<15)" 2725 . 2732)))
+          ("APIC_LVTERR" . ((number "0x370" 3101 . 3106)))
+          ("APIC_RRR" . ((number "0xC0" 792 . 796)))
+          ("APIC_LDR_MASK" . ((semantic-list "(0xFF<<24)" 845 . 855)))
+          ("APIC_ISR" . ((number "0x100" 1129 . 1134)))
+          ("APIC_DM_SMI" . ((number "0x00200" 1959 . 1966)))
+          ("APIC_MODE_EXINT" . ((number "0x7" 3051 . 3054)))
+          ("APIC_TDR_DIV_8" . ((number "0x2" 3337 . 3340)))
+          ("APIC_ESR_SEND_CS" . ((number "0x00001" 1234 . 1241)))
+          ("APIC_DM_LOWEST" . ((number "0x00100" 1928 . 1935)))
+          ("APIC_TIMER_BASE_TMBASE" . ((number "0x1" 2573 . 2576)))
+          ("APIC_TDR_DIV_128" . ((number "0xA" 3461 . 3464)))
+          ("__ASM_APICDEF_H")
+          ("APIC_ARBPRI_MASK" . ((number "0xFF" 653 . 657)))
+          ("APIC_PROCPRI" . ((number "0xA0" 680 . 684)))
+          ("APIC_SPIV" . ((number "0xF0" 1023 . 1027)))
+          ("APIC_SPIV_FOCUS_DISABLED" . ((semantic-list "(1<<9)" 1063 . 1069)))
+          ("APIC_ESR_RECVILL" . ((number "0x00040" 1411 . 1418)))
+          ("APIC_DM_STARTUP" . ((number "0x00600" 2090 . 2097)))
+          ("APIC_LVTT" . ((number "0x320" 2304 . 2309)))
+          ("GET_APIC_TIMER_BASE" (spp-arg-list ("x") 2435 . 2438) . ((semantic-list "(((x)>>18)&0x3)" 2440 . 2455)))
+          ("APIC_LVT_TIMER_PERIODIC" . ((semantic-list "(1<<17)" 2647 . 2654)))
+          ("APIC_MODE_FIXED" . ((number "0x0" 2989 . 2992)))
+          ("APIC_TASKPRI" . ((number "0x80" 564 . 568)))
+          ("APIC_TPRI_MASK" . ((number "0xFF" 595 . 599)))
+          ("APIC_TMR" . ((number "0x180" 1153 . 1158)))
+          ("APIC_ESR" . ((number "0x280" 1201 . 1206)))
+          ("APIC_LVT_REMOTE_IRR" . ((semantic-list "(1<<14)" 2764 . 2771)))
+          ("APIC_INPUT_POLARITY" . ((semantic-list "(1<<13)" 2803 . 2810)))
+          ("APIC_MODE_NMI" . ((number "0x4" 3019 . 3022)))
+          ("APIC_TDCR" . ((number "0x3E0" 3178 . 3183)))
+          ("GET_APIC_MAXLVT" (spp-arg-list ("x") 481 . 484) . ((semantic-list "(((x)>>16)&0xFF)" 485 . 501)))
+          ("APIC_ESR_SEND_ACC" . ((number "0x00004" 1305 . 1312)))
+          ("APIC_ESR_ILLREGA" . ((number "0x00080" 1446 . 1453)))
+          ("APIC_ICR" . ((number "0x300" 1472 . 1477)))
+          ("APIC_DEST_ALLINC" . ((number "0x80000" 1539 . 1546)))
+          ("APIC_INT_LEVELTRIG" . ((number "0x08000" 1757 . 1764)))
+          ("APIC_ICR_BUSY" . ((number "0x01000" 1825 . 1832)))
+          ("APIC_DM_INIT" . ((number "0x00500" 2055 . 2062)))
+          ("APIC_TMCCT" . ((number "0x390" 3153 . 3158)))
+          ("lapic" . ((semantic-list "((volatile struct local_apic *)APIC_BASE)" 3865 . 3906)))
+          ("APIC_ID_MASK" . ((semantic-list "(0x0F<<24)" 304 . 314)))
+          ("APIC_LVR_MASK" . ((number "0xFF00FF" 406 . 414)))
+          ("APIC_ESR_SENDILL" . ((number "0x00020" 1376 . 1383)))
+          ("APIC_DEST_ALLBUT" . ((number "0xC0000" 1574 . 1581)))
+          ("APIC_ICR_RR_INPROG" . ((number "0x10000" 1684 . 1691)))
+          ("APIC_LVT0" . ((number "0x350" 2355 . 2360)))
+          ("APIC_TIMER_BASE_CLKIN" . ((number "0x0" 2535 . 2538)))
+          ("GET_APIC_DELIVERY_MODE" (spp-arg-list ("x") 2880 . 2883) . ((semantic-list "(((x)>>8)&0x7)" 2884 . 2898)))
+          ("GET_APIC_LOGICAL_ID" (spp-arg-list ("x") 885 . 888) . ((semantic-list "(((x)>>24)&0xFF)" 889 . 905)))
+          ("APIC_DEST_LOGICAL" . ((number "0x00800" 1861 . 1868)))
+          ("SET_APIC_TIMER_BASE" (spp-arg-list ("x") 2485 . 2488) . ((semantic-list "(((x)<<18))" 2490 . 2501)))
+          ("APIC_LVT1" . ((number "0x360" 3074 . 3079)))
+          ("APIC_TMICT" . ((number "0x380" 3127 . 3132)))
+          ("APIC_TDR_DIV_1" . ((number "0xB" 3247 . 3250)))
+          ("APIC_TDR_DIV_16" . ((number "0x3" 3368 . 3371)))
+          ("APIC_TDR_DIV_64" . ((number "0x9" 3430 . 3433)))
+          ("APIC_BASE" . ((semantic-list "(fix_to_virt(FIX_APIC_BASE))" 3484 . 3512)))
+          )
+
+    )
+   )
+  :file "!Volumes!share_dev!linux!include!asm-i386!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

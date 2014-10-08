@@ -1,0 +1,120 @@
+;; Object skynet-src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "skynet-src/"
+  :tables (list 
+   (semanticdb-table "skynet_env.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SKYNET_ENV_H" variable (:constant-flag t) nil [30 42])
+            ("skynet_getenv" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [71 87]))                  
+                :type "char")
+                nil [44 88])
+            ("skynet_setenv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [108 124])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [125 143]))                  
+                :type "void")
+                nil [89 144])
+            ("skynet_env_init" function
+               (:prototype-flag t
+                :type "void")
+                nil [146 169]))          
+    :file "skynet_env.h"
+    :pointmax 178
+    :fsize 177
+    :lastmodtime '(20766 18314 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SKYNET_ENV_H")
+          )
+
+    )
+   (semanticdb-table "skynet_env.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("skynet_env.h" include nil nil [1 24])
+            ("lua.h" include (:system-flag t) nil [26 42])
+            ("lauxlib.h" include (:system-flag t) nil [43 63])
+            ("stdlib.h" include (:system-flag t) nil [65 84])
+            ("assert.h" include (:system-flag t) nil [85 104])
+            ("skynet_env" type
+               (:members 
+                  ( ("lock" variable (:type "int") (reparse-symbol classsubparts) [127 136])
+                    ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [138 151]))                  
+                :type "struct")
+                nil [106 154])
+            ("E" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("skynet_env" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [156 191])
+            ("LOCK" variable (:constant-flag t) nil [201 205])
+            ("UNLOCK" variable (:constant-flag t) nil [267 273])
+            ("skynet_getenv" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [339 355]))                  
+                :type "char")
+                nil [311 506])
+            ("skynet_setenv" function
+               (:arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [528 544])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [545 563]))                  
+                :type "void")
+                nil [508 727])
+            ("skynet_env_init" function (:type "void") nil [729 819]))          
+    :file "skynet_env.c"
+    :pointmax 820
+    :fsize 819
+    :lastmodtime '(20766 18314 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UNLOCK" (spp-arg-list ("q") 273 . 276) . 
+              ((symbol "__sync_lock_release" 277 . 296) (semantic-list "(&(q)->lock)" 296 . 308) (punctuation ";" 308 . 309)))
+          ("LOCK" (spp-arg-list ("q") 205 . 208) . 
+              ((WHILE "while" 209 . 214) (semantic-list "(__sync_lock_test_and_set(&(q)->lock,1))" 215 . 255) (semantic-list "{}" 256 . 258)))
+          )
+
+    )
+   )
+  :file "!drive_c!Users!hanyang!work!testemacs!skynet-master!skynet-src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

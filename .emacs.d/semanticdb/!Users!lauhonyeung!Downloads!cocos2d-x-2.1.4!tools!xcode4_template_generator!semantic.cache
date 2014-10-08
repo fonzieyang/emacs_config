@@ -1,0 +1,91 @@
+;; Object xcode4_template_generator/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "xcode4_template_generator/"
+  :tables (list 
+   (semanticdb-table "template_generator.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''
+Xcode 4 template generator
+'''" code nil nil [523 557])
+            ("__docformat__" variable nil nil [559 593])
+            ("_template_open_body" variable nil nil [595 1079])
+            ("_template_close_body" variable nil nil [1081 1123])
+            ("sys" include nil nil [1134 1144])
+            ("os" include nil nil [1145 1154])
+            ("getopt" include nil nil [1155 1168])
+            ("glob" include nil nil [1169 1180])
+            ("Xcode4Template" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1322 1348])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1357 1383])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1392 1411])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1420 1471])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1480 1500])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1622 1652])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1741 1757])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1766 1794]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1230 1234])
+                            ("directory" variable nil (reparse-symbol function_parameters) [1236 1245])
+                            ("group" variable nil (reparse-symbol function_parameters) [1247 1252])
+                            ("identifier" variable nil (reparse-symbol function_parameters) [1256 1266])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [1274 1280])
+                            ("exclude" variable nil (reparse-symbol function_parameters) [1289 1296])
+                            ("append" variable nil (reparse-symbol function_parameters) [1301 1307]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1216 1795])
+                    ("scandirs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1813 1817])
+                            ("path" variable nil (reparse-symbol function_parameters) [1819 1823]))                          )
+                        (reparse-symbol indented_block_body) [1800 2310])
+                    ("append_definition" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2379 2383])
+                            ("output_body" variable nil (reparse-symbol function_parameters) [2385 2396])
+                            ("path" variable nil (reparse-symbol function_parameters) [2398 2402])
+                            ("group" variable nil (reparse-symbol function_parameters) [2404 2409])
+                            ("dont_index" variable nil (reparse-symbol function_parameters) [2411 2421]))                          )
+                        (reparse-symbol indented_block_body) [2356 3134])
+                    ("generate_definitions" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3218 3222]))                          )
+                        (reparse-symbol indented_block_body) [3192 4188])
+                    ("generate_nodes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4261 4265]))                          )
+                        (reparse-symbol indented_block_body) [4241 4748])
+                    ("generate_xml" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4831 4835]))                          )
+                        (reparse-symbol indented_block_body) [4813 5162])
+                    ("generate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5181 5185]))                          )
+                        (reparse-symbol indented_block_body) [5167 5257]))                  
+                :type "class")
+                nil [1182 5257])
+            ("help" function nil nil [5258 5700])
+            ("if" code nil nil [5701 6792]))          
+    :file "template_generator.py"
+    :pointmax 6792
+    :fsize 6791
+    :lastmodtime '(20918 40636 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!lauhonyeung!Downloads!cocos2d-x-2.1.4!tools!xcode4_template_generator!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

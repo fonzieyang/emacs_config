@@ -1,0 +1,435 @@
+;; Object NewServiceActivity/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "NewServiceActivity/"
+  :tables (list 
+   (semanticdb-table "NxNewServiceDataManager.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__NX_NEW_SERVICE_DATA_MANAGER_H__" variable (:constant-flag t) nil [51 84])
+            ("VxBase.h" include nil nil [86 105])
+            ("NxNewServiceData.h" include nil nil [106 135])
+            ("NxEventProtocolResponse" type
+               (:prototype t
+                :type "class")
+                nil [137 167])
+            ("NxLogicEvent" type
+               (:prototype t
+                :type "class")
+                nil [168 187])
+            ("NxEventVipPurchase" type
+               (:prototype t
+                :type "class")
+                nil [188 213])
+            ("NxEventNewServiceReceive" type
+               (:prototype t
+                :type "class")
+                nil [214 245])
+            ("NxHolidayGiftData" type
+               (:prototype t
+                :type "class")
+                nil [246 270])
+            ("NxNewServiceDataManager" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [304 311])
+                    ("VX_SINGLET_DECLARE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("NxNewServiceDataManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [332 356]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [313 357])
+                    ("init" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [359 378])
+                    ("release" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [380 402])
+                    ("getActivity" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("activityId" variable (:type "int") (reparse-symbol arg-sub-list) [436 451]))                          
+                        :type ("NxActivityViewData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [404 452])
+                    ("isFightingValueArrived" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fightingvalue" variable (:type "int") (reparse-symbol arg-sub-list) [482 500]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [454 501])
+                    ("checkFightingValueIsArrived" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [503 538])
+                    ("isHolidayGiftEnable" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [541 568])
+                    ("setHolidayGiftData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sOther" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("NxNetMsg::HolidayData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [594 630]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [570 631])
+                    ("getHolidayGiftData" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("NxHolidayGiftData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [633 673])
+                    ("isChangeWorldBoss" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [676 701])
+                    ("protected" label nil (reparse-symbol classsubparts) [703 713])
+                    ("NxNewServiceDataManager" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [715 741])
+                    ("NxNewServiceDataManager" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [743 770])
+                    ("onEventEnterHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pThis" variable
+                               (:pointer 1
+                                :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [805 836])
+                            ("pEvent" variable
+                               (:pointer 1
+                                :type ("NxLogicEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [837 858]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [773 859])
+                    ("onEventPackReceiveHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pThis" variable
+                               (:pointer 1
+                                :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [899 930])
+                            ("pEvent" variable
+                               (:pointer 1
+                                :type ("NxEventNewServiceReceive" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [931 964]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [861 965])
+                    ("onEventEnterResponseHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pThis" variable
+                               (:pointer 1
+                                :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1007 1038])
+                            ("pEvent" variable
+                               (:pointer 1
+                                :type ("NxEventProtocolResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1039 1071]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [967 1072])
+                    ("onEventPackReceiveResponseHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pThis" variable
+                               (:pointer 1
+                                :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1120 1151])
+                            ("pEvent" variable
+                               (:pointer 1
+                                :type ("NxEventProtocolResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1152 1184]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1074 1185])
+                    ("onEventFightingValueArrivedRequestHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pThis" variable
+                               (:pointer 1
+                                :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1241 1272])
+                            ("pEvent" variable
+                               (:pointer 1
+                                :type ("NxLogicEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1273 1294]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1187 1295])
+                    ("onEventFightingValueArrivedResponseHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pThis" variable
+                               (:pointer 1
+                                :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1352 1383])
+                            ("pEvent" variable
+                               (:pointer 1
+                                :type ("NxEventProtocolResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1384 1416]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1297 1417])
+                    ("onEventUpdateAttrHandler" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pThis" variable
+                               (:pointer 1
+                                :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1456 1487])
+                            ("pEvent" variable
+                               (:pointer 1
+                                :type ("NxLogicEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1488 1509]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1419 1510])
+                    ("clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1513 1526])
+                    ("update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("activityId" variable (:type "int") (reparse-symbol arg-sub-list) [1540 1555])
+                            ("packId" variable (:type "int") (reparse-symbol arg-sub-list) [1556 1567])
+                            ("pData" variable
+                               (:pointer 1
+                                :type ("NxActivityPackReceiveData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1568 1601]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1528 1602])
+                    ("public" label nil (reparse-symbol classsubparts) [1603 1610])
+                    ("m_Activitys" variable (:type ("NxActivityViewDataList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1613 1648])
+                    ("m_pReceiveData" variable
+                       (:pointer 1
+                        :type ("NxActivityPackReceiveData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1650 1692])
+                    ("m_CurrentActivityId" variable (:type "int") (reparse-symbol classsubparts) [1694 1718])
+                    ("m_FightingValueRules" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1720 1758])
+                    ("m_ServerLastFightingValue" variable (:type "int") (reparse-symbol classsubparts) [1760 1790])
+                    ("m_pHolidayGiftData" variable
+                       (:pointer 1
+                        :type ("NxHolidayGiftData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1793 1831])
+                    ("m_bHolidayEnable" variable (:type "bool") (reparse-symbol classsubparts) [1833 1855]))                  
+                :type "class")
+                nil [272 1858]))          
+    :file "NxNewServiceDataManager.h"
+    :pointmax 1866
+    :fsize 1865
+    :lastmodtime '(21198 36820 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__NX_NEW_SERVICE_DATA_MANAGER_H__")
+          )
+
+    )
+   (semanticdb-table "NxNewServiceDataManager.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NxNewServiceDataManager.h" include nil nil [1 37])
+            ("NxLogicServer.h" include nil nil [38 64])
+            ("NxLogicSys.h" include nil nil [65 88])
+            ("NxViewSys.h" include nil nil [89 111])
+            ("NxProtocol.h" include nil nil [112 135])
+            ("NxTipsManager.h" include nil nil [136 162])
+            ("NxDBString.h" include nil nil [163 186])
+            ("NxPlayerDataManager.h" include nil nil [187 219])
+            ("Gift/NxGiftData.h" include nil nil [220 248])
+            ("init" function
+               (:parent "NxNewServiceDataManager"
+                :type "void")
+                nil [250 331])
+            ("release" function
+               (:parent "NxNewServiceDataManager"
+                :type "void")
+                nil [332 417])
+            ("getActivity" function
+               (:pointer 1
+                :parent "NxNewServiceDataManager"
+                :arguments 
+                  ( ("activityId" variable (:type "int") (reparse-symbol arg-sub-list) [476 491]))                  
+                :type ("NxActivityViewData" type (:type "class") nil nil))
+                nil [419 641])
+            ("isFightingValueArrived" function
+               (:parent "NxNewServiceDataManager"
+                :arguments 
+                  ( ("fightingvalue" variable (:type "int") (reparse-symbol arg-sub-list) [696 714]))                  
+                :type "bool")
+                nil [643 963])
+            ("checkFightingValueIsArrived" function
+               (:parent "NxNewServiceDataManager"
+                :type "void")
+                nil [965 1242])
+            ("NxNewServiceDataManager" function
+               (:constructor-flag t
+                :parent "NxNewServiceDataManager"
+                :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                nil [1244 2564])
+            ("NxNewServiceDataManager" function
+               (:destructor-flag t
+                :parent "NxNewServiceDataManager"
+                :type "void")
+                nil [2566 3883])
+            ("clear" function
+               (:parent "NxNewServiceDataManager"
+                :type "void")
+                nil [3885 3964])
+            ("update" function
+               (:parent "NxNewServiceDataManager"
+                :arguments 
+                  ( ("activityId" variable (:type "int") (reparse-symbol arg-sub-list) [4003 4018])
+                    ("packId" variable (:type "int") (reparse-symbol arg-sub-list) [4019 4030])
+                    ("pData" variable
+                       (:pointer 1
+                        :type ("NxActivityPackReceiveData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4031 4064]))                  
+                :type "void")
+                nil [3966 4829])
+            ("onEventEnterHandler" function
+               (:parent "NxNewServiceDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4881 4912])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxLogicEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4913 4934]))                  
+                :type "bool")
+                nil [4831 5007])
+            ("onEventPackReceiveHandler" function
+               (:parent "NxNewServiceDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5065 5096])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventNewServiceReceive" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5097 5130]))                  
+                :type "bool")
+                nil [5009 5269])
+            ("onEventEnterResponseHandler" function
+               (:parent "NxNewServiceDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5329 5360])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventProtocolResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5361 5393]))                  
+                :type "bool")
+                nil [5271 5926])
+            ("onEventPackReceiveResponseHandler" function
+               (:parent "NxNewServiceDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5992 6023])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventProtocolResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6024 6056]))                  
+                :type "bool")
+                nil [5928 7250])
+            ("onEventFightingValueArrivedRequestHandler" function
+               (:parent "NxNewServiceDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7324 7355])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxLogicEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7356 7377]))                  
+                :type "bool")
+                nil [7252 7523])
+            ("onEventFightingValueArrivedResponseHandler" function
+               (:parent "NxNewServiceDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7597 7628])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventProtocolResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7629 7661]))                  
+                :type "bool")
+                nil [7524 7982])
+            ("onEventUpdateAttrHandler" function
+               (:parent "NxNewServiceDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxNewServiceDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8039 8070])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxLogicEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8071 8092]))                  
+                :type "bool")
+                nil [7984 8150])
+            ("isHolidayGiftEnable" function
+               (:parent "NxNewServiceDataManager"
+                :type "bool")
+                nil [8235 8489])
+            ("setHolidayGiftData" function
+               (:parent "NxNewServiceDataManager"
+                :arguments 
+                  ( ("sOther" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("NxNetMsg::HolidayData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8540 8576]))                  
+                :type "void")
+                nil [8491 8853])
+            ("getHolidayGiftData" function
+               (:pointer 1
+                :parent "NxNewServiceDataManager"
+                :type ("NxHolidayGiftData" type (:type "class") nil nil))
+                nil [8855 8951])
+            ("isChangeWorldBoss" function
+               (:parent "NxNewServiceDataManager"
+                :type "bool")
+                nil [8953 9121]))          
+    :file "NxNewServiceDataManager.cpp"
+    :pointmax 9122
+    :fsize 9121
+    :lastmodtime '(21199 27574 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NxNewServiceData.h"
+    :file "NxNewServiceData.h"
+    :fsize 2607
+    :lastmodtime '(21178 20440 0 0)
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!new91!classes!GameSystem!NewServiceActivity!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,48 @@
+;; Object project-creator/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "project-creator/"
+  :tables (list 
+   (semanticdb-table "ios.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "ios.json"
+    :pointmax 354
+    :fsize 353
+    :lastmodtime '(20918 40636 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "create_project.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("context" variable nil nil [161 455])
+            ("platforms_list" variable nil nil [456 475])
+            ("sys" include nil nil [485 495])
+            ("os" include nil nil [496 514])
+            ("os.path" include nil nil [496 514])
+            ("json" include nil nil [515 526])
+            ("shutil" include nil nil [527 540])
+            ("dumpUsage" function nil nil [542 1232])
+            ("checkParams" function (:arguments 
+              ( ("context" variable nil (reparse-symbol function_parameters) [1249 1256]))              ) nil [1233 4000])
+            ("replaceString" function (:arguments 
+              ( ("filepath" variable nil (reparse-symbol function_parameters) [4058 4066])
+                ("src_string" variable nil (reparse-symbol function_parameters) [4068 4078])
+                ("dst_string" variable nil (reparse-symbol function_parameters) [4080 4090]))              ) nil [4040 4375])
+            ("processPlatformProjects" function (:arguments 
+              ( ("platform" variable nil (reparse-symbol function_parameters) [4427 4435]))              ) nil [4399 7042])
+            ("checkParams" code nil nil [7183 7203])
+            ("if" code nil nil [7344 7681])
+            ("for" code nil nil [7747 7817])
+            ("print" code nil nil [7953 8078])
+            ("print" code nil nil [8079 8096]))          
+    :file "create_project.py"
+    :pointmax 8098
+    :fsize 8097
+    :lastmodtime '(20918 40636 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!lauhonyeung!Downloads!cocos2d-x-2.1.4!tools!project-creator!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

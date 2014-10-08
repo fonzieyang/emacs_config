@@ -1,0 +1,20 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("BattleAI.lua"
+ (filename . "/Volumes/share_dev/Client/ProjectZ/Resources/scripts/logic/battle/BattleAI.lua")
+ (front-context-string . "\n-- priority que")
+ (rear-context-string . "= 1\n    end\nend\n")
+ (position . 999))
+("AIQueue.lua"
+ (filename . "/Volumes/share_dev/Client/ProjectZ/Resources/scripts/logic/battle/AIQueue.lua")
+ (front-context-string . "\nlocal aiQueue =")
+ (rear-context-string)
+ (position . 1))
+("ede-new"
+ (filename . "c:/Users/hanyang/work/emacs-24.3/lisp/cedet/ede.el")
+ (front-context-string . " (type &optional")
+ (rear-context-string . "\n\n(defun ede-new")
+ (position . 25537))
+)

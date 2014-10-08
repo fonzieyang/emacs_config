@@ -1,0 +1,192 @@
+;; Object PayPlatform/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PayPlatform/"
+  :tables (list 
+   (semanticdb-table "NxPayPlatform.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NxPayPlatform.h" include nil nil [89 115])
+            ("NxLogicSys.h" include nil nil [116 139])
+            ("NxActionSys.h" include nil nil [140 164])
+            ("NxDBScene.h" include nil nil [165 187])
+            ("NxViewSys.h" include nil nil [188 210])
+            ("NdPayPlatform.h" include nil nil [261 287])
+            ("NxPayPlatformXiaoMi.h" include nil nil [398 430])
+            ("initPay" function
+               (:parent "NxPayPlatform"
+                :type "void")
+                nil [439 576])
+            ("instance" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("NxPayPlatform" type (:type "class") nil nil))
+                nil [578 616])
+            ("defaultPlatform" function
+               (:pointer 1
+                :parent "NxPayPlatform"
+                :type ("NxPayPlatform" type (:type "class") nil nil))
+                nil [618 943])
+            ("NxPayPlatform" function
+               (:constructor-flag t
+                :parent "NxPayPlatform"
+                :type ("NxPayPlatform" type (:type "class") nil nil))
+                nil [945 2056])
+            ("NxPayPlatform" function
+               (:destructor-flag t
+                :parent "NxPayPlatform"
+                :type "void")
+                nil [2058 3224])
+            ("onLoginDone" function
+               (:parent "NxPayPlatform"
+                :type "void")
+                nil [3226 3321])
+            ("onLogoutOut" function
+               (:parent "NxPayPlatform"
+                :type "void")
+                nil [3323 3422])
+            ("onInitDone" function
+               (:parent "NxPayPlatform"
+                :type "void")
+                nil [3424 3517])
+            ("onCheckUpdateDone" function
+               (:parent "NxPayPlatform"
+                :type "void")
+                nil [3519 3621])
+            ("onInit" function
+               (:parent "NxPayPlatform"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3650 3661])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3662 3678]))                  
+                :type "bool")
+                nil [3623 3739])
+            ("onEnterLogin" function
+               (:parent "NxPayPlatform"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3774 3785])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3786 3802]))                  
+                :type "bool")
+                nil [3741 3865])
+            ("onEnterForeground" function
+               (:parent "NxPayPlatform"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3905 3916])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3917 3933]))                  
+                :type "bool")
+                nil [3867 4065])
+            ("onRecharge" function
+               (:parent "NxPayPlatform"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4098 4109])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventDoPayMoney" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4110 4136]))                  
+                :type "bool")
+                nil [4067 4215])
+            ("onEnterForum" function
+               (:parent "NxPayPlatform"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4250 4261])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4262 4278]))                  
+                :type "bool")
+                nil [4217 4340])
+            ("onEnterFeedback" function
+               (:parent "NxPayPlatform"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4378 4389])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4390 4406]))                  
+                :type "bool")
+                nil [4342 4471])
+            ("onEnterPlatform" function
+               (:parent "NxPayPlatform"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4509 4520])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4521 4537]))                  
+                :type "bool")
+                nil [4473 4602])
+            ("onLoginServerFailed" function
+               (:parent "NxPayPlatform"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4644 4655])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4656 4672]))                  
+                :type "bool")
+                nil [4604 4779])
+            ("onAccount" function
+               (:parent "NxPayPlatform"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4811 4822])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4823 4839]))                  
+                :type "bool")
+                nil [4781 4903]))          
+    :file "NxPayPlatform.cpp"
+    :pointmax 5919
+    :fsize 4905
+    :lastmodtime '(21178 20642 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NxPayPlatform.h"
+    :file "NxPayPlatform.h"
+    :fsize 2159
+    :lastmodtime '(21107 27213 0 0)
+    )
+   (semanticdb-table "NxPayPlatformXiaoMi.h"
+    :file "NxPayPlatformXiaoMi.h"
+    :fsize 744
+    :lastmodtime '(21178 20440 0 0)
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!new91!classes!GameSystem!PayPlatform!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,93 @@
+;; Object kernel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kernel/"
+  :tables (list 
+   (semanticdb-table "acct.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("linux/config.h" include (:system-flag t) nil [2026 2051])
+            ("linux/errno.h" include (:system-flag t) nil [2052 2076])
+            ("linux/kernel.h" include (:system-flag t) nil [2077 2102])
+            ("sys_acct" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9595 9617]))                  
+                :type "long")
+                nil [9581 9638]))          
+    :file "acct.c"
+    :pointmax 9646
+    :fsize 9645
+    :lastmodtime '(15030 28028 0 0)
+    :unmatched-syntax '((symbol 9570 . 9580))
+    )
+   (semanticdb-table "capability.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("linux/mm.h" include (:system-flag t) nil [164 185])
+            ("asm/uaccess.h" include (:system-flag t) nil [186 210])
+            ("cap_bset" variable (:type ("kernel_cap_t" type (:type "class") nil nil)) nil [212 253])
+            ("task_capability_lock" variable (:type ("spinlock_t" type (:type "class") nil nil)) nil [320 373])
+            ("sys_capget" function
+               (:arguments 
+                  ( ("header" variable (:type ("cap_user_header_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [586 611])
+                    ("dataptr" variable (:type ("cap_user_data_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [612 636]))                  
+                :type "long")
+                nil [570 1916])
+            ("cap_set_pg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pgrp" variable (:type "int") (reparse-symbol arg-sub-list) [2008 2017])
+                    ("effective" variable
+                       (:pointer 1
+                        :type ("kernel_cap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2038 2062])
+                    ("inheritable" variable
+                       (:pointer 1
+                        :type ("kernel_cap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2083 2109])
+                    ("permitted" variable
+                       (:pointer 1
+                        :type ("kernel_cap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2130 2154]))                  
+                :type "void")
+                nil [1985 2577])
+            ("cap_set_all" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("effective" variable
+                       (:pointer 1
+                        :type ("kernel_cap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2667 2691])
+                    ("inheritable" variable
+                       (:pointer 1
+                        :type ("kernel_cap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2713 2739])
+                    ("permitted" variable
+                       (:pointer 1
+                        :type ("kernel_cap_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2761 2785]))                  
+                :type "void")
+                nil [2643 3281])
+            ("sys_capset" function
+               (:arguments 
+                  ( ("header" variable (:type ("cap_user_header_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3665 3690])
+                    ("data" variable
+                       (:constant-flag t
+                        :type ("cap_user_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3691 3718]))                  
+                :type "long")
+                nil [3649 6364]))          
+    :file "capability.c"
+    :pointmax 6365
+    :fsize 6364
+    :lastmodtime '(14676 13261 0 0)
+    :unmatched-syntax '((symbol 3638 . 3648) (symbol 559 . 569))
+    )
+   )
+  :file "!Volumes!share_dev!linux!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

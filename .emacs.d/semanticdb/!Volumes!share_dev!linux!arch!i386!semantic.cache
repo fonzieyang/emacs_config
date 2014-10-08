@@ -1,0 +1,63 @@
+;; Object i386/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "i386/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( ("LD" variable (:default-value ("$(CROSS_COMPILE)ld" "-m" "elf_i386")) nil [605 639])
+            ("OBJCOPY" variable (:default-value ("$(CROSS_COMPILE)objcopy" "-O" "binary" "-R" ".note" "-R" ".comment" "-S")) nil [639 705])
+            ("LDFLAGS" variable (:default-value ("-e" "stext")) nil [705 722])
+            ("LINKFLAGS" variable (:default-value ("-T" "$(TOPDIR)/arch/i386/vmlinux.lds" "$(LDFLAGS)")) nil [722 779])
+            ("CFLAGS" variable (:default-value ("-pipe")) nil [780 796])
+            ("CFLAGS" variable (:default-value ("$(shell if $(CC) -mpreferred-stack-boundary=2 -S -o /dev/null -xc /dev/null >/dev/null 2>&1; then echo \"-mpreferred-stack-boundary=2\"; fi)")) nil [850 999])
+            ("CFLAGS" variable (:default-value ("-march=i386")) nil [1018 1040])
+            ("CFLAGS" variable (:default-value ("-march=i486")) nil [1065 1087])
+            ("CFLAGS" variable (:default-value ("-march=i586")) nil [1112 1134])
+            ("CFLAGS" variable (:default-value ("-march=i586")) nil [1162 1184])
+            ("CFLAGS" variable (:default-value ("-march=i586")) nil [1212 1234])
+            ("CFLAGS" variable (:default-value ("-march=i686")) nil [1259 1281])
+            ("CFLAGS" variable (:default-value ("-march=i686")) nil [1313 1335])
+            ("CFLAGS" variable (:default-value ("-march=i686")) nil [1365 1387])
+            ("CFLAGS" variable (:default-value ("$(shell if $(CC) -march=k6 -S -o /dev/null -xc /dev/null >/dev/null 2>&1; then echo \"-march=k6\"; else echo \"-march=i586\"; fi)")) nil [1411 1547])
+            ("CFLAGS" variable (:default-value ("$(shell if $(CC) -march=athlon -S -o /dev/null -xc /dev/null >/dev/null 2>&1; then echo \"-march=athlon\"; else echo \"-march=i686 -malign-functions=4\"; fi)")) nil [1571 1736])
+            ("CFLAGS" variable (:default-value ("-march=i686" "-malign-functions=0" "-malign-jumps=0" "-malign-loops=0")) nil [1764 1838])
+            ("CFLAGS" variable (:default-value ("-march=i586")) nil [1869 1891])
+            ("CFLAGS" variable (:default-value ("-march=i586")) nil [1921 1943])
+            ("CFLAGS" variable (:default-value ("-march=i586")) nil [1974 1996])
+            ("CFLAGS" variable (:default-value ("-march=i586")) nil [2026 2048])
+            ("HEAD" variable (:default-value ("arch/i386/kernel/head.o" "arch/i386/kernel/init_task.o")) nil [2055 2116])
+            ("SUBDIRS" variable (:default-value ("arch/i386/kernel" "arch/i386/mm" "arch/i386/lib")) nil [2117 2172])
+            ("CORE_FILES" variable (:default-value ("arch/i386/kernel/kernel.o" "arch/i386/mm/mm.o" "$(CORE_FILES)")) nil [2173 2245])
+            ("LIBS" variable (:default-value ("$(TOPDIR)/arch/i386/lib/lib.a" "$(LIBS)" "$(TOPDIR)/arch/i386/lib/lib.a")) nil [2245 2321])
+            ("SUBDIRS" variable (:default-value ("arch/i386/math-emu")) nil [2350 2380])
+            ("DRIVERS" variable (:default-value ("arch/i386/math-emu/math.o")) nil [2380 2417])
+            ("arch/i386/kernel" function (:arguments ("dummy")) nil [2424 2495])
+            ("arch/i386/mm" function (:arguments ("dummy")) nil [2496 2559])
+            ("MAKEBOOT" variable (:default-value ("$(MAKE)" "-C" "arch/$(ARCH)/boot")) nil [2560 2600])
+            ("vmlinux" function (:arguments ("arch/i386/vmlinux.lds")) nil [2601 2632])
+            ("FORCE" function (:arguments (";")) nil [2633 2642])
+            (".PHONY" function (:arguments ("zImage" "bzImage" "compressed" "zlilo" "bzlilo" "zdisk" "bzdisk" "install" "clean" "archclean" "archmrproper" "archdep")) nil [2643 2752])
+            ("zImage" function (:arguments ("vmlinux")) nil [2753 2790])
+            ("bzImage" function (:arguments ("vmlinux")) nil [2791 2830])
+            ("compressed" function (:arguments ("zImage")) nil [2831 2850])
+            ("zlilo" function (:arguments ("vmlinux")) nil [2851 2903])
+            ("tmp" function nil nil [2904 2947])
+            ("bzlilo" function (:arguments ("vmlinux")) nil [2947 3001])
+            ("zdisk" function (:arguments ("vmlinux")) nil [3002 3054])
+            ("bzdisk" function (:arguments ("vmlinux")) nil [3055 3109])
+            ("install" function (:arguments ("vmlinux")) nil [3110 3167])
+            ("archclean" function nil nil [3168 3199])
+            ("archmrproper" function nil nil [3200 3214])
+            ("archdep" function nil nil [3215 3242]))          
+    :file "Makefile"
+    :pointmax 3242
+    :fsize 3241
+    :lastmodtime '(15061 65535 0 0)
+    :unmatched-syntax '((shell-command 3225 . 3241) (bol 3224 . 3224))
+    )
+   )
+  :file "!Volumes!share_dev!linux!arch!i386!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

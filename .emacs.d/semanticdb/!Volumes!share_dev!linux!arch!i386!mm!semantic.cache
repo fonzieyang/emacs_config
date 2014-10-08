@@ -1,0 +1,180 @@
+;; Object mm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mm/"
+  :tables (list 
+   (semanticdb-table "extable.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("linux/config.h" include (:system-flag t) nil [41 66])
+            ("linux/module.h" include (:system-flag t) nil [67 92])
+            ("linux/spinlock.h" include (:system-flag t) nil [93 120])
+            ("asm/uaccess.h" include (:system-flag t) nil [121 145])
+            ("__start___ex_table" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type ("exception_table_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [147 210])
+            ("__stop___ex_table" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type ("exception_table_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [211 273])
+            ("search_one_table" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("first" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("exception_table_entry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [320 362])
+                    ("last" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("exception_table_entry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [366 407])
+                    ("value" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [411 431]))                  
+                :type "unsigned long")
+                nil [275 823])
+            ("modlist_lock" variable
+               (:typemodifiers ("extern")
+                :type ("spinlock_t" type (:type "class") nil nil))
+                nil [825 856])
+            ("search_exception_table" function
+               (:arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [895 914]))                  
+                :type "unsigned long")
+                nil [858 1582]))          
+    :file "extable.c"
+    :pointmax 1583
+    :fsize 1582
+    :lastmodtime '(15270 23070 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "fault.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("linux/signal.h" include (:system-flag t) nil [82 107])
+            ("linux/sched.h" include (:system-flag t) nil [108 132])
+            ("linux/kernel.h" include (:system-flag t) nil [133 158])
+            ("linux/errno.h" include (:system-flag t) nil [159 183])
+            ("linux/string.h" include (:system-flag t) nil [184 209])
+            ("linux/types.h" include (:system-flag t) nil [210 234])
+            ("linux/ptrace.h" include (:system-flag t) nil [235 260])
+            ("linux/mman.h" include (:system-flag t) nil [261 284])
+            ("linux/mm.h" include (:system-flag t) nil [285 306])
+            ("linux/smp.h" include (:system-flag t) nil [307 329])
+            ("linux/smp_lock.h" include (:system-flag t) nil [330 357])
+            ("linux/interrupt.h" include (:system-flag t) nil [358 386])
+            ("linux/init.h" include (:system-flag t) nil [387 410])
+            ("linux/tty.h" include (:system-flag t) nil [411 433])
+            ("linux/vt_kern.h" include (:system-flag t) nil [434 460])
+            ("asm/system.h" include (:system-flag t) nil [490 513])
+            ("asm/uaccess.h" include (:system-flag t) nil [514 538])
+            ("asm/pgalloc.h" include (:system-flag t) nil [539 563])
+            ("asm/hardirq.h" include (:system-flag t) nil [564 588])
+            ("die" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [606 619])
+                    ("" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [619 636])
+                    ("" variable (:type "long") (reparse-symbol arg-sub-list) [636 641]))                  
+                :type "void")
+                nil [590 642])
+            ("console_loglevel" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [644 672])
+            ("__verify_write" function
+               (:arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [758 776])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [777 796]))                  
+                :type "int")
+                nil [739 1836])
+            ("timerlist_lock" variable
+               (:typemodifiers ("extern")
+                :type ("spinlock_t" type (:type "class") nil nil))
+                nil [1838 1871])
+            ("bust_spinlocks" function
+               (:arguments 
+                  ( ("yes" variable (:type "int") (reparse-symbol arg-sub-list) [2043 2051]))                  
+                :type "void")
+                nil [2023 2636])
+            ("do_BUG" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2650 2667])
+                    ("line" variable (:type "int") (reparse-symbol arg-sub-list) [2668 2677]))                  
+                :type "void")
+                nil [2638 2748])
+            ("do_invalid_op" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2780 2797])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2798 2812]))                  
+                :type "void")
+                nil [2761 2813])
+            ("idt" variable
+               (:typemodifiers ("extern")
+                :type "unsigned long")
+                nil [2814 2839])
+            ("do_page_fault" function
+               (:arguments 
+                  ( ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3189 3210])
+                    ("error_code" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3211 3236]))                  
+                :type "void")
+                nil [3170 9295]))          
+    :file "fault.c"
+    :pointmax 9296
+    :fsize 9295
+    :lastmodtime '(15299 30319 0 0)
+    :unmatched-syntax '((symbol 3159 . 3169) (symbol 2750 . 2760))
+    )
+   )
+  :file "!Volumes!share_dev!linux!arch!i386!mm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,287 @@
+;; Object Stages/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Stages/"
+  :tables (list 
+   (semanticdb-table "NxStageSweepDataManager.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NxStageSweepDataManager.h" include nil nil [3 39])
+            ("NxLogicSys.h" include nil nil [41 64])
+            ("NxNetMsg.pb.h" include nil nil [66 90])
+            ("NxStageSweepData.h" include nil nil [92 121])
+            ("NxDBWorldMap.h" include nil nil [123 148])
+            ("NxDBSpawn.h" include nil nil [150 172])
+            ("NxTimeUtils.h" include nil nil [174 198])
+            ("NxLogicServer.h" include nil nil [200 226])
+            ("NxProtocol.h" include nil nil [228 251])
+            ("NxViewSys.h" include nil nil [253 275])
+            ("ActionPower/NxActionPowerDataManager.h" include nil nil [277 326])
+            ("NxStageSweepLayer.h" include nil nil [328 358])
+            ("NxDBString.h" include nil nil [360 383])
+            ("NxTipsManager.h" include nil nil [385 411])
+            ("NxPlayerDataManager.h" include nil nil [413 445])
+            ("getTotalBattleCount" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("nZoneEntryId" variable (:type "int") (reparse-symbol arg-sub-list) [498 515])
+                    ("nSweepCount" variable (:type "int") (reparse-symbol arg-sub-list) [516 532]))                  
+                :type "int")
+                nil [449 764])
+            ("getMonstersCountInStage" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("nZoneEntryId" variable (:type "int") (reparse-symbol arg-sub-list) [822 839])
+                    ("pMonstersCount" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("NxMonsterCount" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [840 884]))                  
+                :type "void")
+                nil [768 1761])
+            ("getActionPower" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("nZoneEntryId" variable (:type "int") (reparse-symbol arg-sub-list) [1809 1826])
+                    ("nSweepCount" variable (:type "int") (reparse-symbol arg-sub-list) [1827 1843]))                  
+                :type "int")
+                nil [1765 1995])
+            ("start" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("NxSweepData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2035 2054]))                  
+                :type "void")
+                nil [1999 2179])
+            ("update" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pReward" variable
+                       (:pointer 1
+                        :type ("NxSweepOneRound" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2220 2245]))                  
+                :type "void")
+                nil [2183 2864])
+            ("finish" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pFinish" variable
+                       (:pointer 1
+                        :type ("NxSweepFinish" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2905 2928]))                  
+                :type "void")
+                nil [2868 3662])
+            ("restart" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pData" variable
+                       (:pointer 1
+                        :type ("NxSweepData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3704 3723])
+                    ("pReward" variable
+                       (:pointer 1
+                        :type ("NxSweepReward" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3724 3747])
+                    ("nStageId" variable (:type "int") (reparse-symbol arg-sub-list) [3748 3761])
+                    ("state" variable (:type "int") (reparse-symbol arg-sub-list) [3762 3772]))                  
+                :type "void")
+                nil [3666 4058])
+            ("processRestart" function
+               (:parent "NxStageSweepDataManager"
+                :type "void")
+                nil [4062 4257])
+            ("config" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pSetting" variable
+                       (:pointer 1
+                        :type ("NxSweepSetting" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4298 4323]))                  
+                :type "void")
+                nil [4261 4354])
+            ("clear" function
+               (:parent "NxStageSweepDataManager"
+                :type "void")
+                nil [4356 4731])
+            ("sendUpdate" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("sweepType" variable (:type "int") (reparse-symbol arg-sub-list) [4776 4790]))                  
+                :type "void")
+                nil [4735 4870])
+            ("NxStageSweepDataManager" function
+               (:constructor-flag t
+                :parent "NxStageSweepDataManager"
+                :type ("NxStageSweepDataManager" type (:type "class") nil nil))
+                nil [4874 6746])
+            ("NxStageSweepDataManager" function
+               (:destructor-flag t
+                :parent "NxStageSweepDataManager"
+                :type "void")
+                nil [6750 8494])
+            ("onEventStageSweepStartHandler" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStageSweepDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8558 8589])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventStageSweepStart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8590 8621]))                  
+                :type "bool")
+                nil [8498 8778])
+            ("onEventStageSweepStopHandler" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStageSweepDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8841 8872])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventStageSweepStop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8873 8903]))                  
+                :type "bool")
+                nil [8782 9240])
+            ("onEventStageSweepRestartHandler" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStageSweepDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9306 9337])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventStageSweepRestart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9338 9371]))                  
+                :type "bool")
+                nil [9244 9656])
+            ("onEventStageSweepConfigHandler" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStageSweepDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9721 9752])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventStageSweepConfig" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9753 9785]))                  
+                :type "bool")
+                nil [9660 9840])
+            ("sendStageSweepStopRequest" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NxNetMsg::RaidStopRequest_Type_FastFinish" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9914 9956]))                  
+                :type "int")
+                nil [9888 9957])
+            ("onEventStageSweepUpdateHandler" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStageSweepDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10030 10061])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventStageSweepUpdate" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10062 10094]))                  
+                :type "bool")
+                nil [9969 10198])
+            ("onEventStageSweepSendUpdateHandler" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStageSweepDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10267 10298])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventStageSweepOneRound" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10299 10333]))                  
+                :type "bool")
+                nil [10202 10448])
+            ("onEventStageSweepCloseHandler" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStageSweepDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10512 10543])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventStageSweep" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10544 10570]))                  
+                :type "bool")
+                nil [10452 10610])
+            ("onEventStageSweepStartResponseHandler" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStageSweepDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10684 10715])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventProtocolResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10716 10748]))                  
+                :type "bool")
+                nil [10616 11947])
+            ("onEventStageSweepStopResponseHandler" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStageSweepDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12018 12049])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventProtocolResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12050 12082]))                  
+                :type "bool")
+                nil [11951 12880])
+            ("onEventStageSweepRoundResponseHandler" function
+               (:parent "NxStageSweepDataManager"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStageSweepDataManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12950 12981])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventProtocolResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12982 13014]))                  
+                :type "bool")
+                nil [12882 14388]))          
+    :file "NxStageSweepDataManager.cpp"
+    :pointmax 14390
+    :fsize 14389
+    :lastmodtime '(21102 6246 0 0)
+    :unmatched-syntax '((punctuation 9967 . 9968) (punctuation 9966 . 9967) (punctuation 9965 . 9966) (punctuation 9964 . 9965) (punctuation 9963 . 9964) (punctuation 9962 . 9963) (punctuation 9961 . 9962) (punctuation 9887 . 9888) (punctuation 9886 . 9887) (semantic-list 9884 . 9886) (symbol 9873 . 9884) (punctuation 9872 . 9873) (punctuation 9871 . 9872) (symbol 9858 . 9871) (symbol 9852 . 9856) (punctuation 9850 . 9851) (punctuation 9849 . 9850) (punctuation 9848 . 9849) (punctuation 9847 . 9848) (punctuation 9846 . 9847) (punctuation 9845 . 9846) (punctuation 9844 . 9845))
+    )
+   (semanticdb-table "NxStageSweepDataManager.h"
+    :file "NxStageSweepDataManager.h"
+    :fsize 2770
+    :lastmodtime '(21102 6240 0 0)
+    )
+   (semanticdb-table "NxStageSweepData.h"
+    :file "NxStageSweepData.h"
+    :fsize 7238
+    :lastmodtime '(21102 6240 0 0)
+    )
+   (semanticdb-table "NxStageSweepLayer.h"
+    :file "NxStageSweepLayer.h"
+    :fsize 4571
+    :lastmodtime '(21102 6240 0 0)
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!new91!classes!GameSystem!Stages!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,221 @@
+;; Object Framework/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Framework/"
+  :tables (list 
+   (semanticdb-table "NxFramework.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NxDef.h" include nil nil [3 21])
+            ("NxFramework.h" include nil nil [23 47])
+            ("NxActionSys.h" include nil nil [49 73])
+            ("NxViewSys.h" include nil nil [75 97])
+            ("NxLogicSys.h" include nil nil [99 122])
+            ("NxDBManager.h" include nil nil [124 148])
+            ("NxNetManager.h" include nil nil [150 175])
+            ("NxDataContext.h" include nil nil [177 203])
+            ("NxDataLocalStorage.h" include nil nil [205 236])
+            ("NxTimerManager.h" include nil nil [238 265])
+            ("NxCommandExecutor.h" include nil nil [267 297])
+            ("NxConditionMonitor.h" include nil nil [299 330])
+            ("NxTriggerExecutor.h" include nil nil [332 362])
+            ("NxGameLogic.h" include nil nil [364 388])
+            ("NxBattleLogic.h" include nil nil [390 416])
+            ("NxBattleDataManager.h" include nil nil [418 450])
+            ("NxPlayerManager.h" include nil nil [452 480])
+            ("NxNpcManager.h" include nil nil [482 507])
+            ("NxMonsterManager.h" include nil nil [509 538])
+            ("NxItemDataManager.h" include nil nil [540 570])
+            ("NxSceneManager.h" include nil nil [572 599])
+            ("NxAnimationManager.h" include nil nil [601 632])
+            ("NxTextureManager.h" include nil nil [634 663])
+            ("NxSpriteManager.h" include nil nil [665 693])
+            ("NxQuestDataManager.h" include nil nil [695 726])
+            ("NxEquipmentDataManager.h" include nil nil [728 763])
+            ("NxMonitorManager.h" include nil nil [765 794])
+            ("NxRewardDataManager.h" include nil nil [796 828])
+            ("VxFile.h" include nil nil [830 849])
+            ("VxPath.h" include nil nil [851 870])
+            ("NxNavigateManager.h" include nil nil [872 902])
+            ("NxScenarioManager.h" include nil nil [904 934])
+            ("NxSettingDataManager.h" include nil nil [936 969])
+            ("NxSkillDataManager.h" include nil nil [971 1002])
+            ("NxMatrixDataManager.h" include nil nil [1004 1036])
+            ("NxConsoleManager.h" include nil nil [1038 1067])
+            ("NxGuideManager.h" include nil nil [1069 1096])
+            ("NxStageDataManager.h" include nil nil [1098 1129])
+            ("NxManufactureDataManager.h" include nil nil [1131 1168])
+            ("NxSoundManager.h" include nil nil [1170 1197])
+            ("NxTipsManager.h" include nil nil [1199 1225])
+            ("NxUpdateDataManager.h" include nil nil [1227 1259])
+            ("NxChatManager.h" include nil nil [1261 1287])
+            ("NxArenaManager.h" include nil nil [1289 1316])
+            ("NxLoadingDataManager.h" include nil nil [1318 1351])
+            ("NxDayTimeManager.h" include nil nil [1353 1382])
+            ("NxShopDataManager.h" include nil nil [1384 1414])
+            ("NxGuildDataManager.h" include nil nil [1416 1447])
+            ("NxCoinsConvertorDataManager.h" include nil nil [1449 1489])
+            ("NxCoinsStarDataManager.h" include nil nil [1491 1526])
+            ("NxCloudStorager.h" include nil nil [1528 1556])
+            ("NxSpacesDataManager.h" include nil nil [1558 1590])
+            ("NxFairylandBathDataManager.h" include nil nil [1592 1631])
+            ("Sign/NxSignDataManager.h" include nil nil [1633 1668])
+            ("Gift/NxGiftDataManager.h" include nil nil [1670 1705])
+            ("Gamble/NxGambleDataManager.h" include nil nil [1707 1746])
+            ("NxPayPlatform.h" include nil nil [1748 1774])
+            ("ActionPower/NxActionPowerDataManager.h" include nil nil [1776 1825])
+            ("init" function
+               (:parent "NxFramework"
+                :type "void")
+                nil [1830 5505])
+            ("release" function
+               (:parent "NxFramework"
+                :type "void")
+                nil [5509 6960])
+            ("initGameSys" function
+               (:parent "NxFramework"
+                :type "void")
+                nil [6964 7232])
+            ("releaseGameSys" function
+               (:parent "NxFramework"
+                :type "void")
+                nil [7236 7497])
+            ("initCleanableGameSys" function
+               (:parent "NxFramework"
+                :type "void")
+                nil [7501 8372])
+            ("releaseCleanableGameSys" function
+               (:parent "NxFramework"
+                :type "void")
+                nil [8376 9331])
+            ("onAppLaunching" function
+               (:parent "NxFramework"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9368 9379])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventAppLaunching" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9380 9408]))                  
+                :type "bool")
+                nil [9335 9430])
+            ("onAppLaunched" function
+               (:parent "NxFramework"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9466 9477])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventAppLaunched" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9478 9505]))                  
+                :type "bool")
+                nil [9434 9527])
+            ("onAppExiting" function
+               (:parent "NxFramework"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9562 9573])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventAppExiting" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9574 9600]))                  
+                :type "bool")
+                nil [9531 9622])
+            ("onAppExited" function
+               (:parent "NxFramework"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9656 9667])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventAppExited" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9668 9693]))                  
+                :type "bool")
+                nil [9626 9715])
+            ("onAppEnterForeground" function
+               (:parent "NxFramework"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9758 9769])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventAppEnterForeground" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9770 9804]))                  
+                :type "bool")
+                nil [9719 9872])
+            ("onAppEnterBackground" function
+               (:parent "NxFramework"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9915 9926])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventAppEnterBackground" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9927 9961]))                  
+                :type "bool")
+                nil [9876 10029])
+            ("onEventGameExitClearGameDataHandler" function
+               (:parent "NxFramework"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10087 10098])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10099 10115]))                  
+                :type "bool")
+                nil [10033 10194]))          
+    :file "NxFramework.cpp"
+    :pointmax 10196
+    :fsize 10195
+    :lastmodtime '(20985 50481 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NxFramework.h"
+    :file "NxFramework.h"
+    :fsize 921
+    :lastmodtime '(20963 20378 0 0)
+    )
+   (semanticdb-table "NxTimerManager.h"
+    :file "NxTimerManager.h"
+    :fsize 818
+    :lastmodtime '(20963 20378 0 0)
+    )
+   (semanticdb-table "NxCommandExecutor.h"
+    :file "NxCommandExecutor.h"
+    :fsize 584
+    :lastmodtime '(20963 20378 0 0)
+    )
+   (semanticdb-table "NxConditionMonitor.h"
+    :file "NxConditionMonitor.h"
+    :fsize 1825
+    :lastmodtime '(20963 20378 0 0)
+    )
+   (semanticdb-table "NxTriggerExecutor.h"
+    :file "NxTriggerExecutor.h"
+    :fsize 622
+    :lastmodtime '(20963 20378 0 0)
+    )
+   (semanticdb-table "NxGameLogic.h"
+    :file "NxGameLogic.h"
+    :fsize 3112
+    :lastmodtime '(20985 50121 0 0)
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!JianXian!classes!CoreSystem!Framework!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

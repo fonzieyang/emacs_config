@@ -1,0 +1,23 @@
+;; Object PayPlatform/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PayPlatform/"
+  :tables (list 
+   (semanticdb-table "NxPayPlatform.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "NxPayPlatform.cpp"
+    :pointmax 6724
+    :fsize 6519
+    :lastmodtime '(21178 15041 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NxPayPlatform.h"
+    :file "NxPayPlatform.h"
+    :fsize 2093
+    :lastmodtime '(21114 64595 0 0)
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!newuc!classes!GameSystem!PayPlatform!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

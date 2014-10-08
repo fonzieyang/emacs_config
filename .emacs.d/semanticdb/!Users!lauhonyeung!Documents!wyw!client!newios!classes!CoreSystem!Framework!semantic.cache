@@ -1,0 +1,582 @@
+;; Object Framework/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Framework/"
+  :tables (list 
+   (semanticdb-table "NxGameLogic.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NxDef.h" include nil nil [3 21])
+            ("NxGameLogic.h" include nil nil [23 47])
+            ("NxActionSys.h" include nil nil [49 73])
+            ("NxLogicSys.h" include nil nil [75 98])
+            ("NxViewSys.h" include nil nil [100 122])
+            ("NxDBScene.h" include nil nil [124 146])
+            ("NxPlayerDataManager.h" include nil nil [148 180])
+            ("NxDataContext.h" include nil nil [182 208])
+            ("NxLogicServer.h" include nil nil [210 236])
+            ("NxDBWorldMap.h" include nil nil [238 263])
+            ("NxSceneManager.h" include nil nil [265 292])
+            ("NxTownScene.h" include nil nil [294 318])
+            ("NxBattle.h" include nil nil [320 341])
+            ("NxBattleLogic.h" include nil nil [343 369])
+            ("NxBattleDataManager.h" include nil nil [371 403])
+            ("NxSceneTransition.h" include nil nil [405 435])
+            ("NxSettingDataManager.h" include nil nil [437 470])
+            ("NxSceneLoading.h" include nil nil [472 499])
+            ("NxLayerManager.h" include nil nil [501 528])
+            ("NxStageDataManager.h" include nil nil [530 561])
+            ("NxGameServer.h" include nil nil [563 588])
+            ("NxArenaData.h" include nil nil [590 614])
+            ("NxPayPlatform.h" include nil nil [616 642])
+            ("NxNewServiceDataManager.h" include nil nil [644 680])
+            ("Gift/NxGiftDataManager.h" include nil nil [682 717])
+            ("__NX_GAME_LOGIC_ENTER_ARENA_USING_CHANGE_SCENE__" variable (:constant-flag t) nil [814 862])
+            ("NxGameLogic::m_bIsExit" variable (:type "bool") nil [1033 1068])
+            ("init" function
+               (:parent "NxGameLogic"
+                :type "void")
+                nil [1072 6868])
+            ("release" function
+               (:parent "NxGameLogic"
+                :type "void")
+                nil [6872 12753])
+            ("onEventAppLaunchingHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12802 12813])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12814 12830]))                  
+                :type "bool")
+                nil [12757 13040])
+            ("onEventAppLaunchedHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13088 13099])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13100 13116]))                  
+                :type "bool")
+                nil [13044 13529])
+            ("onEventAppEnterBackgroundHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13586 13597])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13598 13614]))                  
+                :type "bool")
+                nil [13535 13916])
+            ("onEventSceneWelcomeAnimationStopHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13980 13991])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13992 14008]))                  
+                :type "bool")
+                nil [13922 14160])
+            ("onEventStartupLoadingCompletedHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14220 14231])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14232 14248]))                  
+                :type "bool")
+                nil [14164 14391])
+            ("onEventEnterGameUpdateHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14443 14454])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14455 14471]))                  
+                :type "bool")
+                nil [14395 14615])
+            ("onEventVersionUpdateCompletedHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14674 14685])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14686 14702]))                  
+                :type "bool")
+                nil [14619 14854])
+            ("onEventLoginCompletedHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14905 14916])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14917 14933]))                  
+                :type "bool")
+                nil [14858 15089])
+            ("onEventDungeonInstanceExitHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15145 15156])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15157 15173]))                  
+                :type "bool")
+                nil [15093 15260])
+            ("onEventEnterWorldMapHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15310 15321])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15322 15338]))                  
+                :type "bool")
+                nil [15264 15483])
+            ("onEventExitWorldMapHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15532 15543])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15544 15560]))                  
+                :type "bool")
+                nil [15487 15626])
+            ("onEventReEnterWorldMapZoneEntryHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15687 15698])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventSceneReEnterWorldMapZoneEntry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15699 15744]))                  
+                :type "bool")
+                nil [15630 16658])
+            ("onEventEnterWorldMapZoneEntryHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16717 16728])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventSceneEnterWorldMapZoneEntry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16729 16772]))                  
+                :type "bool")
+                nil [16662 17305])
+            ("onEventServerSelectionCompletedHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17368 17379])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17380 17396]))                  
+                :type "bool")
+                nil [17311 17556])
+            ("onEventEnterGameHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17602 17613])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17614 17630]))                  
+                :type "bool")
+                nil [17560 17943])
+            ("onEventEnterCharacterCreatorHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18001 18012])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18013 18029]))                  
+                :type "bool")
+                nil [17947 18182])
+            ("onEventExitCharacterCreatorHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18239 18250])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18251 18267]))                  
+                :type "bool")
+                nil [18186 18423])
+            ("onEventPlayerSelfMoveToSceneHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18483 18494])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventPlayerSelfMoveToScene" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18495 18532]))                  
+                :type "bool")
+                nil [18429 20362])
+            ("onEventSceneExitStageHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20413 20424])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventSceneExitStage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20425 20455]))                  
+                :type "bool")
+                nil [20366 21137])
+            ("onEventSwitchSceneInStage" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21187 21198])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventSceneSwitchSceneInStage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21199 21238]))                  
+                :type "bool")
+                nil [21143 22354])
+            ("onEventEnterBattleHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22485 22496])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventBattleEnter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22497 22524]))                  
+                :type "bool")
+                nil [22441 23492])
+            ("onEventExitBattleForErrorHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [23547 23558])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23559 23575]))                  
+                :type "bool")
+                nil [23496 23680])
+            ("onEventEnterArenaHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [23810 23821])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23822 23838]))                  
+                :type "bool")
+                nil [23767 24341])
+            ("onEventExitArenaHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24470 24481])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24482 24498]))                  
+                :type "bool")
+                nil [24428 24761])
+            ("onEventExitToLoginHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24809 24820])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24821 24837]))                  
+                :type "bool")
+                nil [24765 25207])
+            ("onEventExitToCharacterSelectionHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [25268 25279])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25280 25296]))                  
+                :type "bool")
+                nil [25211 26426])
+            ("onEventExitGameHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26471 26482])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26483 26499]))                  
+                :type "bool")
+                nil [26430 26794])
+            ("onEventKeypadBackHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26841 26852])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26853 26869]))                  
+                :type "bool")
+                nil [26798 26985])
+            ("onEventEnterFairylandBathHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [27040 27051])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27052 27068]))                  
+                :type "bool")
+                nil [26989 28062])
+            ("onEventExitFairylandBathHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28116 28127])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28128 28144]))                  
+                :type "bool")
+                nil [28066 28819])
+            ("onEventEnterPlayerBathingHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28874 28885])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28886 28902]))                  
+                :type "bool")
+                nil [28823 29052])
+            ("onEventExitPlayerBathingHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29106 29117])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29118 29134]))                  
+                :type "bool")
+                nil [29056 29200])
+            ("onEventEnterGamble" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29324 29335])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29336 29352]))                  
+                :type "bool")
+                nil [29287 29495])
+            ("onEventExitGamble" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29618 29629])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29630 29646]))                  
+                :type "bool")
+                nil [29582 29712])
+            ("onEventEnterGuildHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29761 29772])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29773 29789]))                  
+                :type "bool")
+                nil [29718 30715])
+            ("onEventExitGuildHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30761 30772])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30773 30789]))                  
+                :type "bool")
+                nil [30719 31482])
+            ("onEventEnterGuildBossHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [31533 31544])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31545 31561]))                  
+                :type "bool")
+                nil [31486 32491])
+            ("onEventExitGuildBossHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32541 32552])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32553 32569]))                  
+                :type "bool")
+                nil [32495 33236])
+            ("onEventEnterWorldBossHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [33289 33300])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33301 33317]))                  
+                :type "bool")
+                nil [33242 34454])
+            ("onEventExitWorldBossHandler" function
+               (:parent "NxGameLogic"
+                :arguments 
+                  ( ("pArg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [34504 34515])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34516 34532]))                  
+                :type "bool")
+                nil [34458 35199]))          
+    :file "NxGameLogic.cpp"
+    :pointmax 35200
+    :fsize 35199
+    :lastmodtime '(21196 58870 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__NX_GAME_LOGIC_ENTER_ARENA_USING_CHANGE_SCENE__")
+          )
+
+    )
+   (semanticdb-table "NxGameLogic.h"
+    :file "NxGameLogic.h"
+    :fsize 3575
+    :lastmodtime '(21185 4307 0 0)
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!newios!classes!CoreSystem!Framework!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

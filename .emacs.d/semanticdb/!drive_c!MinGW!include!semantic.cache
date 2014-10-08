@@ -1,0 +1,1019 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "stdlib.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_STDLIB_H_" variable (:constant-flag t) nil [315 325])
+            ("_mingw.h" include (:system-flag t) nil [368 387])
+            ("__need_size_t" variable (:constant-flag t) nil [397 410])
+            ("__need_wchar_t" variable (:constant-flag t) nil [419 433])
+            ("__need_NULL" variable (:constant-flag t) nil [442 453])
+            ("stddef.h" include (:system-flag t) nil [473 492])
+            ("RAND_MAX" variable (:constant-flag t) nil [620 628])
+            ("EXIT_SUCCESS" variable (:constant-flag t) nil [702 714])
+            ("EXIT_FAILURE" variable (:constant-flag t) nil [725 737])
+            ("MAX_PATH" variable (:constant-flag t) nil [1022 1030])
+            ("_MAX_PATH" variable (:constant-flag t) nil [1053 1062])
+            ("_MAX_DRIVE" variable (:constant-flag t) nil [1080 1090])
+            ("_MAX_DIR" variable (:constant-flag t) nil [1103 1111])
+            ("_MAX_FNAME" variable (:constant-flag t) nil [1124 1134])
+            ("_MAX_EXT" variable (:constant-flag t) nil [1147 1155])
+            ("_argc" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1575 1592])
+            ("_argv" variable
+               (:pointer 2
+                :typemodifiers ("extern")
+                :type "char")
+                nil [1593 1613])
+            ("_imp____argc_dll" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type "int")
+                nil [2013 2045])
+            ("_imp____argv_dll" variable
+               (:pointer 3
+                :typemodifiers ("extern")
+                :type "char")
+                nil [2046 2079])
+            ("__argc" variable (:constant-flag t) nil [2088 2094])
+            ("__argv" variable (:constant-flag t) nil [2123 2129])
+            ("_imp____mb_cur_max_dll" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type "int")
+                nil [2861 2897])
+            ("MB_CUR_MAX" variable (:constant-flag t) nil [2908 2918])
+            ("_errno" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3191 3196]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [3168 3197])
+            ("errno" variable (:constant-flag t) nil [3206 3211])
+            ("__doserrno" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3281 3286]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [3254 3287])
+            ("_doserrno" variable (:constant-flag t) nil [3296 3305])
+            ("_imp___environ_dll" variable
+               (:pointer 3
+                :typemodifiers ("extern")
+                :type "char")
+                nil [3705 3740])
+            ("_environ" variable (:constant-flag t) nil [3752 3760])
+            ("environ" variable (:constant-flag t) nil [3961 3968])
+            ("_imp___sys_nerr_dll" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type "int")
+                nil [4384 4416])
+            ("sys_nerr" variable (:constant-flag t) nil [4426 4434])
+            ("_imp__sys_errlist" variable
+               (:pointer 3
+                :typemodifiers ("extern")
+                :type "char")
+                nil [4650 4683])
+            ("sys_errlist" variable (:constant-flag t) nil [4692 4703])
+            ("_imp___osver_dll" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type "unsigned int")
+                nil [5710 5748])
+            ("_imp___winver_dll" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type "unsigned int")
+                nil [5749 5788])
+            ("_imp___winmajor_dll" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type "unsigned int")
+                nil [5789 5830])
+            ("_imp___winminor_dll" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type "unsigned int")
+                nil [5831 5872])
+            ("_osver" variable (:constant-flag t) nil [5882 5888])
+            ("_winver" variable (:constant-flag t) nil [5918 5925])
+            ("_winmajor" variable (:constant-flag t) nil [5956 5965])
+            ("_winminor" variable (:constant-flag t) nil [5997 6006])
+            ("__imp__pgmptr_dll" variable
+               (:pointer 2
+                :typemodifiers ("extern")
+                :type "char")
+                nil [6785 6817])
+            ("_pgmptr" variable (:constant-flag t) nil [6827 6834])
+            ("_imp___fmode_dll" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type "int")
+                nil [7294 7323])
+            ("_fmode" variable (:constant-flag t) nil [7332 7338])
+            ("atof" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7671 7683]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [7649 7684])
+            ("atoi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7727 7739]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [7705 7740])
+            ("atol" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7785 7797]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [7762 7798])
+            ("_wtof" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [7876 7892]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [7853 7893])
+            ("_wtoi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [7937 7953]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [7914 7954])
+            ("_wtol" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [7999 8015]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [7976 8016])
+            ("__strtod" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8115 8127])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8128 8135]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [8089 8136])
+            ("strtod" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("__nptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8183 8215])
+                    ("__endptr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8216 8245]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [8159 8246])
+            ("strtof" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8285 8310])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8298 8311])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8312 8332])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8320 8333]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [8261 8334])
+            ("strtold" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8380 8405])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8393 8406])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8407 8427])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8415 8428]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [8355 8429])
+            ("strtol" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8577 8589])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8590 8597])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [8598 8602]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [8553 8603])
+            ("strtoul" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8659 8671])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8672 8679])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [8680 8684]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [8634 8685])
+            ("wcstol" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [8789 8804])
+                    ("" variable
+                       (:pointer 2
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [8805 8815])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [8816 8820]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [8765 8821])
+            ("wcstoul" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [8877 8892])
+                    ("" variable
+                       (:pointer 2
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [8893 8903])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [8904 8908]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [8852 8909])
+            ("wcstod" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [8957 8972])
+                    ("" variable
+                       (:pointer 2
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [8973 8983]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [8933 8984])
+            ("wcstof" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [9072 9100])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9088 9101])
+                    ("" variable
+                       (:pointer 2
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [9102 9125])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9113 9126]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [9048 9127])
+            ("wcstold" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [9173 9201])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9189 9202])
+                    ("" variable
+                       (:pointer 2
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [9203 9226])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9214 9227]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [9148 9228])
+            ("_WSTDLIB_DEFINED" variable (:constant-flag t) nil [9898 9914])
+            ("wcstombs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9972 9978])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [9979 9994])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9995 10002]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [9946 10003])
+            ("wctomb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10049 10055])
+                    ("" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [10056 10064]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10024 10065])
+            ("mblen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10111 10123])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10124 10131]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10087 10132])
+            ("mbstowcs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [10182 10191])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10192 10204])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10205 10212]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10156 10213])
+            ("mbtowc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [10259 10268])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10269 10281])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10282 10289]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10234 10290])
+            ("rand" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10334 10339]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10312 10340])
+            ("srand" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10385 10398]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10362 10399])
+            ("__MINGW_ATTRIB_MALLOC" variable (:type "int") nil [10463 10485])
+            ("__MINGW_ATTRIB_MALLOC" variable (:type "int") nil [10540 10562])
+            ("realloc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10610 10616])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10617 10624]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10585 10625])
+            ("free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10669 10675]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10647 10676])
+            ("__MINGW_ATTRIB_NORETURN" variable (:type "int") nil [10727 10751])
+            ("__MINGW_ATTRIB_NORETURN" variable (:type "int") nil [10800 10824])
+            ("atexit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10930 10938]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10906 10946])
+            ("system" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10992 11004]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [10968 11005])
+            ("getenv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11052 11064]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [11028 11065])
+            ("bsearch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11160 11172])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11173 11185])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11186 11193])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11194 11201])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [11213 11220]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [11143 11248])
+            ("qsort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11276 11282])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11283 11290])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11291 11298])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [11305 11312]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [11262 11340])
+            ("__MINGW_ATTRIB_CONST" variable (:type "int") nil [11388 11409])
+            ("__MINGW_ATTRIB_CONST" variable (:type "int") nil [11459 11480])
+            ("div_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("rem" variable (:type "int") (reparse-symbol classsubparts) [11748 11762])
+                          ("quot" variable (:type "int") (reparse-symbol classsubparts) [11748 11762]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11731 11771])
+            ("ldiv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("rem" variable (:type "long") (reparse-symbol classsubparts) [11789 11804])
+                          ("quot" variable (:type "long") (reparse-symbol classsubparts) [11789 11804]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [11772 11814])
+            ("__MINGW_ATTRIB_CONST" variable (:type "int") nil [11869 11890])
+            ("__MINGW_ATTRIB_CONST" variable (:type "int") nil [11948 11969])
+            ("__MINGW_ATTRIB_DEPRECATED" variable (:type "int") nil [12232 12258])
+            ("__MINGW_ATTRIB_DEPRECATED" variable (:type "int") nil [12371 12397])
+            ("__MINGW_ATTRIB_DEPRECATED" variable (:type "int") nil [12458 12484])
+            ("__MINGW_ATTRIB_NORETURN" variable (:type "int") nil [12535 12559])
+            ("_onexit_t" variable
+               (:functionpointer-flag t
+                :type "int")
+                nil [12698 12722])
+            ("_onexit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("_onexit_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12766 12777]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [12741 12778])
+            ("_putenv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12825 12837]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [12800 12838])
+            ("_searchenv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12888 12900])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12901 12913])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12914 12920]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [12860 12921])
+            ("_ecvt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [12968 12975])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [12976 12980])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12981 12986])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12987 12992]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [12945 12993])
+            ("_fcvt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [13039 13046])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13047 13051])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13052 13057])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13058 13063]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13016 13064])
+            ("_gcvt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [13110 13117])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13118 13122])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13123 13129]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13087 13130])
+            ("_makepath" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13180 13186])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13187 13199])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13200 13212])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13213 13225])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13226 13238]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13153 13239])
+            ("_splitpath" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13289 13301])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13302 13308])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13309 13315])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13316 13322])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13323 13329]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13261 13330])
+            ("_fullpath" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13380 13386])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13387 13399])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13400 13407]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13353 13408])
+            ("_itoa" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [13455 13459])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13460 13466])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13467 13471]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13432 13472])
+            ("_ltoa" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "long") (reparse-symbol arg-sub-list) [13518 13523])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13524 13530])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13531 13535]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13495 13536])
+            ("_ultoa" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [13584 13598])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13599 13605])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13606 13610]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13559 13611])
+            ("_itow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [13661 13665])
+                    ("" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [13666 13675])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13676 13680]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13637 13681])
+            ("_ltow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "long") (reparse-symbol arg-sub-list) [13731 13736])
+                    ("" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [13737 13746])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13747 13751]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13707 13752])
+            ("_ultow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [13803 13817])
+                    ("" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [13818 13827])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [13828 13832]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [13778 13833])
+            ("putenv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15662 15674]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15638 15675])
+            ("searchenv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15724 15736])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15737 15749])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15750 15756]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15697 15757])
+            ("itoa" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [15803 15807])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15808 15814])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [15815 15819]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15781 15820])
+            ("ltoa" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "long") (reparse-symbol arg-sub-list) [15865 15870])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15871 15877])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [15878 15882]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15843 15883])
+            ("ecvt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [15943 15950])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [15951 15955])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15956 15961])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [15962 15967]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15921 15968])
+            ("fcvt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [16013 16020])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [16021 16025])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16026 16031])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16032 16037]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [15991 16038])
+            ("gcvt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [16083 16090])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [16091 16095])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16096 16102]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16061 16103])
+            ("__MINGW_ATTRIB_NORETURN" variable (:type "int") nil [16334 16358])
+            ("_Exit" function
+               (:arguments 
+                  ( ("__status" variable (:type "int") (reparse-symbol arg-sub-list) [16462 16475]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16440 16499])
+            ("lldiv_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("rem" variable (:type "long long") (reparse-symbol classsubparts) [16526 16546])
+                          ("quot" variable (:type "long long") (reparse-symbol classsubparts) [16526 16546]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [16509 16557])
+            ("__MINGW_ATTRIB_CONST" variable (:type "int") nil [16620 16641])
+            ("llabs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "long long") (reparse-symbol arg-sub-list) [16683 16693]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16661 16694])
+            ("llabs" function
+               (:arguments 
+                  ( ("_j" variable (:type "long long") (reparse-symbol arg-sub-list) [16770 16783]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16748 16816])
+            ("strtoll" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16869 16893])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16881 16894])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16895 16913])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [16914 16918]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16844 16919])
+            ("strtoull" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16974 16998])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16986 16999])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17000 17019])
+                    ("" variable (:type ("__restrict__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17007 17020])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [17021 17025]))                  
+                :type ("__MINGW_NOTHROW" type (:type "class") nil nil))
+                nil [16948 17026]))          
+    :file "stdlib.h"
+    :pointmax 18501
+    :fsize 18500
+    :lastmodtime '(20462 9145 0 0)
+    :unmatched-syntax '((symbol 16940 . 16947) (LONG 16934 . 16938) (LONG 16929 . 16933) (UNSIGNED 16920 . 16928) (symbol 16836 . 16843) (LONG 16830 . 16834) (LONG 16825 . 16829) (symbol 16740 . 16747) (LONG 16735 . 16739) (LONG 16730 . 16734) (symbol 16717 . 16729) (symbol 16653 . 16660) (LONG 16648 . 16652) (LONG 16643 . 16647) (semantic-list 16597 . 16619) (symbol 16591 . 16596) (symbol 16575 . 16590) (symbol 16567 . 16574) (symbol 16559 . 16566) (symbol 16432 . 16439) (VOID 16427 . 16431) (symbol 16414 . 16426) (semantic-list 16328 . 16333) (symbol 16323 . 16328) (symbol 16307 . 16322) (symbol 16299 . 16306) (VOID 16294 . 16298) (symbol 16053 . 16060) (punctuation 16051 . 16052) (CHAR 16047 . 16051) (symbol 16039 . 16046) (symbol 15983 . 15990) (punctuation 15981 . 15982) (CHAR 15977 . 15981) (symbol 15969 . 15976) (symbol 15913 . 15920) (punctuation 15911 . 15912) (CHAR 15907 . 15911) (symbol 15899 . 15906) (symbol 15835 . 15842) (punctuation 15833 . 15834) (CHAR 15829 . 15833) (symbol 15821 . 15828) (symbol 15773 . 15780) (punctuation 15771 . 15772) (CHAR 15767 . 15771) (symbol 15759 . 15766) (symbol 15689 . 15696) (VOID 15684 . 15688) (symbol 15676 . 15683) (symbol 15630 . 15637) (INT 15626 . 15629) (symbol 15618 . 15625) (symbol 13770 . 13777) (punctuation 13768 . 13769) (WCHAR 13761 . 13768) (symbol 13753 . 13760) (symbol 13699 . 13706) (punctuation 13697 . 13698) (WCHAR 13690 . 13697) (symbol 13682 . 13689) (symbol 13629 . 13636) (punctuation 13627 . 13628) (WCHAR 13620 . 13627) (symbol 13612 . 13619) (symbol 13551 . 13558) (punctuation 13549 . 13550) (CHAR 13545 . 13549) (symbol 13537 . 13544) (symbol 13487 . 13494) (punctuation 13485 . 13486) (CHAR 13481 . 13485) (symbol 13473 . 13480) (symbol 13424 . 13431) (punctuation 13422 . 13423) (CHAR 13418 . 13422) (symbol 13410 . 13417) (symbol 13345 . 13352) (punctuation 13343 . 13344) (CHAR 13339 . 13343) (symbol 13331 . 13338) (symbol 13253 . 13260) (VOID 13248 . 13252) (symbol 13240 . 13247) (symbol 13145 . 13152) (VOID 13140 . 13144) (symbol 13132 . 13139) (symbol 13079 . 13086) (punctuation 13077 . 13078) (CHAR 13073 . 13077) (symbol 13065 . 13072) (symbol 13008 . 13015) (punctuation 13006 . 13007) (CHAR 13002 . 13006) (symbol 12994 . 13001) (symbol 12937 . 12944) (punctuation 12935 . 12936) (CHAR 12931 . 12935) (symbol 12923 . 12930) (symbol 12852 . 12859) (VOID 12847 . 12851) (symbol 12839 . 12846) (symbol 12792 . 12799) (INT 12788 . 12791) (symbol 12780 . 12787) (symbol 12733 . 12740) (symbol 12723 . 12732) (TYPEDEF 12689 . 12696) (semantic-list 12529 . 12534) (symbol 12523 . 12528) (symbol 12507 . 12522) (symbol 12499 . 12506) (VOID 12494 . 12498) (symbol 12486 . 12493) (semantic-list 12442 . 12457) (symbol 12435 . 12441) (symbol 12419 . 12434) (symbol 12411 . 12418) (VOID 12406 . 12410) (symbol 12398 . 12405) (semantic-list 12365 . 12370) (symbol 12351 . 12364) (symbol 12335 . 12350) (symbol 12327 . 12334) (VOID 12322 . 12326) (symbol 12314 . 12321) (semantic-list 12203 . 12231) (symbol 12197 . 12202) (symbol 12181 . 12196) (symbol 12173 . 12180) (VOID 12168 . 12172) (symbol 12160 . 12167) (semantic-list 11935 . 11947) (symbol 11930 . 11934) (symbol 11914 . 11929) (symbol 11906 . 11913) (symbol 11899 . 11905) (symbol 11891 . 11898) (semantic-list 11858 . 11868) (symbol 11854 . 11857) (symbol 11838 . 11853) (symbol 11830 . 11837) (symbol 11824 . 11829) (symbol 11816 . 11823) (semantic-list 11452 . 11458) (symbol 11447 . 11451) (symbol 11431 . 11446) (symbol 11423 . 11430) (LONG 11418 . 11422) (symbol 11410 . 11417) (semantic-list 11382 . 11387) (symbol 11378 . 11381) (symbol 11362 . 11377) (symbol 11354 . 11361) (INT 11350 . 11353) (symbol 11342 . 11349) (semantic-list 11312 . 11338) (semantic-list 11309 . 11312) (VOID 11257 . 11261) (symbol 11249 . 11256) (semantic-list 11220 . 11246) (semantic-list 11217 . 11220) (punctuation 11141 . 11142) (VOID 11137 . 11141) (symbol 11129 . 11136) (symbol 11020 . 11027) (punctuation 11018 . 11019) (CHAR 11014 . 11018) (symbol 11006 . 11013) (symbol 10960 . 10967) (INT 10956 . 10959) (symbol 10948 . 10955) (semantic-list 10938 . 10944) (semantic-list 10935 . 10938) (symbol 10898 . 10905) (INT 10894 . 10897) (semantic-list 10794 . 10799) (symbol 10789 . 10793) (symbol 10773 . 10788) (symbol 10765 . 10772) (VOID 10760 . 10764) (symbol 10752 . 10759) (semantic-list 10720 . 10726) (symbol 10714 . 10719) (symbol 10698 . 10713) (symbol 10690 . 10697) (VOID 10685 . 10689) (symbol 10677 . 10684) (symbol 10639 . 10646) (VOID 10634 . 10638) (symbol 10626 . 10633) (symbol 10577 . 10584) (punctuation 10575 . 10576) (VOID 10571 . 10575) (symbol 10563 . 10570) (semantic-list 10531 . 10539) (symbol 10524 . 10530) (symbol 10508 . 10523) (symbol 10500 . 10507) (punctuation 10498 . 10499) (VOID 10494 . 10498) (symbol 10486 . 10493) (semantic-list 10446 . 10462) (symbol 10439 . 10445) (symbol 10423 . 10438) (symbol 10415 . 10422) (punctuation 10413 . 10414) (VOID 10409 . 10413) (symbol 10401 . 10408) (symbol 10354 . 10361) (VOID 10349 . 10353) (symbol 10341 . 10348) (symbol 10304 . 10311) (INT 10300 . 10303) (symbol 10292 . 10299) (symbol 10226 . 10233) (INT 10222 . 10225) (symbol 10214 . 10221) (symbol 10148 . 10155) (symbol 10141 . 10147) (symbol 10133 . 10140) (symbol 10079 . 10086) (INT 10075 . 10078) (symbol 10067 . 10074) (symbol 10016 . 10023) (INT 10012 . 10015) (symbol 10004 . 10011) (symbol 9938 . 9945) (symbol 9931 . 9937) (symbol 9923 . 9930) (symbol 9140 . 9147) (DOUBLE 9133 . 9139) (LONG 9128 . 9132) (symbol 9040 . 9047) (FLOAT 9034 . 9039) (symbol 8925 . 8932) (DOUBLE 8918 . 8924) (symbol 8910 . 8917) (symbol 8844 . 8851) (LONG 8839 . 8843) (UNSIGNED 8830 . 8838) (symbol 8822 . 8829) (symbol 8757 . 8764) (LONG 8752 . 8756) (symbol 8744 . 8751) (symbol 8626 . 8633) (LONG 8621 . 8625) (UNSIGNED 8612 . 8620) (symbol 8604 . 8611) (symbol 8545 . 8552) (LONG 8540 . 8544) (symbol 8532 . 8539) (symbol 8347 . 8354) (DOUBLE 8340 . 8346) (LONG 8335 . 8339) (symbol 8253 . 8260) (FLOAT 8247 . 8252) (symbol 8151 . 8158) (DOUBLE 8144 . 8150) (EXTERN 8137 . 8143) (symbol 8081 . 8088) (DOUBLE 8074 . 8080) (symbol 7968 . 7975) (LONG 7963 . 7967) (symbol 7955 . 7962) (symbol 7906 . 7913) (INT 7902 . 7905) (symbol 7894 . 7901) (symbol 7845 . 7852) (DOUBLE 7838 . 7844) (symbol 7830 . 7837) (symbol 7754 . 7761) (LONG 7749 . 7753) (symbol 7741 . 7748) (symbol 7697 . 7704) (INT 7693 . 7696) (symbol 7685 . 7692) (symbol 7641 . 7648) (DOUBLE 7634 . 7640) (symbol 7626 . 7633) (symbol 3246 . 3253) (punctuation 3244 . 3245) (INT 3241 . 3244) (symbol 3233 . 3240) (symbol 3160 . 3167) (punctuation 3158 . 3159) (INT 3155 . 3158) (symbol 3147 . 3154))
+    :lexical-table 
+        '(("_MAX_DIR" . ((number "256" 1112 . 1115)))
+          ("_osver" . ((semantic-list "(*_imp___osver_dll)" 5890 . 5909)))
+          ("_STDLIB_H_")
+          ("sys_errlist" . ((semantic-list "(*_imp___sys_errlist)" 4704 . 4725)))
+          ("_winmajor" . ((semantic-list "(*_imp___winmajor_dll)" 5966 . 5988)))
+          ("_pgmptr" . ((semantic-list "(*_imp___pgmptr_dll)" 6835 . 6855)))
+          ("__need_size_t")
+          ("_MAX_FNAME" . ((number "256" 1135 . 1138)))
+          ("_winver" . ((semantic-list "(*_imp___winver_dll)" 5927 . 5947)))
+          ("__need_wchar_t")
+          ("environ" . ((symbol "_environ" 3969 . 3977)))
+          ("_MAX_EXT" . ((number "256" 1156 . 1159)))
+          ("MB_CUR_MAX" . ((semantic-list "(*_imp____mb_cur_max_dll)" 2919 . 2944)))
+          ("_fmode" . ((semantic-list "(*_imp___fmode_dll)" 7339 . 7358)))
+          ("__argc" . ((semantic-list "(*_imp____argc_dll)" 2095 . 2114)))
+          ("_environ" . ((semantic-list "(*_imp___environ_dll)" 3761 . 3782)))
+          ("_winminor" . ((semantic-list "(*_imp___winminor_dll)" 6007 . 6029)))
+          ("sys_nerr" . ((semantic-list "(*_imp___sys_nerr_dll)" 4435 . 4457)))
+          ("MAX_PATH" . ((semantic-list "(260)" 1031 . 1036)))
+          ("_MAX_DRIVE" . ((semantic-list "(3)" 1091 . 1094)))
+          ("_WSTDLIB_DEFINED")
+          ("_doserrno" . ((semantic-list "(*__doserrno())" 3306 . 3321)))
+          ("__need_NULL")
+          ("RAND_MAX" . ((number "0x7FFF" 629 . 635)))
+          ("EXIT_SUCCESS" . ((number "0" 715 . 716)))
+          ("EXIT_FAILURE" . ((number "1" 738 . 739)))
+          ("_MAX_PATH" . ((symbol "MAX_PATH" 1063 . 1071)))
+          ("__argv" . ((semantic-list "(*_imp____argv_dll)" 2130 . 2149)))
+          ("errno" . ((semantic-list "(*_errno())" 3213 . 3224)))
+          )
+
+    )
+   (semanticdb-table "assert.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_mingw.h" include (:system-flag t) nil [513 532])
+            ("__MINGW_ATTRIB_NORETURN" variable (:type "int") nil [884 908])
+            ("assert" variable (:constant-flag t) nil [960 966]))          
+    :file "assert.h"
+    :pointmax 1105
+    :fsize 1104
+    :lastmodtime '(20462 9139 0 0)
+    :unmatched-syntax '((semantic-list 852 . 883) (symbol 844 . 851) (symbol 828 . 843) (symbol 820 . 827) (VOID 815 . 819) (symbol 807 . 814))
+    :lexical-table 
+        '(("assert" (spp-arg-list ("e") 966 . 969) . ((semantic-list "((e) ? (void)0 : _assert(#e, __FILE__, __LINE__))" 976 . 1025)))
+          )
+
+    )
+   (semanticdb-table "_mingw.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__MINGW_H" variable (:constant-flag t) nil [648 657])
+            ("__MINGW32_VERSION" variable (:constant-flag t) nil [667 684])
+            ("__MINGW32_MAJOR_VERSION" variable (:constant-flag t) nil [708 731])
+            ("__MINGW32_MINOR_VERSION" variable (:constant-flag t) nil [746 769])
+            ("__MINGW32_PATCHLEVEL" variable (:constant-flag t) nil [785 805])
+            ("__MINGW_ANSI_STDIO__" variable (:constant-flag t) nil [2400 2420])
+            ("__MINGW_LC_EXTENSIONS__" variable (:constant-flag t) nil [2579 2602])
+            ("__MINGW_LC_MESSAGES__" variable (:constant-flag t) nil [2634 2655])
+            ("__MINGW_LC_ENVVARS__" variable (:constant-flag t) nil [2687 2707])
+            ("__MINGW_IMPORT" variable (:constant-flag t) nil [4808 4822])
+            ("_CRTIMP" variable (:constant-flag t) nil [4881 4888])
+            ("__DECLSPEC_SUPPORTED" variable (:constant-flag t) nil [4929 4949])
+            ("__attribute__" variable (:constant-flag t) nil [4959 4972])
+            ("__MINGW_GNUC_PREREQ" variable (:constant-flag t) nil [5189 5208])
+            ("__CRT_INLINE" variable (:constant-flag t) nil [5400 5412])
+            ("_CRTALIAS" variable (:constant-flag t) nil [5550 5559])
+            ("__UNUSED_PARAM" variable (:constant-flag t) nil [5727 5741])
+            ("__MINGW_ATTRIB_NORETURN" variable (:constant-flag t) nil [5913 5936])
+            ("__MINGW_ATTRIB_CONST" variable (:constant-flag t) nil [5945 5965])
+            ("__MINGW_ATTRIB_MALLOC" variable (:constant-flag t) nil [6133 6154])
+            ("__MINGW_ATTRIB_PURE" variable (:constant-flag t) nil [6163 6182])
+            ("__MINGW_ATTRIB_NONNULL" variable (:constant-flag t) nil [6482 6504])
+            ("__MINGW_ATTRIB_DEPRECATED" variable (:constant-flag t) nil [6649 6674])
+            ("__MINGW_NOTHROW" variable (:constant-flag t) nil [6802 6817])
+            ("__MSVCRT_VERSION__" variable (:constant-flag t) nil [7090 7108])
+            ("__USE_MINGW_ANSI_STDIO" variable (:constant-flag t) nil [7818 7840]))          
+    :file "_mingw.h"
+    :pointmax 7927
+    :fsize 7926
+    :lastmodtime '(20462 9139 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__MINGW32_VERSION" . ((number "3.20" 695 . 699)))
+          ("__MINGW_ATTRIB_NONNULL" (spp-arg-list ("arg") 6504 . 6509))
+          ("__MINGW32_MINOR_VERSION" . ((number "20" 774 . 776)))
+          ("__attribute__" (spp-arg-list ("x") 4972 . 4975))
+          ("__MINGW_ATTRIB_PURE")
+          ("__MINGW_NOTHROW")
+          ("__MINGW_H")
+          ("__DECLSPEC_SUPPORTED")
+          ("__USE_MINGW_ANSI_STDIO" . ((semantic-list "(__MINGW_FEATURES__ & __MINGW_ANSI_STDIO__)" 7844 . 7887)))
+          ("__MINGW32_PATCHLEVEL" . ((number "0" 813 . 814)))
+          ("__MINGW_IMPORT" . ((symbol "__declspec" 4824 . 4834) (semantic-list "(dllimport)" 4834 . 4845)))
+          ("__MINGW_GNUC_PREREQ" (spp-arg-list ("major" "minor") 5208 . 5222) . ((number "0" 5224 . 5225)))
+          ("__MINGW_ATTRIB_DEPRECATED")
+          ("__MINGW_LC_MESSAGES__" . ((symbol "0x0000000000000010ULL" 2657 . 2678)))
+          ("__MINGW_LC_ENVVARS__" . ((symbol "0x0000000000000040ULL" 2709 . 2730)))
+          ("_CRTIMP" . ((symbol "__declspec" 4890 . 4900) (semantic-list "(dllimport)" 4900 . 4911)))
+          ("_CRTALIAS" . ((symbol "__CRT_INLINE" 5560 . 5572)))
+          ("__MINGW_ATTRIB_MALLOC")
+          ("__MINGW_LC_EXTENSIONS__" . ((symbol "0x0000000000000050ULL" 2604 . 2625)))
+          ("__MINGW_ATTRIB_NORETURN")
+          ("__MINGW_ATTRIB_CONST")
+          ("__MINGW32_MAJOR_VERSION" . ((number "3" 736 . 737)))
+          ("__CRT_INLINE" . ((EXTERN "extern" 5413 . 5419) (symbol "__inline__" 5420 . 5430)))
+          ("__MSVCRT_VERSION__" . ((number "0x0600" 7109 . 7115)))
+          ("__MINGW_ANSI_STDIO__" . ((symbol "0x0000000000000001ULL" 2422 . 2443)))
+          ("__UNUSED_PARAM" (spp-arg-list ("x") 5741 . 5744) . ((symbol "x" 5745 . 5746)))
+          )
+
+    )
+   )
+  :file "!drive_c!MinGW!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

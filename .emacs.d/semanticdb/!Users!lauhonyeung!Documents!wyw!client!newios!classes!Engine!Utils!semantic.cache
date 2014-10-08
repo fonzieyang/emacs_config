@@ -1,0 +1,88 @@
+;; Object Utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Utils/"
+  :tables (list 
+   (semanticdb-table "VxStringEncoding.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("VxStringEncoding.h" include nil nil [3 32])
+            ("string" include (:system-flag t) nil [33 50])
+            ("utf8_skip_data" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [53 880])
+            ("g_utf8_skip" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [882 936])
+            ("cc_utf8_next_char" variable (:constant-flag t) nil [946 963])
+            ("getUTF8WordSizeByFirstByte" function
+               (:parent "VxStringEncoding"
+                :arguments 
+                  ( ("nFirstByte" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1069 1094]))                  
+                :type "int")
+                nil [1020 1131])
+            ("getUTF8Length" function
+               (:parent "VxStringEncoding"
+                :arguments 
+                  ( ("pString" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1169 1189])
+                    ("nMaxUTF8Len" variable (:type "int") (reparse-symbol arg-sub-list) [1190 1206]))                  
+                :type "int")
+                nil [1133 1354])
+            ("getUTF8CharacterCount" function
+               (:parent "VxStringEncoding"
+                :arguments 
+                  ( ("pString" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1400 1420]))                  
+                :type "int")
+                nil [1356 1553])
+            ("splitUTF8ByLength" function
+               (:parent "VxStringEncoding"
+                :arguments 
+                  ( ("pString" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1596 1616])
+                    ("length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1617 1637])
+                    ("strings" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1638 1672]))                  
+                :type "void")
+                nil [1555 2186]))          
+    :file "VxStringEncoding.cpp"
+    :pointmax 2187
+    :fsize 2186
+    :lastmodtime '(21199 37551 0 0)
+    :unmatched-syntax '((symbol 134 . 174) (punctuation 132 . 133) (punctuation 131 . 132) (punctuation 130 . 131) (punctuation 129 . 130) (punctuation 128 . 129) (punctuation 127 . 128) (punctuation 126 . 127) (punctuation 70 . 71) (punctuation 69 . 70) (punctuation 68 . 69) (punctuation 67 . 68) (punctuation 66 . 67) (punctuation 65 . 66) (punctuation 64 . 65) (symbol 9 . 13) (punctuation 7 . 8) (punctuation 6 . 7) (punctuation 5 . 6) (punctuation 4 . 5) (punctuation 3 . 4) (punctuation 2 . 3) (punctuation 1 . 2))
+    :lexical-table 
+        '(("cc_utf8_next_char" (spp-arg-list ("p") 963 . 966) . ((semantic-list "(char *)" 967 . 975) (semantic-list "((p) + g_utf8_skip[*(unsigned char *)(p)])" 975 . 1017)))
+          )
+
+    )
+   (semanticdb-table "VxStringEncoding.h"
+    :file "VxStringEncoding.h"
+    :fsize 544
+    :lastmodtime '(21199 37507 0 0)
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!newios!classes!Engine!Utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

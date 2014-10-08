@@ -1,0 +1,285 @@
+;; Object console/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "console/"
+  :tables (list 
+   (semanticdb-table "cocos2d.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''
+Command line tool manager for cocos2d
+'''" code nil nil [311 356])
+            ("__docformat__" variable nil nil [358 392])
+            ("sys" include nil nil [404 414])
+            ("re" include nil nil [415 424])
+            ("ConfigParser" include nil nil [425 444])
+            ("os" include nil nil [445 454])
+            ("COCOS2D_CONSOLE_VERSION" variable nil nil [456 487])
+            ("CCPlugin" type
+               (:superclasses ("object")
+                :members 
+                  ( ("brief_description" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [626 630]))                          
+                        :parent "dummy")
+                        (reparse-symbol indented_block_body) [586 646])
+                    ("__init__" function
+                       (:suite 
+                          ( ("pass" code nil (reparse-symbol indented_block_body) [697 701]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [682 686]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [669 702])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [728 732])
+                            ("argv" variable nil (reparse-symbol function_parameters) [734 738]))                          )
+                        (reparse-symbol indented_block_body) [720 754]))                  
+                :type "class")
+                nil [538 754])
+            ("get_class" function (:arguments 
+              ( ("kls" variable nil (reparse-symbol function_parameters) [822 825]))              ) nil [808 1098])
+            ("parse_plugins" function nil nil [1100 1757])
+            ("help" function nil nil [1759 2179])
+            ("if" code nil nil [2180 2553]))          
+    :file "cocos2d.py"
+    :pointmax 2553
+    :fsize 2552
+    :lastmodtime '(20893 8015 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cocos2d_new.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''
+\"new\" plugin for cocos2d command line tool
+'''" code nil nil [277 327])
+            ("__docformat__" variable nil nil [329 363])
+            ("os" include nil nil [374 383])
+            ("sys" include nil nil [384 394])
+            ("getopt" include nil nil [395 408])
+            ("ConfigParser" include nil nil [409 428])
+            ("cocos2d" include nil nil [430 444])
+            ("help" function nil nil [447 476])
+            ("CCPluginNew" type
+               (:superclasses ("cocos2d.CCPlugin")
+                :members 
+                  ( ("brief_description" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [568 657])
+                    ("parse_args" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [699 703])
+                            ("argv" variable nil (reparse-symbol function_parameters) [705 709]))                          )
+                        (reparse-symbol indented_block_body) [684 1176])
+                    ("create_project" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1225 1229])
+                            ("args" variable nil (reparse-symbol function_parameters) [1231 1235]))                          )
+                        (reparse-symbol indented_block_body) [1206 1956])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2034 2038])
+                            ("argv" variable nil (reparse-symbol function_parameters) [2040 2044]))                          )
+                        (reparse-symbol indented_block_body) [2026 2118]))                  
+                :type "class")
+                nil [526 2118]))          
+    :file "cocos2d_new.py"
+    :pointmax 2119
+    :fsize 2118
+    :lastmodtime '(20893 8015 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cocos2d_version.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''
+\"version\" plugin for cocos2d command line tool
+'''" code nil nil [281 335])
+            ("__docformat__" variable nil nil [337 371])
+            ("cocos2d" include nil nil [383 397])
+            ("CCPluginVersion" type
+               (:superclasses ("cocos2d.CCPlugin")
+                :members 
+                  ( ("brief_description" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [494 612])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [625 629])
+                            ("argv" variable nil (reparse-symbol function_parameters) [631 635]))                          )
+                        (reparse-symbol indented_block_body) [617 689]))                  
+                :type "class")
+                nil [448 689]))          
+    :file "cocos2d_version.py"
+    :pointmax 689
+    :fsize 688
+    :lastmodtime '(20893 8015 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cocos2d_jscompile.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("'''
+\"jscompile\" plugin for cocos2d command line tool
+'''" code nil nil [252 308])
+            ("__docformat__" variable nil nil [310 344])
+            ("sys" include nil nil [346 356])
+            ("subprocess" include nil nil [357 374])
+            ("os" include nil nil [375 384])
+            ("json" include nil nil [385 396])
+            ("inspect" include nil nil [397 411])
+            ("cocos2d" include nil nil [413 427])
+            ("CCPluginJSCompile" type
+               (:documentation "
+    compiles (encodes) and minifies JS files
+    "
+                :superclasses ("cocos2d.CCPlugin")
+                :members 
+                  ( ("brief_description" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [538 696])
+                    ("init" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [767 771])
+                            ("options" variable nil (reparse-symbol function_parameters) [773 780])
+                            ("workingdir" variable nil (reparse-symbol function_parameters) [782 792]))                          
+                        :documentation "
+        Arguments:
+        - `options`:
+        ")
+                        (reparse-symbol indented_block_body) [758 1767])
+                    ("normalize_path_in_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1799 1803])
+                            ("list" variable nil (reparse-symbol function_parameters) [1805 1809]))                          )
+                        (reparse-symbol indented_block_body) [1772 1931])
+                    ("get_relative_path" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1958 1962])
+                            ("jsfile" variable nil (reparse-symbol function_parameters) [1964 1970]))                          )
+                        (reparse-symbol indented_block_body) [1936 2480])
+                    ("get_output_file_path" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2510 2514])
+                            ("jsfile" variable nil (reparse-symbol function_parameters) [2516 2522]))                          
+                        :documentation "
+        Gets output file path by source js file
+        ")
+                        (reparse-symbol indented_block_body) [2485 3270])
+                    ("compile_js" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3290 3294])
+                            ("jsfile" variable nil (reparse-symbol function_parameters) [3296 3302])
+                            ("output_file" variable nil (reparse-symbol function_parameters) [3304 3315]))                          
+                        :documentation "
+        Compiles js file
+        ")
+                        (reparse-symbol indented_block_body) [3275 3764])
+                    ("compress_js" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3785 3789]))                          
+                        :documentation "
+        Compress all js files into one big file.
+        ")
+                        (reparse-symbol indented_block_body) [3769 4504])
+                    ("deep_iterate_dir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4530 4534])
+                            ("rootDir" variable nil (reparse-symbol function_parameters) [4536 4543]))                          )
+                        (reparse-symbol indented_block_body) [4509 4881])
+                    ("index_in_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4905 4909])
+                            ("jsfile" variable nil (reparse-symbol function_parameters) [4911 4917])
+                            ("l" variable nil (reparse-symbol function_parameters) [4919 4920]))                          
+                        :documentation "
+        Arguments:
+        - `self`:
+        - `jsfile`:
+        - `l`:
+        ")
+                        (reparse-symbol indented_block_body) [4887 5235])
+                    ("js_filename_pre_order_compare" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5274 5278])
+                            ("a" variable nil (reparse-symbol function_parameters) [5280 5281])
+                            ("b" variable nil (reparse-symbol function_parameters) [5283 5284]))                          
+                        :documentation "
+        ")
+                        (reparse-symbol indented_block_body) [5240 5914])
+                    ("js_filename_post_order_compare" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5955 5959])
+                            ("a" variable nil (reparse-symbol function_parameters) [5961 5962])
+                            ("b" variable nil (reparse-symbol function_parameters) [5964 5965]))                          
+                        :documentation "
+        ")
+                        (reparse-symbol indented_block_body) [5920 6599])
+                    ("reorder_js_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6625 6629]))                          )
+                        (reparse-symbol indented_block_body) [6604 7492])
+                    ("handle_all_js_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7607 7611]))                          
+                        :documentation "
+        Arguments:
+        - `self`:
+        ")
+                        (reparse-symbol indented_block_body) [7583 8169])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8230 8234])
+                            ("argv" variable nil (reparse-symbol function_parameters) [8236 8240]))                          
+                        :documentation "
+        ")
+                        (reparse-symbol indented_block_body) [8222 9111])
+                    ("parse_args" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9131 9135])
+                            ("argv" variable nil (reparse-symbol function_parameters) [9137 9141]))                          
+                        :documentation "
+        ")
+                        (reparse-symbol indented_block_body) [9116 11265]))                  
+                :type "class")
+                nil [429 11265]))          
+    :file "cocos2d_jscompile.py"
+    :pointmax 11266
+    :fsize 11265
+    :lastmodtime '(20893 8015 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!lauhonyeung!Downloads!cocos2d-x-2.1.4!tools!cocos2d-console!console!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

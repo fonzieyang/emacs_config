@@ -1,0 +1,41 @@
+;; Object Battle/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Battle/"
+  :tables (list 
+   (semanticdb-table "NxBattleNodeAction.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NxBattleNodeAction.h" include nil nil [1 32])
+            ("NxNodeAction.h" include nil nil [33 58])
+            ("NxBattleAction.h" include nil nil [59 86])
+            ("createAttackNodeAction" function
+               (:pointer 1
+                :parent "NxBattleNodeActionManager"
+                :arguments 
+                  ( ("pBattleAction" variable
+                       (:pointer 1
+                        :type ("NxBattleAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [348 378]))                  
+                :type ("NxNodeActionGuard" type (:type "class") nil nil))
+                nil [278 552]))          
+    :file "NxBattleNodeAction.cpp"
+    :pointmax 554
+    :fsize 568
+    :lastmodtime '(20954 34787 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NxBattleNodeAction.h"
+    :file "NxBattleNodeAction.h"
+    :fsize 325
+    :lastmodtime '(20954 34787 0 0)
+    )
+   (semanticdb-table "NxBattleAction.h"
+    :file "NxBattleAction.h"
+    :fsize 8737
+    :lastmodtime '(20954 34787 0 0)
+    )
+   )
+  :file "!drive_d!work!wyw!client!JianXian!classes!GameSystem!Battle!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

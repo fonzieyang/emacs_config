@@ -1,0 +1,87 @@
+;; Object Desktop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Desktop/"
+  :tables (list 
+   (semanticdb-table "profile.html"
+    :major-mode 'html-mode
+    :tags 
+        '( (";; This buffer is for notes you don't want to save, and for Lisp evaluation." section nil nil [238 2347])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }" section nil nil [2347 3926])
+            (";; This buffer is for notes you don't want to save, and for Lisp evaluation." section (:members 
+              ( (";; This buffer is for notes you don't want to save, and for Lisp evaluation." section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1" anchor nil nil [4183 4186])
+                        ("1.1 简介" anchor nil nil [4216 4219])
+                        ("1.2 技术路线" anchor nil nil [4255 4258])
+                        ("1.3 项目经验" anchor nil nil [4296 4299])
+                        ("1.3.1 大荒传奇" anchor nil nil [4337 4340])
+                        ("1.3.2 宝迪射击" anchor nil nil [4382 4385])
+                        ("1.3.3 神谕" anchor nil nil [4427 4430])
+                        ("1.4 关于编程的看法" anchor nil nil [4482 4485])
+                        ("1.5 关于工作" anchor nil nil [4526 4529])
+                        ("1.6 联系方式" anchor nil nil [4567 4570]))                      ) nil [4113 4686])
+                    ("1" section (:members 
+                      ( ("1.1" section nil nil [4878 5210])
+                        ("1.2" section nil nil [5210 5540])
+                        ("1.3" section (:members 
+                          ( ("1.3.1" section nil nil [5715 6027])
+                            ("1.3.2" section nil nil [6027 6346])
+                            ("1.3.3" section nil nil [6346 6692]))                          ) nil [5540 6692])
+                        ("1.4" section nil nil [6692 7076])
+                        ("1.5" section nil nil [7076 7310])
+                        ("1.6" section (:members 
+                          ( ("Org" anchor nil nil [7637 7640])
+                            ("Emacs" anchor nil nil [7694 7697])
+                            ("Validate XHTML 1.0" anchor nil nil [7764 7767]))                          ) nil [7310 7863]))                      ) nil [4686 7863]))                  ) nil [3982 7863]))              ) nil [3926 7863]))          
+    :file "profile.html"
+    :pointmax 7863
+    :fsize 8968
+    :lastmodtime '(21170 27904 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!lauhonyeung!Desktop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

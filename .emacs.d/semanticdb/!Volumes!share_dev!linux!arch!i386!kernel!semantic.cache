@@ -1,0 +1,164 @@
+;; Object kernel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kernel/"
+  :tables (list 
+   (semanticdb-table "i8259.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("linux/config.h" include (:system-flag t) nil [1 26])
+            ("linux/ptrace.h" include (:system-flag t) nil [27 52])
+            ("linux/errno.h" include (:system-flag t) nil [53 77])
+            ("linux/signal.h" include (:system-flag t) nil [78 103])
+            ("linux/sched.h" include (:system-flag t) nil [104 128])
+            ("linux/ioport.h" include (:system-flag t) nil [129 154])
+            ("linux/interrupt.h" include (:system-flag t) nil [155 183])
+            ("linux/timex.h" include (:system-flag t) nil [184 208])
+            ("linux/slab.h" include (:system-flag t) nil [209 232])
+            ("linux/random.h" include (:system-flag t) nil [233 258])
+            ("linux/smp_lock.h" include (:system-flag t) nil [259 286])
+            ("linux/init.h" include (:system-flag t) nil [287 310])
+            ("linux/kernel_stat.h" include (:system-flag t) nil [311 341])
+            ("asm/atomic.h" include (:system-flag t) nil [343 366])
+            ("asm/system.h" include (:system-flag t) nil [367 390])
+            ("asm/io.h" include (:system-flag t) nil [391 410])
+            ("asm/irq.h" include (:system-flag t) nil [411 431])
+            ("asm/bitops.h" include (:system-flag t) nil [432 455])
+            ("asm/pgtable.h" include (:system-flag t) nil [456 480])
+            ("asm/delay.h" include (:system-flag t) nil [481 503])
+            ("asm/desc.h" include (:system-flag t) nil [504 525])
+            ("asm/apic.h" include (:system-flag t) nil [526 547])
+            ("linux/irq.h" include (:system-flag t) nil [549 571])
+            ("BI" variable (:constant-flag t) nil [960 962])
+            ("BUILD_16_IRQS" variable (:constant-flag t) nil [996 1009])
+            ("IRQ" variable (:constant-flag t) nil [2961 2964])
+            ("IRQLIST_16" variable (:constant-flag t) nil [3004 3014])
+            ("i8259A_lock" variable (:type ("spinlock_t" type (:type "class") nil nil)) nil [3848 3892])
+            ("end_8259A_irq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3921 3938]))                  
+                :type "void")
+                nil [3894 4029])
+            ("shutdown_8259A_irq" variable (:constant-flag t) nil [4039 4057])
+            ("mask_and_ack_8259A" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4101 4114]))                  
+                :type "void")
+                nil [4077 4115])
+            ("startup_8259A_irq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4155 4172]))                  
+                :type "unsigned int")
+                nil [4117 4241])
+            ("i8259A_irq_type" variable
+               (:typemodifiers ("static")
+                :type ("hw_interrupt_type" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4243 4431])
+            ("cached_irq_mask" variable
+               (:typemodifiers ("static")
+                :type "unsigned int")
+                nil [4556 4601])
+            ("__byte" variable (:constant-flag t) nil [4611 4617])
+            ("cached_21" variable (:constant-flag t) nil [4661 4670])
+            ("cached_A1" variable (:constant-flag t) nil [4707 4716])
+            ("io_apic_irqs" variable (:type "unsigned long") nil [5119 5146])
+            ("disable_8259A_irq" function
+               (:arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5171 5188]))                  
+                :type "void")
+                nil [5148 5427])
+            ("enable_8259A_irq" function
+               (:arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5451 5468]))                  
+                :type "void")
+                nil [5429 5710])
+            ("i8259A_irq_pending" function
+               (:arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5735 5752]))                  
+                :type "int")
+                nil [5712 5998])
+            ("make_8259A_irq" function
+               (:arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6020 6037]))                  
+                :type "void")
+                nil [6000 6156])
+            ("i8259A_irq_real" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6374 6391]))                  
+                :type "int")
+                nil [6340 6727])
+            ("mask_and_ack_8259A" function
+               (:arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6950 6967]))                  
+                :type "void")
+                nil [6926 8918])
+            ("init_8259A" function
+               (:arguments 
+                  ( ("auto_eoi" variable (:type "int") (reparse-symbol arg-sub-list) [8943 8956]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [8925 10183])
+            ("math_error_irq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cpl" variable (:type "int") (reparse-symbol arg-sub-list) [10636 10644])
+                    ("dev_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10645 10658])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10659 10680]))                  
+                :type "void")
+                nil [10609 10821])
+            ("irq13" variable
+               (:typemodifiers ("static")
+                :type ("irqaction" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10923 10999])
+            ("irq2" variable
+               (:typemodifiers ("static")
+                :type ("irqaction" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [11090 11163])
+            ("init_ISA_irqs" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11200 11205]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [11178 11637])
+            ("init_IRQ" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11660 11665]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [11644 13349]))          
+    :file "i8259.c"
+    :pointmax 13350
+    :fsize 13349
+    :lastmodtime '(15270 58269 0 0)
+    :unmatched-syntax '((VOID 11639 . 11643) (VOID 11173 . 11177) (VOID 8920 . 8924) (punctuation 3507 . 3508) (semantic-list 3225 . 3507) (punctuation 3223 . 3224) (semantic-list 3216 . 3222) (semantic-list 3195 . 3216) (VOID 3190 . 3194) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x" symbol "f" 3 . 4)))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x" symbol "e" 3 . 4)))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x" symbol "d" 3 . 4)))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x" symbol "c" 3 . 4)))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x" symbol "b" 3 . 4)))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x" symbol "a" 3 . 4)))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x")))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x")))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x")))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x")))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x")))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x")))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x")))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x")))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x")))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list #("(x##y)" 0 1 (macros (("y") ("x")))) 1281 . 1299) (symbol "BUILD_IRQ" 1281 . 1299) (semantic-list 948 . 950) (symbol 932 . 948))
+    :lexical-table 
+        '(("cached_A1" . ((semantic-list "(__byte(1,cached_irq_mask))" 4717 . 4744)))
+          ("shutdown_8259A_irq" . ((symbol "disable_8259A_irq" 4058 . 4075)))
+          ("__byte" (spp-arg-list ("x" "y") 4617 . 4622) . ((semantic-list "(((unsigned char *)&(y))[x])" 4624 . 4652)))
+          ("cached_21" . ((semantic-list "(__byte(0,cached_irq_mask))" 4671 . 4698)))
+          )
+
+    )
+   )
+  :file "!Volumes!share_dev!linux!arch!i386!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,2567 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "sprite.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("EJOY_2D_SPRITE_H" variable (:constant-flag t) nil [34 50])
+            ("spritepack.h" include nil nil [52 75])
+            ("matrix.h" include nil nil [76 95])
+            ("lua.h" include (:system-flag t) nil [97 113])
+            ("stdint.h" include (:system-flag t) nil [114 133])
+            ("stdbool.h" include (:system-flag t) nil [134 154])
+            ("sprite" type
+               (:members 
+                  ( ("type" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [173 187])
+                    ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [189 201])
+                    ("t" variable (:type ("sprite_trans" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [203 225])
+                    ("s" variable (:type ("" type
+                         (:members 
+                            ( ("ani" variable
+                                 (:pointer 1
+                                  :type ("pack_animation" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [237 264])
+                              ("pic" variable
+                                 (:pointer 1
+                                  :type ("pack_picture" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [267 292])
+                              ("poly" variable
+                                 (:pointer 1
+                                  :type ("pack_polygon" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [295 321])
+                              ("label" variable
+                                 (:pointer 1
+                                  :type ("pack_label" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [324 349])
+                              ("pannel" variable
+                                 (:pointer 1
+                                  :type ("pack_pannel" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [352 379]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [227 385])
+                    ("mat" variable (:type ("matrix" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [387 405])
+                    ("start_frame" variable (:type "int") (reparse-symbol classsubparts) [407 423])
+                    ("total_frame" variable (:type "int") (reparse-symbol classsubparts) [425 441])
+                    ("frame" variable (:type "int") (reparse-symbol classsubparts) [444 454])
+                    ("visible" variable (:type "bool") (reparse-symbol classsubparts) [456 469])
+                    ("message" variable (:type "bool") (reparse-symbol classsubparts) [471 484])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [486 503])
+                    ("data" variable (:type ("" type
+                         (:members 
+                            ( ("children" variable
+                                 (:pointer 1
+                                  :dereference 1
+                                  :type ("sprite" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [534 562])
+                              ("text" variable
+                                 (:pointer 1
+                                  :constant-flag t
+                                  :type "char")
+                                  (reparse-symbol classsubparts) [565 583])
+                              ("scissor" variable (:type "int") (reparse-symbol classsubparts) [586 598]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [524 607]))                  
+                :type "struct")
+                nil [156 610])
+            ("sprite_drawquad" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("picture" variable
+                       (:pointer 1
+                        :type ("pack_picture" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [633 662])
+                    ("srt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [663 685])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [686 717]))                  
+                :type "void")
+                nil [612 718])
+            ("sprite_drawpolygon" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("poly" variable
+                       (:pointer 1
+                        :type ("pack_polygon" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [743 769])
+                    ("srt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [770 792])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [793 824]))                  
+                :type "void")
+                nil [719 825])
+            ("sprite_size" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pack" variable
+                       (:pointer 1
+                        :type ("sprite_pack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [890 915])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [916 923]))                  
+                :type "int")
+                nil [874 924])
+            ("sprite_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [942 958])
+                    ("pack" variable
+                       (:pointer 1
+                        :type ("sprite_pack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [959 985])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [986 993])
+                    ("sz" variable (:type "int") (reparse-symbol arg-sub-list) [994 1001]))                  
+                :type "void")
+                nil [925 1002])
+            ("sprite_action" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1082 1098])
+                    ("action" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1099 1119]))                  
+                :type "int")
+                nil [1064 1120])
+            ("sprite_draw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1139 1155])
+                    ("srt" variable
+                       (:pointer 1
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1156 1172]))                  
+                :type "void")
+                nil [1122 1173])
+            ("sprite_test" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1202 1218])
+                    ("srt" variable
+                       (:pointer 1
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1219 1235])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1236 1242])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1243 1249]))                  
+                :type ("sprite" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1174 1250])
+            ("sprite_child" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1311 1327])
+                    ("childname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1328 1351]))                  
+                :type "int")
+                nil [1294 1352])
+            ("sprite_component" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1414 1430])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1431 1441]))                  
+                :type "int")
+                nil [1393 1442])
+            ("sprite_childname" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1473 1489])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1490 1500]))                  
+                :type "char")
+                nil [1443 1501])
+            ("sprite_setframe" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1523 1539])
+                    ("frame" variable (:type "int") (reparse-symbol arg-sub-list) [1540 1550]))                  
+                :type "void")
+                nil [1502 1551])
+            ("sprite_mount" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1570 1586])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1587 1597])
+                    ("" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1598 1614]))                  
+                :type "void")
+                nil [1552 1615])
+            ("ejoy2d_sprite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1635 1648]))                  
+                :type "int")
+                nil [1617 1649]))          
+    :file "sprite.h"
+    :pointmax 1658
+    :fsize 1657
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("EJOY_2D_SPRITE_H")
+          )
+
+    )
+   (semanticdb-table "spritepack.h"
+    :file "spritepack.h"
+    :fsize 1435
+    :lastmodtime '(21190 9403 0 0)
+    )
+   (semanticdb-table "matrix.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("EJOY_2D_MATRIX_H" variable (:constant-flag t) nil [34 50])
+            ("matrix" type
+               (:members 
+                  ( ("m" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [69 78]))                  
+                :type "struct")
+                nil [52 81])
+            ("matrix_mul" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [113 131])
+                    ("mm1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [132 157])
+                    ("mm2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [158 183]))                  
+                :type "void")
+                nil [83 552])
+            ("matrix_identity" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [589 607]))                  
+                :type "void")
+                nil [554 714])
+            ("matrix_inverse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [736 760])
+                    ("mo" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [761 779]))                  
+                :type "void")
+                nil [716 780])
+            ("srt" type
+               (:members 
+                  ( ("offx" variable (:type "int") (reparse-symbol classsubparts) [796 805])
+                    ("offy" variable (:type "int") (reparse-symbol classsubparts) [807 816])
+                    ("scalex" variable (:type "int") (reparse-symbol classsubparts) [818 829])
+                    ("scaley" variable (:type "int") (reparse-symbol classsubparts) [831 842])
+                    ("rot" variable (:type "int") (reparse-symbol classsubparts) [844 852]))                  
+                :type "struct")
+                nil [782 855])
+            ("matrix_srt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [873 891])
+                    ("srt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [892 914]))                  
+                :type "void")
+                nil [857 915])
+            ("matrix_rot" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [932 949])
+                    ("rot" variable (:type "int") (reparse-symbol arg-sub-list) [950 958]))                  
+                :type "void")
+                nil [916 959])
+            ("matrix_scale" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [978 995])
+                    ("sx" variable (:type "int") (reparse-symbol arg-sub-list) [996 1003])
+                    ("sy" variable (:type "int") (reparse-symbol arg-sub-list) [1004 1011]))                  
+                :type "void")
+                nil [960 1012]))          
+    :file "matrix.h"
+    :pointmax 1021
+    :fsize 1020
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("EJOY_2D_MATRIX_H")
+          )
+
+    )
+   (semanticdb-table "sprite.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("sprite.h" include nil nil [1 20])
+            ("spritepack.h" include nil nil [21 44])
+            ("shader.h" include nil nil [45 64])
+            ("texture.h" include nil nil [65 85])
+            ("screen.h" include nil nil [86 105])
+            ("matrix.h" include nil nil [106 125])
+            ("label.h" include nil nil [126 144])
+            ("scissor.h" include nil nil [145 165])
+            ("string.h" include (:system-flag t) nil [167 186])
+            ("assert.h" include (:system-flag t) nil [187 206])
+            ("stdio.h" include (:system-flag t) nil [207 225])
+            ("sprite_drawquad" function
+               (:arguments 
+                  ( ("picture" variable
+                       (:pointer 1
+                        :type ("pack_picture" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [248 277])
+                    ("srt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [278 300])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [302 333]))                  
+                :type "void")
+                nil [227 1126])
+            ("sprite_drawpolygon" function
+               (:arguments 
+                  ( ("poly" variable
+                       (:pointer 1
+                        :type ("pack_polygon" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1153 1179])
+                    ("srt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1180 1202])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1203 1234]))                  
+                :type "void")
+                nil [1128 2053])
+            ("sprite_size" function
+               (:arguments 
+                  ( ("pack" variable
+                       (:pointer 1
+                        :type ("sprite_pack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2072 2097])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [2098 2105]))                  
+                :type "int")
+                nil [2055 2427])
+            ("sprite_action" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2448 2465])
+                    ("action" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2466 2486]))                  
+                :type "int")
+                nil [2429 3057])
+            ("sprite_init" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3077 3095])
+                    ("pack" variable
+                       (:pointer 1
+                        :type ("sprite_pack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3096 3122])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [3123 3130])
+                    ("sz" variable (:type "int") (reparse-symbol arg-sub-list) [3131 3138]))                  
+                :type "void")
+                nil [3059 4070])
+            ("sprite_mount" function
+               (:arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4091 4113])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [4114 4124])
+                    ("child" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4125 4146]))                  
+                :type "void")
+                nil [4072 4329])
+            ("real_frame" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4353 4370]))                  
+                :type "int")
+                nil [4331 4510])
+            ("sprite_child" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4530 4547])
+                    ("childname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4548 4571]))                  
+                :type "int")
+                nil [4512 4863])
+            ("sprite_component" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4887 4904])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [4905 4915]))                  
+                :type "int")
+                nil [4865 5101])
+            ("sprite_childname" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5134 5151])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [5152 5162]))                  
+                :type "char")
+                nil [5103 5354])
+            ("color_mul" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("c1" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5405 5417])
+                    ("c2" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5418 5430]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [5372 5754])
+            ("clamp" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("c" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5789 5804]))                  
+                :type "unsigned int")
+                nil [5756 5841])
+            ("color_add" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("c1" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5876 5888])
+                    ("c2" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5889 5901]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [5843 6132])
+            ("trans_mul" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6173 6196])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6197 6220])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6221 6244])
+                    ("tmp_matrix" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6245 6271]))                  
+                :type ("sprite_trans" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6134 6810])
+            ("switch_program" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6839 6862])
+                    ("def" variable (:type "int") (reparse-symbol arg-sub-list) [6863 6871]))                  
+                :type "void")
+                nil [6812 6984])
+            ("set_scissor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pack_pannel" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7010 7038])
+                    ("srt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7039 7061])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7062 7093]))                  
+                :type "void")
+                nil [6986 7960])
+            ("draw_child" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7985 8002])
+                    ("srt" variable
+                       (:pointer 1
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8003 8019])
+                    ("ts" variable
+                       (:pointer 1
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8020 8045]))                  
+                :type "int")
+                nil [7962 9398])
+            ("sprite_draw" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9417 9434])
+                    ("srt" variable
+                       (:pointer 1
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9435 9451]))                  
+                :type "void")
+                nil [9400 9505])
+            ("test_quad" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pic" variable
+                       (:pointer 1
+                        :type ("pack_picture" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9528 9554])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [9555 9561])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [9562 9568]))                  
+                :type "int")
+                nil [9507 10048])
+            ("test_polygon" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("poly" variable
+                       (:pointer 1
+                        :type ("pack_polygon" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10074 10101])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [10103 10109])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [10110 10116]))                  
+                :type "int")
+                nil [10050 10613])
+            ("test_label" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("label" variable
+                       (:pointer 1
+                        :type ("pack_label" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10637 10662])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [10663 10669])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [10670 10676]))                  
+                :type "int")
+                nil [10615 10779])
+            ("test_pannel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pannel" variable
+                       (:pointer 1
+                        :type ("pack_pannel" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10804 10831])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [10832 10838])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [10839 10845]))                  
+                :type "int")
+                nil [10781 10950])
+            ("test_child" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10974 10991])
+                    ("srt" variable
+                       (:pointer 1
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10992 11008])
+                    ("ts" variable
+                       (:pointer 1
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11009 11034])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [11035 11041])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [11042 11048])
+                    ("touch" variable
+                       (:pointer 2
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11049 11072]))                  
+                :type "int")
+                nil [10952 11073])
+            ("check_child" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11098 11115])
+                    ("srt" variable
+                       (:pointer 1
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11116 11132])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11133 11157])
+                    ("pf" variable
+                       (:pointer 1
+                        :type ("pack_frame" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11158 11181])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [11182 11188])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [11189 11195])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [11196 11202])
+                    ("touch" variable
+                       (:pointer 2
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11203 11226]))                  
+                :type "int")
+                nil [11075 11821])
+            ("test_animation" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11928 11945])
+                    ("srt" variable
+                       (:pointer 1
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11946 11962])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11963 11987])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [11988 11994])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [11995 12001])
+                    ("touch" variable
+                       (:pointer 2
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12002 12025]))                  
+                :type "int")
+                nil [11902 12922])
+            ("test_child" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12946 12963])
+                    ("srt" variable
+                       (:pointer 1
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12964 12980])
+                    ("ts" variable
+                       (:pointer 1
+                        :type ("sprite_trans" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12981 13006])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [13007 13013])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [13014 13020])
+                    ("touch" variable
+                       (:pointer 2
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13021 13044]))                  
+                :type "int")
+                nil [12924 14255])
+            ("sprite_test" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14286 14303])
+                    ("srt" variable
+                       (:pointer 1
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14304 14320])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [14321 14327])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [14328 14334]))                  
+                :type ("sprite" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [14257 14491])
+            ("sprite_setframe" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("sprite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14514 14531])
+                    ("frame" variable (:type "int") (reparse-symbol arg-sub-list) [14532 14542]))                  
+                :type "void")
+                nil [14493 14804]))          
+    :file "sprite.c"
+    :pointmax 14805
+    :fsize 14804
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "shader.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("EJOY_2D_SHADER_H" variable (:constant-flag t) nil [34 50])
+            ("stdint.h" include (:system-flag t) nil [52 71])
+            ("lua.h" include (:system-flag t) nil [72 88])
+            ("PROGRAM_DEFAULT" variable (:constant-flag t) nil [98 113])
+            ("PROGRAM_PICTURE" variable (:constant-flag t) nil [125 140])
+            ("PROGRAM_TEXT" variable (:constant-flag t) nil [151 163])
+            ("shader_init" function
+               (:prototype-flag t
+                :type "void")
+                nil [167 186])
+            ("shader_load" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("prog" variable (:type "int") (reparse-symbol arg-sub-list) [204 213])
+                    ("fs" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [214 229])
+                    ("vs" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [230 245]))                  
+                :type "void")
+                nil [187 246])
+            ("shader_unload" function
+               (:prototype-flag t
+                :type "void")
+                nil [247 268])
+            ("shader_blend" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("m1" variable (:type "int") (reparse-symbol arg-sub-list) [287 294])
+                    ("m2" variable (:type "int") (reparse-symbol arg-sub-list) [294 301]))                  
+                :type "void")
+                nil [269 302])
+            ("shader_defaultblend" function
+               (:prototype-flag t
+                :type "void")
+                nil [303 330])
+            ("shader_texture" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [351 358]))                  
+                :type "void")
+                nil [331 359])
+            ("shader_draw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vb" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [377 396])
+                    ("color" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [396 411]))                  
+                :type "void")
+                nil [360 412])
+            ("shader_drawpolygon" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [437 443])
+                    ("vb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [444 460])
+                    ("color" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [461 476]))                  
+                :type "void")
+                nil [413 477])
+            ("shader_program" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [498 504])
+                    ("arg" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [505 518]))                  
+                :type "void")
+                nil [478 519])
+            ("shader_flush" function
+               (:prototype-flag t
+                :type "void")
+                nil [520 540])
+            ("ejoy2d_shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [560 573]))                  
+                :type "int")
+                nil [542 574]))          
+    :file "shader.h"
+    :pointmax 583
+    :fsize 582
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("EJOY_2D_SHADER_H")
+          ("PROGRAM_PICTURE" . ((number "0" 141 . 142)))
+          ("PROGRAM_DEFAULT" . ((punctuation "-" 114 . 115) (number "1" 115 . 116)))
+          ("PROGRAM_TEXT" . ((number "1" 164 . 165)))
+          )
+
+    )
+   (semanticdb-table "texture.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("EJOY_2D_TEXTURE_H" variable (:constant-flag t) nil [35 52])
+            ("opengl.h" include nil nil [54 73])
+            ("Texture2DPixelFormat_RGBA8888" variable (:constant-flag t) nil [83 112])
+            ("Texture2DPixelFormat_RGBA4444" variable (:constant-flag t) nil [123 152])
+            ("Texture2DPixelFormat_PVRTC4" variable (:constant-flag t) nil [163 190])
+            ("Texture2DPixelFormat_PVRTC2" variable (:constant-flag t) nil [201 228])
+            ("Texture2DPixelFormat_RGB888" variable (:constant-flag t) nil [239 266])
+            ("Texture2DPixelFormat_RGB565" variable (:constant-flag t) nil [277 304])
+            ("Texture2DPixelFormat_A8" variable (:constant-flag t) nil [315 338])
+            ("texture_load" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [368 375])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [376 385])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [386 396])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [397 408])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [409 422]))                  
+                :type "char")
+                nil [342 423])
+            ("texture_unload" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [444 451]))                  
+                :type "void")
+                nil [424 452])
+            ("texture_glid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [473 480]))                  
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [453 481])
+            ("texture_coord" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [501 508])
+                    ("x" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [509 518])
+                    ("y" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [519 528]))                  
+                :type "void")
+                nil [482 529])
+            ("texture_clearall" function
+               (:prototype-flag t
+                :type "void")
+                nil [530 554])
+            ("texture_exit" function
+               (:prototype-flag t
+                :type "void")
+                nil [555 575]))          
+    :file "texture.h"
+    :pointmax 584
+    :fsize 583
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("Texture2DPixelFormat_PVRTC4" . ((number "3" 191 . 192)))
+          ("Texture2DPixelFormat_RGB888" . ((number "5" 267 . 268)))
+          ("Texture2DPixelFormat_RGB565" . ((number "6" 305 . 306)))
+          ("Texture2DPixelFormat_RGBA4444" . ((number "2" 153 . 154)))
+          ("Texture2DPixelFormat_A8" . ((number "7" 339 . 340)))
+          ("EJOY_2D_TEXTURE_H")
+          ("Texture2DPixelFormat_RGBA8888" . ((number "1" 113 . 114)))
+          ("Texture2DPixelFormat_PVRTC2" . ((number "4" 229 . 230)))
+          )
+
+    )
+   (semanticdb-table "screen.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ejoy_2d_screen_h" variable (:constant-flag t) nil [34 50])
+            ("screen_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type "float") (reparse-symbol arg-sub-list) [69 77])
+                    ("h" variable (:type "float") (reparse-symbol arg-sub-list) [78 86])
+                    ("scale" variable (:type "float") (reparse-symbol arg-sub-list) [87 99]))                  
+                :type "void")
+                nil [52 100])
+            ("screen_trans" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [119 128])
+                    ("y" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [129 138]))                  
+                :type "void")
+                nil [101 139])
+            ("screen_scissor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [160 166])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [167 173])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [174 180])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [181 187]))                  
+                :type "void")
+                nil [140 188]))          
+    :file "screen.h"
+    :pointmax 197
+    :fsize 196
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ejoy_2d_screen_h")
+          )
+
+    )
+   (semanticdb-table "label.h"
+    :file "label.h"
+    :fsize 703
+    :lastmodtime '(21190 9403 0 0)
+    )
+   (semanticdb-table "scissor.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("EJOY2D_SCISSOR_H" variable (:constant-flag t) nil [34 50])
+            ("scissor_push" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [70 76])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [77 83])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [84 90])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [91 97]))                  
+                :type "void")
+                nil [52 98])
+            ("scissor_pop" function
+               (:prototype-flag t
+                :type "void")
+                nil [99 118]))          
+    :file "scissor.h"
+    :pointmax 127
+    :fsize 126
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("EJOY2D_SCISSOR_H")
+          )
+
+    )
+   (semanticdb-table "scissor.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("scissor.h" include nil nil [1 21])
+            ("opengl.h" include nil nil [22 41])
+            ("screen.h" include nil nil [42 61])
+            ("shader.h" include nil nil [62 81])
+            ("assert.h" include (:system-flag t) nil [83 102])
+            ("SCISSOR_MAX" variable (:constant-flag t) nil [112 123])
+            ("box" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [141 147])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [149 155])
+                    ("width" variable (:type "int") (reparse-symbol classsubparts) [157 167])
+                    ("height" variable (:type "int") (reparse-symbol classsubparts) [169 180]))                  
+                :type "struct")
+                nil [127 183])
+            ("scissor" type
+               (:members 
+                  ( ("depth" variable (:type "int") (reparse-symbol classsubparts) [203 213])
+                    ("s" variable
+                       (:dereference 1
+                        :type ("box" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [215 241]))                  
+                :type "struct")
+                nil [185 244])
+            ("S" variable
+               (:typemodifiers ("static")
+                :type ("scissor" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [246 270])
+            ("scissor_push" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [291 297])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [298 304])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [305 311])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [312 318]))                  
+                :type "void")
+                nil [272 559])
+            ("scissor_pop" function (:type "void") nil [561 779]))          
+    :file "scissor.c"
+    :pointmax 780
+    :fsize 779
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SCISSOR_MAX" . ((number "8" 124 . 125)))
+          )
+
+    )
+   (semanticdb-table "opengl.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ejoy2d_opengl_h" variable (:constant-flag t) nil [33 48])
+            ("OpenGLES/ES2/gl.h" include (:system-flag t) nil [98 126]))          
+    :file "opengl.h"
+    :pointmax 172
+    :fsize 171
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ejoy2d_opengl_h")
+          )
+
+    )
+   (semanticdb-table "screen.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("screen.h" include nil nil [1 20])
+            ("opengl.h" include nil nil [21 40])
+            ("spritepack.h" include nil nil [41 64])
+            ("screen" type
+               (:members 
+                  ( ("width" variable (:type "int") (reparse-symbol classsubparts) [83 93])
+                    ("height" variable (:type "int") (reparse-symbol classsubparts) [95 106])
+                    ("scale" variable (:type "int") (reparse-symbol classsubparts) [108 118])
+                    ("invw" variable (:type "float") (reparse-symbol classsubparts) [120 131])
+                    ("invh" variable (:type "float") (reparse-symbol classsubparts) [133 144]))                  
+                :type "struct")
+                nil [66 147])
+            ("SCREEN" variable
+               (:typemodifiers ("static")
+                :type ("screen" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [149 177])
+            ("screen_init" function
+               (:arguments 
+                  ( ("w" variable (:type "float") (reparse-symbol arg-sub-list) [196 204])
+                    ("h" variable (:type "float") (reparse-symbol arg-sub-list) [205 213])
+                    ("scale" variable (:type "float") (reparse-symbol arg-sub-list) [214 226]))                  
+                :type "void")
+                nil [179 426])
+            ("screen_trans" function
+               (:arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [447 456])
+                    ("y" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [457 466]))                  
+                :type "void")
+                nil [428 510])
+            ("screen_scissor" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [533 539])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [540 546])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [547 553])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [554 560]))                  
+                :type "void")
+                nil [512 844]))          
+    :file "screen.c"
+    :pointmax 847
+    :fsize 846
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ppm.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ejoy_2d_ppm_h" variable (:constant-flag t) nil [31 44])
+            ("lua.h" include (:system-flag t) nil [46 62])
+            ("ejoy2d_ppm" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79 92]))                  
+                :type "int")
+                nil [64 93]))          
+    :file "ppm.h"
+    :pointmax 102
+    :fsize 101
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ejoy_2d_ppm_h")
+          )
+
+    )
+   (semanticdb-table "ppm.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ppm.h" include nil nil [1 17])
+            ("texture.h" include nil nil [18 38])
+            ("lua.h" include (:system-flag t) nil [40 56])
+            ("lauxlib.h" include (:system-flag t) nil [57 77])
+            ("stdint.h" include (:system-flag t) nil [79 98])
+            ("stdio.h" include (:system-flag t) nil [99 117])
+            ("stdlib.h" include (:system-flag t) nil [118 137])
+            ("string.h" include (:system-flag t) nil [138 157])
+            ("PPM_RGBA8" variable (:constant-flag t) nil [167 176])
+            ("PPM_RGB8" variable (:constant-flag t) nil [187 195])
+            ("PPM_RGBA4" variable (:constant-flag t) nil [206 215])
+            ("PPM_RGB4" variable (:constant-flag t) nil [226 234])
+            ("PPM_ALPHA8" variable (:constant-flag t) nil [245 255])
+            ("PPM_ALPHA4" variable (:constant-flag t) nil [266 276])
+            ("ppm" type
+               (:members 
+                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [294 303])
+                    ("depth" variable (:type "int") (reparse-symbol classsubparts) [305 315])
+                    ("step" variable (:type "int") (reparse-symbol classsubparts) [317 326])
+                    ("width" variable (:type "int") (reparse-symbol classsubparts) [328 338])
+                    ("height" variable (:type "int") (reparse-symbol classsubparts) [340 351])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [353 369]))                  
+                :type "struct")
+                nil [280 372])
+            ("LINEMAX" variable (:constant-flag t) nil [382 389])
+            ("readline" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [418 426])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [427 440]))                  
+                :type "char")
+                nil [395 584])
+            ("ppm_header" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [608 616])
+                    ("ppm" variable
+                       (:pointer 1
+                        :type ("ppm" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [617 633]))                  
+                :type "int")
+                nil [586 991])
+            ("ppm_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ppm" variable
+                       (:pointer 1
+                        :type ("ppm" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1013 1029])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1030 1038])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1039 1046])
+                    ("skip" variable (:type "int") (reparse-symbol arg-sub-list) [1047 1056]))                  
+                :type "int")
+                nil [993 2050])
+            ("loadppm_from_file" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rgb" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2081 2091])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2092 2104])
+                    ("ppm" variable
+                       (:pointer 1
+                        :type ("ppm" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2105 2121]))                  
+                :type "int")
+                nil [2052 2903])
+            ("loadppm" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2924 2937]))                  
+                :type "int")
+                nil [2905 4134])
+            ("loadtexture" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4159 4172]))                  
+                :type "int")
+                nil [4136 6453])
+            ("ppm_type" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6476 6489])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6490 6510])
+                    ("ppm" variable
+                       (:pointer 1
+                        :type ("ppm" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6511 6527]))                  
+                :type "void")
+                nil [6455 7258])
+            ("save_rgb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7407 7420])
+                    ("step" variable (:type "int") (reparse-symbol arg-sub-list) [7421 7430])
+                    ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [7431 7441]))                  
+                :type "void")
+                nil [7386 8304])
+            ("save_alpha" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8329 8342])
+                    ("step" variable (:type "int") (reparse-symbol arg-sub-list) [8343 8352])
+                    ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [8353 8363])
+                    ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [8364 8375]))                  
+                :type "void")
+                nil [8306 9075])
+            ("saveppm" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9096 9109]))                  
+                :type "int")
+                nil [9077 9868])
+            ("ejoy2d_ppm" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9886 9899]))                  
+                :type "int")
+                nil [9870 10051]))          
+    :file "ppm.c"
+    :pointmax 10052
+    :fsize 10051
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PPM_ALPHA4" . ((number "5" 277 . 278)))
+          ("PPM_ALPHA8" . ((number "4" 256 . 257)))
+          ("PPM_RGB4" . ((number "3" 235 . 236)))
+          ("PPM_RGBA4" . ((number "2" 216 . 217)))
+          ("LINEMAX" . ((number "128" 390 . 393)))
+          ("PPM_RGB8" . ((number "1" 196 . 197)))
+          ("PPM_RGBA8" . ((number "0" 177 . 178)))
+          )
+
+    )
+   (semanticdb-table "particle.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ejoy_2d_particle_h" variable (:constant-flag t) nil [36 54])
+            ("lua.h" include (:system-flag t) nil [56 72])
+            ("stdbool.h" include (:system-flag t) nil [73 93])
+            ("stdint.h" include (:system-flag t) nil [94 113])
+            ("stdlib.h" include (:system-flag t) nil [114 133])
+            ("matrix.h" include nil nil [135 154])
+            ("CC_DEGREES_TO_RADIANS" variable (:constant-flag t) nil [165 186])
+            ("CC_RADIANS_TO_DEGREES" variable (:constant-flag t) nil [249 270])
+            ("PARTICLE_MODE_GRAVITY" variable (:constant-flag t) nil [332 353])
+            ("PARTICLE_MODE_RADIUS" variable (:constant-flag t) nil [364 384])
+            ("POSITION_TYPE_FREE" variable (:constant-flag t) nil [396 414])
+            ("POSITION_TYPE_RELATIVE" variable (:constant-flag t) nil [425 447])
+            ("POSTTION_TYPE_GROUPED" variable (:constant-flag t) nil [458 479])
+            ("DURATION_INFINITY" variable (:constant-flag t) nil [533 550])
+            ("START_SIZE_EQUAL_TO_END_SIZE" variable (:constant-flag t) nil [634 662])
+            ("START_RADIUS_EQUAL_TO_END_RADIUS" variable (:constant-flag t) nil [750 782])
+            ("point" type
+               (:members 
+                  ( ("x" variable (:type "float") (reparse-symbol classsubparts) [805 813])
+                    ("y" variable (:type "float") (reparse-symbol classsubparts) [815 823]))                  
+                :type "struct")
+                nil [789 826])
+            ("color4f" type
+               (:members 
+                  ( ("r" variable (:type "float") (reparse-symbol classsubparts) [846 854])
+                    ("g" variable (:type "float") (reparse-symbol classsubparts) [856 864])
+                    ("b" variable (:type "float") (reparse-symbol classsubparts) [866 874])
+                    ("a" variable (:type "float") (reparse-symbol classsubparts) [876 884]))                  
+                :type "struct")
+                nil [828 887])
+            ("particle" type
+               (:members 
+                  ( ("pos" variable (:type ("point" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [908 925])
+                    ("startPos" variable (:type ("point" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [927 949])
+                    ("color" variable (:type ("color4f" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [952 973])
+                    ("deltaColor" variable (:type ("color4f" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [975 1001])
+                    ("size" variable (:type "float") (reparse-symbol classsubparts) [1004 1015])
+                    ("deltaSize" variable (:type "float") (reparse-symbol classsubparts) [1017 1033])
+                    ("rotation" variable (:type "float") (reparse-symbol classsubparts) [1036 1051])
+                    ("deltaRotation" variable (:type "float") (reparse-symbol classsubparts) [1053 1073])
+                    ("timeToLive" variable (:type "float") (reparse-symbol classsubparts) [1076 1093])
+                    ("mode" variable (:type ("" type
+                         (:members 
+                            ( ("A" variable (:type ("" type
+                                   (:members 
+                                      ( ("dir" variable (:type ("point" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil)) (reparse-symbol classsubparts) [1183 1200])
+                                        ("radialAccel" variable (:type "float") (reparse-symbol classsubparts) [1204 1222])
+                                        ("tangentialAccel" variable (:type "float") (reparse-symbol classsubparts) [1226 1248]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [1171 1255])
+                              ("B" variable (:type ("" type
+                                   (:members 
+                                      ( ("angle" variable (:type "float") (reparse-symbol classsubparts) [1297 1309])
+                                        ("degreesPerSecond" variable (:type "float") (reparse-symbol classsubparts) [1313 1336])
+                                        ("radius" variable (:type "float") (reparse-symbol classsubparts) [1340 1353])
+                                        ("deltaRadius" variable (:type "float") (reparse-symbol classsubparts) [1357 1375]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [1285 1382]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [1096 1391]))                  
+                :type "struct")
+                nil [889 1394])
+            ("particle_config" type
+               (:members 
+                  ( ("emitterMode" variable (:type "int") (reparse-symbol classsubparts) [1619 1635])
+                    ("mode" variable (:type ("" type
+                         (:members 
+                            ( ("A" variable (:type ("" type
+                                   (:members 
+                                      ( ("gravity" variable (:type ("point" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil)) (reparse-symbol classsubparts) [1795 1816])
+                                        ("speed" variable (:type "float") (reparse-symbol classsubparts) [1889 1901])
+                                        ("speedVar" variable (:type "float") (reparse-symbol classsubparts) [1982 1997])
+                                        ("tangentialAccel" variable (:type "float") (reparse-symbol classsubparts) [2087 2109])
+                                        ("tangentialAccelVar" variable (:type "float") (reparse-symbol classsubparts) [2208 2233])
+                                        ("radialAccel" variable (:type "float") (reparse-symbol classsubparts) [2319 2337])
+                                        ("radialAccelVar" variable (:type "float") (reparse-symbol classsubparts) [2432 2453])
+                                        ("rotationIsDir" variable (:type "bool") (reparse-symbol classsubparts) [2552 2571]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [1724 2578])
+                              ("B" variable (:type ("" type
+                                   (:members 
+                                      ( ("startRadius" variable (:type "float") (reparse-symbol classsubparts) [2784 2802])
+                                        ("startRadiusVar" variable (:type "float") (reparse-symbol classsubparts) [2896 2917])
+                                        ("endRadius" variable (:type "float") (reparse-symbol classsubparts) [3000 3016])
+                                        ("endRadiusVar" variable (:type "float") (reparse-symbol classsubparts) [3108 3127])
+                                        ("rotatePerSecond" variable (:type "float") (reparse-symbol classsubparts) [3247 3269])
+                                        ("rotatePerSecondVar" variable (:type "float") (reparse-symbol classsubparts) [3357 3382]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [2691 3389]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [1638 3398])
+                    ("duration" variable (:type "float") (reparse-symbol classsubparts) [3562 3577])
+                    ("sourcePosition" variable (:type ("point" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3617 3645])
+                    ("posVar" variable (:type ("point" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3688 3708])
+                    ("life" variable (:type "float") (reparse-symbol classsubparts) [3760 3771])
+                    ("lifeVar" variable (:type "float") (reparse-symbol classsubparts) [3812 3826])
+                    ("angle" variable (:type "float") (reparse-symbol classsubparts) [3879 3891])
+                    ("angleVar" variable (:type "float") (reparse-symbol classsubparts) [3933 3948])
+                    ("startSize" variable (:type "float") (reparse-symbol classsubparts) [3997 4013])
+                    ("startSizeVar" variable (:type "float") (reparse-symbol classsubparts) [4064 4083])
+                    ("endSize" variable (:type "float") (reparse-symbol classsubparts) [4129 4143])
+                    ("endSizeVar" variable (:type "float") (reparse-symbol classsubparts) [4198 4215])
+                    ("startColor" variable (:type ("color4f" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4254 4280])
+                    ("startColorVar" variable (:type ("color4f" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4328 4357])
+                    ("endColor" variable (:type ("color4f" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4418 4442])
+                    ("endColorVar" variable (:type ("color4f" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4488 4515])
+                    ("startSpin" variable (:type "float") (reparse-symbol classsubparts) [4553 4569])
+                    ("startSpinVar" variable (:type "float") (reparse-symbol classsubparts) [4607 4626])
+                    ("endSpin" variable (:type "float") (reparse-symbol classsubparts) [4664 4678])
+                    ("endSpinVar" variable (:type "float") (reparse-symbol classsubparts) [4716 4733])
+                    ("emissionRate" variable (:type "float") (reparse-symbol classsubparts) [4774 4793])
+                    ("totalParticles" variable (:type "int") (reparse-symbol classsubparts) [4835 4854])
+                    ("positionType" variable (:type "int") (reparse-symbol classsubparts) [5201 5218]))                  
+                :type "struct")
+                nil [1396 5221])
+            ("particle_system" type
+               (:members 
+                  ( ("elapsed" variable (:type "float") (reparse-symbol classsubparts) [5310 5324])
+                    ("particles" variable
+                       (:pointer 1
+                        :type ("particle" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5350 5377])
+                    ("matrix" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5379 5401])
+                    ("emitCounter" variable (:type "float") (reparse-symbol classsubparts) [5454 5472])
+                    ("particleIdx" variable (:type "int") (reparse-symbol classsubparts) [5494 5510])
+                    ("allocatedParticles" variable (:type "int") (reparse-symbol classsubparts) [5547 5570])
+                    ("isActive" variable (:type "bool") (reparse-symbol classsubparts) [5603 5617])
+                    ("isAlive" variable (:type "bool") (reparse-symbol classsubparts) [5660 5673])
+                    ("particleCount" variable (:type "int") (reparse-symbol classsubparts) [5745 5763])
+                    ("config" variable
+                       (:pointer 1
+                        :type ("particle_config" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5766 5797]))                  
+                :type "struct")
+                nil [5223 5800])
+            ("init_with_particles" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("particle_system" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5828 5855])
+                    ("numberOfParticles" variable (:type "int") (reparse-symbol arg-sub-list) [5856 5878]))                  
+                :type "void")
+                nil [5803 5879])
+            ("particle_system_update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ps" variable
+                       (:pointer 1
+                        :type ("particle_system" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5908 5935])
+                    ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [5936 5945]))                  
+                :type "void")
+                nil [5880 5946])
+            ("calc_particle_system_mat" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("particle" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5977 5997])
+                    ("m" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5998 6015]))                  
+                :type "void")
+                nil [5947 6016])
+            ("ejoy2d_particle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6038 6051]))                  
+                :type "int")
+                nil [6018 6052]))          
+    :file "particle.h"
+    :pointmax 6061
+    :fsize 6060
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PARTICLE_MODE_RADIUS" . ((number "1" 385 . 386)))
+          ("ejoy_2d_particle_h")
+          ("POSITION_TYPE_RELATIVE" . ((number "1" 448 . 449)))
+          ("POSITION_TYPE_FREE" . ((number "0" 415 . 416)))
+          ("START_SIZE_EQUAL_TO_END_SIZE" . ((semantic-list "(-1)" 663 . 667)))
+          ("CC_DEGREES_TO_RADIANS" (spp-arg-list ("__ANGLE__") 186 . 197) . ((semantic-list "((__ANGLE__) * 0.01745329252f)" 198 . 228)))
+          ("CC_RADIANS_TO_DEGREES" (spp-arg-list ("__ANGLE__") 270 . 281) . ((semantic-list "((__ANGLE__) * 57.29577951f)" 282 . 310)))
+          ("PARTICLE_MODE_GRAVITY" . ((number "0" 354 . 355)))
+          ("DURATION_INFINITY" . ((semantic-list "(-1)" 551 . 555)))
+          ("POSTTION_TYPE_GROUPED" . ((number "2" 480 . 481)))
+          ("START_RADIUS_EQUAL_TO_END_RADIUS" . ((semantic-list "(-1)" 783 . 787)))
+          )
+
+    )
+   (semanticdb-table "matrix.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("matrix.h" include nil nil [1 20])
+            ("stdint.h" include (:system-flag t) nil [21 40])
+            ("_inverse_scale" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [76 90])
+                    ("o" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [91 98]))                  
+                :type "void")
+                nil [42 248])
+            ("_inverse_rot" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [282 295])
+                    ("o" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [296 303]))                  
+                :type "void")
+                nil [250 453])
+            ("matrix_inverse" function
+               (:arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [475 499])
+                    ("mo" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [500 518]))                  
+                :type "void")
+                nil [455 1043])
+            ("icost" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dd" variable (:type "int") (reparse-symbol arg-sub-list) [1087 1094]))                  
+                :type "int")
+                nil [1063 2425])
+            ("icosd" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("d" variable (:type "int") (reparse-symbol arg-sub-list) [2451 2457]))                  
+                :type "int")
+                nil [2427 2495])
+            ("isind" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("d" variable (:type "int") (reparse-symbol arg-sub-list) [2521 2527]))                  
+                :type "int")
+                nil [2497 2570])
+            ("rot_mat" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2599 2606])
+                    ("d" variable (:type "int") (reparse-symbol arg-sub-list) [2607 2613]))                  
+                :type "void")
+                nil [2572 3230])
+            ("scale_mat" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3261 3268])
+                    ("sx" variable (:type "int") (reparse-symbol arg-sub-list) [3269 3276])
+                    ("sy" variable (:type "int") (reparse-symbol arg-sub-list) [3277 3284]))                  
+                :type "void")
+                nil [3232 3494])
+            ("matrix_srt" function
+               (:arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3513 3531])
+                    ("srt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("srt" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3532 3554]))                  
+                :type "void")
+                nil [3496 3678])
+            ("matrix_rot" function
+               (:arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3697 3714])
+                    ("rot" variable (:type "int") (reparse-symbol arg-sub-list) [3715 3723]))                  
+                :type "void")
+                nil [3680 3748])
+            ("matrix_scale" function
+               (:arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("matrix" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3768 3785])
+                    ("sx" variable (:type "int") (reparse-symbol arg-sub-list) [3786 3793])
+                    ("sy" variable (:type "int") (reparse-symbol arg-sub-list) [3794 3801]))                  
+                :type "void")
+                nil [3750 3831]))          
+    :file "matrix.c"
+    :pointmax 3833
+    :fsize 3832
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lmatrix.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("EJOY2D_LUA_MATRIX_H" variable (:constant-flag t) nil [37 56])
+            ("lua.h" include (:system-flag t) nil [58 74])
+            ("ejoy2d_matrix" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94 107]))                  
+                :type "int")
+                nil [76 108]))          
+    :file "lmatrix.h"
+    :pointmax 117
+    :fsize 116
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("EJOY2D_LUA_MATRIX_H")
+          )
+
+    )
+   (semanticdb-table "fault.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("EJOY_2D_FAULT_H" variable (:constant-flag t) nil [33 48])
+            ("fault" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [61 81])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [82 86]))                  
+                :type "void")
+                nil [50 87]))          
+    :file "fault.h"
+    :pointmax 96
+    :fsize 95
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("EJOY_2D_FAULT_H")
+          )
+
+    )
+   (semanticdb-table "fault.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("stdarg.h" include (:system-flag t) nil [40 59])
+            ("fault" function
+               (:arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [72 92])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [93 97]))                  
+                :type "void")
+                nil [61 182]))          
+    :file "fault.c"
+    :pointmax 184
+    :fsize 183
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ejoy2dgame.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("EJOY_2D_LUASTATE_H" variable (:constant-flag t) nil [36 54])
+            ("lua.h" include (:system-flag t) nil [56 72])
+            ("game" type
+               (:prototype t
+                :type "struct")
+                nil [74 86])
+            ("ejoy2d_game" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("game" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [88 116])
+            ("ejoy2d_game_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [139 153]))                  
+                :type "void")
+                nil [117 154])
+            ("ejoy2d_game_lua" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [184 198]))                  
+                :type ("lua_State" type (:type "class") nil nil))
+                nil [155 199])
+            ("ejoy2d_game_start" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [223 237]))                  
+                :type "void")
+                nil [200 238])
+            ("ejoy2d_game_update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [263 277])
+                    ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [278 287]))                  
+                :type "void")
+                nil [239 288])
+            ("ejoy2d_game_drawframe" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [316 330]))                  
+                :type "void")
+                nil [289 331])
+            ("ejoy2d_game_touch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [355 369])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [370 377])
+                    ("x" variable (:type "float") (reparse-symbol arg-sub-list) [378 386])
+                    ("y" variable (:type "float") (reparse-symbol arg-sub-list) [387 395])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [396 407]))                  
+                :type "void")
+                nil [332 408]))          
+    :file "ejoy2dgame.h"
+    :pointmax 417
+    :fsize 416
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("EJOY_2D_LUASTATE_H")
+          )
+
+    )
+   (semanticdb-table "ejoy2dgame.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("lua.h" include (:system-flag t) nil [1 17])
+            ("lauxlib.h" include (:system-flag t) nil [18 38])
+            ("lualib.h" include (:system-flag t) nil [39 58])
+            ("assert.h" include (:system-flag t) nil [59 78])
+            ("stdlib.h" include (:system-flag t) nil [79 98])
+            ("ejoy2dgame.h" include nil nil [100 123])
+            ("fault.h" include nil nil [124 142])
+            ("shader.h" include nil nil [143 162])
+            ("texture.h" include nil nil [163 183])
+            ("ppm.h" include nil nil [184 200])
+            ("spritepack.h" include nil nil [201 224])
+            ("sprite.h" include nil nil [225 244])
+            ("lmatrix.h" include nil nil [245 265])
+            ("label.h" include nil nil [266 284])
+            ("particle.h" include nil nil [285 306])
+            ("LOGIC_FRAME" variable (:constant-flag t) nil [316 327])
+            ("EJOY_INIT" variable (:constant-flag t) nil [340 349])
+            ("EJOY_UPDATE" variable (:constant-flag t) nil [372 383])
+            ("EJOY_DRAWFRAME" variable (:constant-flag t) nil [408 422])
+            ("EJOY_TOUCH" variable (:constant-flag t) nil [450 460])
+            ("TRACEBACK_FUNCTION" variable (:constant-flag t) nil [485 503])
+            ("UPDATE_FUNCTION" variable (:constant-flag t) nil [514 529])
+            ("DRAWFRAME_FUNCTION" variable (:constant-flag t) nil [540 558])
+            ("TOP_FUNCTION" variable (:constant-flag t) nil [569 581])
+            ("game" type
+               (:members 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [600 613])
+                    ("real_time" variable (:type "float") (reparse-symbol classsubparts) [615 631])
+                    ("logic_time" variable (:type "float") (reparse-symbol classsubparts) [633 650]))                  
+                :type "struct")
+                nil [585 653])
+            ("_panic" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [673 686]))                  
+                :type "int")
+                nil [655 760])
+            ("linject" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [781 794]))                  
+                :type "int")
+                nil [762 1202])
+            ("ejoy2d_framework" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1232 1245]))                  
+                :type "int")
+                nil [1204 1395])
+            ("checkluaversion" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1425 1438]))                  
+                :type "void")
+                nil [1397 1680])
+            ("STR_VALUE" variable (:constant-flag t) nil [1690 1699])
+            ("_OS_STRING" variable (:constant-flag t) nil [1718 1728])
+            ("OS_STRING" variable (:constant-flag t) nil [1759 1768])
+            ("ejoy2d_game" function
+               (:pointer 1
+                :type ("game" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1792 2546])
+            ("ejoy2d_game_exit" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2570 2585]))                  
+                :type "void")
+                nil [2548 2669])
+            ("ejoy2d_game_lua" function
+               (:pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2699 2714]))                  
+                :type ("lua_State" type (:type "class") nil nil))
+                nil [2671 2732])
+            ("traceback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2756 2769]))                  
+                :type "int")
+                nil [2734 2989])
+            ("ejoy2d_game_start" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3014 3029]))                  
+                :type "void")
+                nil [2991 3287])
+            ("call" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3305 3318])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3319 3325])
+                    ("r" variable (:type "int") (reparse-symbol arg-sub-list) [3326 3332]))                  
+                :type "int")
+                nil [3289 3811])
+            ("logic_frame" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3837 3850]))                  
+                :type "void")
+                nil [3813 3936])
+            ("ejoy2d_game_update" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3962 3977])
+                    ("time" variable (:type "float") (reparse-symbol arg-sub-list) [3978 3989]))                  
+                :type "void")
+                nil [3938 4193])
+            ("ejoy2d_game_drawframe" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4222 4237]))                  
+                :type "void")
+                nil [4195 4368])
+            ("ejoy2d_game_touch" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("game" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4393 4408])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [4409 4416])
+                    ("x" variable (:type "float") (reparse-symbol arg-sub-list) [4417 4425])
+                    ("y" variable (:type "float") (reparse-symbol arg-sub-list) [4426 4434])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [4435 4446]))                  
+                :type "void")
+                nil [4370 4635]))          
+    :file "ejoy2dgame.c"
+    :pointmax 4638
+    :fsize 4637
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LOGIC_FRAME" . ((number "30" 328 . 330)))
+          ("DRAWFRAME_FUNCTION" . ((number "3" 559 . 560)))
+          ("STR_VALUE" (spp-arg-list ("arg") 1699 . 1704) . ((punctuation "#" 1705 . 1706) (symbol "arg" 1706 . 1709)))
+          ("OS_STRING" . ((symbol "_OS_STRING" 1769 . 1779) (semantic-list "(EJOY2D_OS)" 1779 . 1790)))
+          ("EJOY_INIT" . ((string "\"EJOY2D_INIT\"" 350 . 363)))
+          ("EJOY_UPDATE" . ((string "\"EJOY2D_UPDATE\"" 384 . 399)))
+          ("UPDATE_FUNCTION" . ((number "2" 530 . 531)))
+          ("_OS_STRING" (spp-arg-list ("name") 1728 . 1734) . ((symbol "STR_VALUE" 1735 . 1744) (semantic-list "(name)" 1744 . 1750)))
+          ("EJOY_TOUCH" . ((string "\"EJOY2D_TOUCH\"" 461 . 475)))
+          ("TOP_FUNCTION" . ((number "3" 582 . 583)))
+          ("TRACEBACK_FUNCTION" . ((number "1" 504 . 505)))
+          ("EJOY_DRAWFRAME" . ((string "\"EJOY2D_DRAWFRAME\"" 423 . 441)))
+          )
+
+    )
+   (semanticdb-table "dfont.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("dynamic_font_h" variable (:constant-flag t) nil [32 46])
+            ("dfont" type
+               (:prototype t
+                :type "struct")
+                nil [48 61])
+            ("dfont_rect" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [84 90])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [92 98])
+                    ("w" variable (:type "int") (reparse-symbol classsubparts) [100 106])
+                    ("h" variable (:type "int") (reparse-symbol classsubparts) [108 114]))                  
+                :type "struct")
+                nil [63 117])
+            ("dfont_create" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [147 157])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [158 169]))                  
+                :type ("dfont" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [119 170])
+            ("dfont_release" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("dfont" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [190 205]))                  
+                :type "void")
+                nil [171 206])
+            ("dfont_lookup" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("dfont" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [246 261])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [262 268])
+                    ("font" variable (:type "int") (reparse-symbol arg-sub-list) [269 278]))                  
+                :type ("dfont_rect" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [207 279])
+            ("dfont_insert" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("dfont" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [319 334])
+                    ("c" variable (:type "int") (reparse-symbol arg-sub-list) [335 341])
+                    ("font" variable (:type "int") (reparse-symbol arg-sub-list) [342 351])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [352 362])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [363 374]))                  
+                :type ("dfont_rect" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [280 375])
+            ("dfont_flush" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("dfont" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [393 408]))                  
+                :type "void")
+                nil [376 409])
+            ("dfont_dump" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("dfont" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [426 441]))                  
+                :type "void")
+                nil [410 442]))          
+    :file "dfont.h"
+    :pointmax 464
+    :fsize 463
+    :lastmodtime '(21190 9403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("dynamic_font_h")
+          )
+
+    )
+   )
+  :file "!Users!lauhonyeung!Desktop!ejoy2d-master!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

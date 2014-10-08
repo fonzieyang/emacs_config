@@ -1,0 +1,258 @@
+;; Object Setting/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Setting/"
+  :tables (list 
+   (semanticdb-table "NxSettingPopupLayer.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NxSettingPopupLayer.h" include nil nil [3 35])
+            ("NxSettingDataManager.h" include nil nil [36 69])
+            ("NxSoundManager.h" include nil nil [70 97])
+            ("NxLogicSys.h" include nil nil [98 121])
+            ("NxViewSys.h" include nil nil [122 144])
+            ("NxPopupWindow.h" include nil nil [145 171])
+            ("NxDBScene.h" include nil nil [172 194])
+            ("NxDBString.h" include nil nil [195 218])
+            ("NxActionSys.h" include nil nil [219 243])
+            ("initLoadingRunner" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("pLoadingRunner" variable
+                       (:pointer 1
+                        :type ("NxLoadingRunner" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [289 321])
+                    ("nCCBI" variable (:type "int") (reparse-symbol arg-sub-list) [322 332]))                  
+                :type "void")
+                nil [245 411])
+            ("" type
+               (:members 
+                  ( ("NX_SETTING_POPUPLAYER_POPUPWINDOW_TAG_SWITCH_ACCOUNT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [421 474])
+                    ("NX_SETTING_POPUPLAYER_POPUPWINDOW_TAG_CHARACTER_SELECTION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [476 534])
+                    ("NX_SETTING_POPUPLAYER_POPUPWINDOW_TAG_EXIT_GAME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [536 584]))                  
+                :type "enum")
+                nil [413 587])
+            ("NxSettingPopupLayer" function
+               (:constructor-flag t
+                :parent "NxSettingPopupLayer"
+                :type ("NxSettingPopupLayer" type (:type "class") nil nil))
+                nil [590 853])
+            ("NxSettingPopupLayer" function
+               (:destructor-flag t
+                :parent "NxSettingPopupLayer"
+                :type "void")
+                nil [855 1156])
+            ("onAssignCCBMemberVariable" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("pTarget" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1211 1230])
+                    ("pMemberVariableName" variable
+                       (:pointer 1
+                        :type ("CCString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1231 1262])
+                    ("pNode" variable
+                       (:pointer 1
+                        :type ("CCNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1263 1278]))                  
+                :type "bool")
+                nil [1159 2598])
+            ("onResolveCCBCCControlSelector" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("pTarget" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2672 2691])
+                    ("pSelectorName" variable
+                       (:pointer 1
+                        :type ("CCString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2692 2717]))                  
+                :type ("SEL_CCControlHandler" type (:type "class") nil nil))
+                nil [2600 3822])
+            ("onVxNodeLoaded" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("pNode" variable
+                       (:pointer 1
+                        :type ("CCNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3865 3879])
+                    ("pNodeLoader" variable
+                       (:pointer 1
+                        :type ("CCNodeLoader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3880 3906]))                  
+                :type "void")
+                nil [3824 4717])
+            ("initLayerDatas" function
+               (:parent "NxSettingPopupLayer"
+                :type "void")
+                nil [4719 4874])
+            ("onSliderValueChangedEventHandler" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("pSender" variable
+                       (:pointer 1
+                        :type ("CCNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4935 4951])
+                    ("nNewValue" variable (:type "int") (reparse-symbol arg-sub-list) [4952 4966]))                  
+                :type "void")
+                nil [4876 5422])
+            ("onVxCheckBoxEventHandler" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("pSender" variable
+                       (:pointer 1
+                        :type ("CCNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5475 5491])
+                    ("nEvent" variable (:type ("VxCheckBoxListener::Event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5492 5525]))                  
+                :type "void")
+                nil [5424 6419])
+            ("onPopupWindowEventHandler" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("pSender" variable
+                       (:pointer 1
+                        :type ("CCNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6473 6489])
+                    ("nEvent" variable (:type ("VxPopupWindowListener::Event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6490 6526]))                  
+                :type "void")
+                nil [6421 7141])
+            ("onButtonSwitchAccountHandler" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7198 7215])
+                    ("controlEvent" variable (:type ("CCControlEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7216 7244]))                  
+                :type "void")
+                nil [7143 7548])
+            ("onButtonSelectCharacterHandler" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7607 7624])
+                    ("controlEvent" variable (:type ("CCControlEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7625 7653]))                  
+                :type "void")
+                nil [7550 8043])
+            ("onButtonExitGameHandler" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8095 8112])
+                    ("controlEvent" variable (:type ("CCControlEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8113 8141]))                  
+                :type "void")
+                nil [8045 8429])
+            ("onButtonAccountHandler" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8480 8497])
+                    ("controlEvent" variable (:type ("CCControlEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8498 8526]))                  
+                :type "void")
+                nil [8431 8588])
+            ("onEnter" function
+               (:parent "NxSettingPopupLayer"
+                :type "void")
+                nil [8590 8661])
+            ("onExit" function
+               (:parent "NxSettingPopupLayer"
+                :type "void")
+                nil [8663 8852])
+            ("initSettingData" function
+               (:parent "NxSettingPopupLayer"
+                :type "void")
+                nil [8854 9602])
+            ("onButtonEnterForumHandler" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9657 9674])
+                    ("controlEvent" variable (:type ("CCControlEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9675 9703]))                  
+                :type "void")
+                nil [9605 9766])
+            ("onButtonEnterCommunityHandler" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9824 9841])
+                    ("controlEvent" variable (:type ("CCControlEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9842 9870]))                  
+                :type "void")
+                nil [9768 9937])
+            ("onButtonCustomerFeekbackHandler" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9997 10014])
+                    ("controlEvent" variable (:type ("CCControlEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10015 10043]))                  
+                :type "void")
+                nil [9939 10112])
+            ("onButtonEnterXiaoMiCenter" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10166 10183])
+                    ("controlEvent" variable (:type ("CCControlEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10184 10212]))                  
+                :type "void")
+                nil [10114 10275])
+            ("onButtonAccountHandler" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10326 10343])
+                    ("controlEvent" variable (:type ("CCControlEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10344 10372]))                  
+                :type "void")
+                nil [10277 10440])
+            ("getStringByType" function
+               (:parent "NxSettingPopupLayer"
+                :arguments 
+                  ( ("nType" variable (:type "int") (reparse-symbol arg-sub-list) [10491 10501]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [10442 10913]))          
+    :file "NxSettingPopupLayer.cpp"
+    :pointmax 10914
+    :fsize 10913
+    :lastmodtime '(21178 21189 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "NxSettingPopupLayer.h"
+    :file "NxSettingPopupLayer.h"
+    :fsize 3041
+    :lastmodtime '(21178 20949 0 0)
+    )
+   (semanticdb-table "NxSettingDataManager.h"
+    :file "NxSettingDataManager.h"
+    :fsize 1496
+    :lastmodtime '(21115 23286 0 0)
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!newdl!classes!GameSystem!Setting!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

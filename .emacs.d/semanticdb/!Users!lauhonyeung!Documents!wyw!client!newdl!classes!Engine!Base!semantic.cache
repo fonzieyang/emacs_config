@@ -1,0 +1,18 @@
+;; Object Base/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Base/"
+  :tables (list 
+   (semanticdb-table "VxDef.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "VxDef.h"
+    :pointmax 11842
+    :fsize 11841
+    :lastmodtime '(21115 24268 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!newdl!classes!Engine!Base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

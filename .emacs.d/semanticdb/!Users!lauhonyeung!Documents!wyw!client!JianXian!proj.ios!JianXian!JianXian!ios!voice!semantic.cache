@@ -1,0 +1,18 @@
+;; Object voice/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "voice/"
+  :tables (list 
+   (semanticdb-table "IOSSoundRecorder.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "IOSSoundRecorder.h"
+    :pointmax 465
+    :fsize 464
+    :lastmodtime '(20975 15592 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!JianXian!proj.ios!JianXian!JianXian!ios!voice!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

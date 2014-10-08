@@ -1,0 +1,18 @@
+;; Object Logic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Logic/"
+  :tables (list 
+   (semanticdb-table "NxLogicEvent.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "NxLogicEvent.h"
+    :pointmax 83215
+    :fsize 83214
+    :lastmodtime '(20985 50415 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!JianXian!classes!CoreSystem!Logic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

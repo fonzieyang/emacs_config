@@ -1,0 +1,166 @@
+;; Object Startup/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Startup/"
+  :tables (list 
+   (semanticdb-table "NxStartupLoadingScene.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("NxStartupLoadingScene.h" include nil nil [2 36])
+            ("NxConditionMonitor.h" include nil nil [37 68])
+            ("NxLogicSys.h" include nil nil [69 92])
+            ("NxDef.h" include nil nil [93 111])
+            ("VxProgressTimer.h" include nil nil [112 140])
+            ("NxDBEnvironment.h" include nil nil [141 169])
+            ("VxButton.h" include nil nil [170 191])
+            ("NxLoginData.h" include nil nil [192 216])
+            ("NxUpdateData.h" include nil nil [217 242])
+            ("NxDBString.h" include nil nil [243 266])
+            ("NxProtocol.h" include nil nil [267 290])
+            ("NxUpdateDataManager.h" include nil nil [291 323])
+            ("NxSceneLoading.h" include nil nil [324 351])
+            ("NxUpdateProcessor.h" include nil nil [352 382])
+            ("NxStartupLoadingScene" function
+               (:constructor-flag t
+                :parent "NxStartupLoadingScene"
+                :type ("cea99290571fe72ee77825015235a82a2b37cf29" type (:type "class") nil nil))
+                nil [468 685])
+            ("NxStartupLoadingScene" function
+               (:destructor-flag t
+                :parent "NxStartupLoadingScene"
+                :type "void")
+                nil [687 967])
+            ("completedAnimationSequenceNamed" function
+               (:parent "NxStartupLoadingScene"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1029 1046]))                  
+                :type "void")
+                nil [969 1099])
+            ("onAssignCCBMemberVariable" function
+               (:parent "NxStartupLoadingScene"
+                :arguments 
+                  ( ("pTarget" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1155 1174])
+                    ("pMemberVariableName" variable
+                       (:pointer 1
+                        :type ("CCString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1175 1206])
+                    ("pNode" variable
+                       (:pointer 1
+                        :type ("CCNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1207 1222]))                  
+                :type "bool")
+                nil [1101 1564])
+            ("onResolveCCBCCControlSelector" function
+               (:parent "NxStartupLoadingScene"
+                :arguments 
+                  ( ("pTarget" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1640 1659])
+                    ("pSelectorName" variable
+                       (:pointer 1
+                        :type ("CCString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1660 1685]))                  
+                :type ("SEL_CCControlHandler" type (:type "class") nil nil))
+                nil [1566 1881])
+            ("onButtonUpdateEventHandler" function
+               (:parent "NxStartupLoadingScene"
+                :arguments 
+                  ( ("sender" variable
+                       (:pointer 1
+                        :type ("CCObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1938 1955])
+                    ("controlEvent" variable (:type ("CCControlEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1956 1984]))                  
+                :type "void")
+                nil [1883 2020])
+            ("onCreate" function
+               (:parent "NxStartupLoadingScene"
+                :type "void")
+                nil [2022 2598])
+            ("onDataLoadingChecker" function
+               (:parent "NxStartupLoadingScene"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStartupLoadingScene" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2649 2678])
+                    ("pResult" variable
+                       (:pointer 1
+                        :type ("NxConditionStatus" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2679 2706]))                  
+                :type "void")
+                nil [2600 2821])
+            ("processDataLoadingResult" function
+               (:parent "NxStartupLoadingScene"
+                :arguments 
+                  ( ("bInEnter" variable (:type "bool") (reparse-symbol arg-sub-list) [2876 2890]))                  
+                :type "void")
+                nil [2823 3322])
+            ("dispatchDataLoadingCompleteEvent" function
+               (:parent "NxStartupLoadingScene"
+                :arguments 
+                  ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [3385 3394]))                  
+                :type "void")
+                nil [3324 3571])
+            ("onEventNetVersionCheckFailedHandler" function
+               (:parent "NxStartupLoadingScene"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStartupLoadingScene" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3637 3666])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventNetVersionCheckFailed" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3667 3704]))                  
+                :type "bool")
+                nil [3573 3909])
+            ("onEventProtocolVersionCheckResponseHandler" function
+               (:parent "NxStartupLoadingScene"
+                :arguments 
+                  ( ("pThis" variable
+                       (:pointer 1
+                        :type ("NxStartupLoadingScene" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3982 4011])
+                    ("pEvent" variable
+                       (:pointer 1
+                        :type ("NxEventProtocolResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4012 4044]))                  
+                :type "bool")
+                nil [3911 4895])
+            ("registerVersionCheckingEventHandler" function
+               (:parent "NxStartupLoadingScene"
+                :arguments 
+                  ( ("bRegister" variable (:type "bool") (reparse-symbol arg-sub-list) [4961 4976]))                  
+                :type "void")
+                nil [4897 5821])
+            ("launchVersionChecking" function
+               (:parent "NxStartupLoadingScene"
+                :type "void")
+                nil [5823 6332]))          
+    :file "NxStartupLoadingScene.cpp"
+    :pointmax 6551
+    :fsize 6332
+    :lastmodtime '(21178 20669 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__NX_ENABLE_VERSION_CHECKING__")
+          )
+
+    )
+   (semanticdb-table "NxStartupLoadingScene.h"
+    :file "NxStartupLoadingScene.h"
+    :fsize 1671
+    :lastmodtime '(21107 27164 0 0)
+    )
+   )
+  :file "!Users!lauhonyeung!Documents!wyw!client!new91!classes!GameSystem!Startup!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

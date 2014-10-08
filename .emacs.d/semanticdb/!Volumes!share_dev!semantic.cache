@@ -1,0 +1,32 @@
+;; Object share_dev/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "share_dev/"
+  :tables (list 
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio" include (:system-flag t) nil [198 214])
+            ("array" variable
+               (:dereference 1
+                :type "char")
+                nil [253 359])
+            ("printMatrix3x5" function
+               (:arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [381 393]))                  
+                :type "void")
+                nil [361 982])
+            ("main" function (:type "int") nil [984 1034]))          
+    :file "test.cpp"
+    :pointmax 1035
+    :fsize 1034
+    :lastmodtime '(21200 42754 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Volumes!share_dev!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
